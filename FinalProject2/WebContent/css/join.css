@@ -23,19 +23,19 @@ div {
 }
 /*--------페이지 이름 + 아이콘 영역--------*/
 #top {
+	margin : auto;
 	width: 100%;
-	height: 54%;
+	height: 80%;
 }
 /*--------페이지 이름--------*/
-#top>h3 {
+#top>a>img {
+	margin : auto;
 	width: 300px;
-	height: 50px;
+	height: 150px;
 	margin: 0px;
 	position: relative;
-	left: 25px;
+	left: 450px;
 	top: 23px;
-	font-weight: bold;
-	font-size: 36px;
 }
 
 /*--------아이콘--------*/
@@ -122,7 +122,7 @@ div {
 	border-color: rgb(200, 200, 200);
 	box-sizing: border-box;
 }
-#mainContents>form>ul li:nth-of-type(n+7):nth-last-of-type(n) {
+#mainContents>form>ul li:nth-of-type(n+9):nth-last-of-type(n) {
 	border-bottom: 0px;
 }
 #mainContents>form>ul li:nth-last-of-type(2) {
@@ -191,12 +191,9 @@ div {
 	left: 3%;
 	
 }
-#mainContents>form>ul>li:nth-last-of-type(2)>input{
-	position: relative;
-	top: 27%;
-	left: 1.6%;
+
 	
-}
+
 
 #mainContents>form>ul>li>input[type=submit] {
 	height: 43%;

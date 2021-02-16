@@ -20,24 +20,29 @@ public class JoinServiceCon extends HttpServlet {
 		request.setCharacterEncoding("euc-kr");
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
+		String pwcheck = request.getParameter("pwcheck");
 		String name = request.getParameter("name");
 		String tel = request.getParameter("tel");
 	
 		customersDAO dao = new customersDAO();
+		
 		customersVO vo = new customersVO(id,pw,name,tel);
-	
+	   if(pw.equals(pwcheck)) {
 		int cnt = dao.join(id, pw, name, tel);
 		
 		if(cnt>0) {
 			System.out.println("회원가입성공");
 			//HttpSession session = request.getSession();
-			response.sendRedirect("joinSucess.jsp");
+			response.sendRedirect("main.jsp");
 			//세션값 뭐 보내지?
 		}else {
 			System.out.println("회원가입실패");
 			response.sendRedirect("main.jsp");
 		}
-		
+	   }else {
+		    System.out.println("회원가입실패");
+			response.sendRedirect("main.jsp");
+	   }
 		
 	}
 
