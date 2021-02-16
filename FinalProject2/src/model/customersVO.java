@@ -7,6 +7,7 @@ public class customersVO {
 	private String userPw;
 	private String userName;
 	private String userTel;
+	
 	public customersVO(int userUid, String userId, String userPw, String userName, String userTel) {
 		super();
 		this.userUid = userUid;
@@ -15,6 +16,7 @@ public class customersVO {
 		this.userName = userName;
 		this.userTel = userTel;
 	}
+	
 	public int getUserUid() {
 		return userUid;
 	}
