@@ -67,7 +67,7 @@ public class customersDAO {
 	public customersVO login(String id, String pw) {
 		try {
 			conn();
-			String sql = "select * from customers where userId = ? and userPw = ?";
+			String sql = "select * from customers where user_Id = ? and user_Pw = ?";
 			psmt = conn.prepareStatement(sql);
 			
 			psmt.setString(1, id);

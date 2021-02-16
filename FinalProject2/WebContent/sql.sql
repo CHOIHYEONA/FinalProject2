@@ -1,6 +1,6 @@
 create table customers (
 	user_Uid number NOT NULL primary key,
-	user_Id varchar2(40) NOT NUTLL, 
+	user_Id varchar2(40) NOT NULL, 
 	user_Pw varchar2(40) NOT NULL, 
 	user_Name varchar2(40) NOT NULL, 
 	user_Tel varchar2(40) NOT NULL

@@ -62,7 +62,7 @@ public class commDAO {
 	public int deleteDate(commVO vo) {
 		try {
 			conn();
-			String sql = "delete from comm where commUid = ?";
+			String sql = "delete from comm where comm_Uid = ?";
 			psmt = conn.prepareStatement(sql);
 			
 			psmt.setInt(1, vo.getCommUid());

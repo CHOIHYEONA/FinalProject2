@@ -45,7 +45,7 @@ public class boardDAO {
 	public int deleteDate(boardVO vo) {
 		try {
 			conn();
-			String sql = "delete from board where boardUid = ?";
+			String sql = "delete from board where board_Uid = ?";
 			psmt = conn.prepareStatement(sql);
 			
 			psmt.setInt(1, vo.getBoardUid());
