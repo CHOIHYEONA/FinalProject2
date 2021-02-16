@@ -17,6 +17,16 @@ public class customersVO {
 		this.userTel = userTel;
 	}
 	
+	
+	public customersVO(String userId, String userPw, String userName, String userTel) {
+		super();
+		this.userId = userId;
+		this.userPw = userPw;
+		this.userName = userName;
+		this.userTel = userTel;
+	}
+
+
 	public int getUserUid() {
 		return userUid;
 	}

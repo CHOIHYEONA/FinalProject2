@@ -16,9 +16,17 @@ public class boardVO {
 		this.b_date = b_date;
 		this.b_content = content;
 		this.b_count = b_count;
-		this.b_like = b_like;
 		this.userUid = userUid;
 	}
+	
+	
+	public boardVO(String b_title, String b_content, int userUid) {
+		super();
+		this.b_title = b_title;
+		this.b_content = b_content;
+		this.userUid = userUid;
+	}
+
 	public int getBoardUid() {
 		return boardUid;
 	}

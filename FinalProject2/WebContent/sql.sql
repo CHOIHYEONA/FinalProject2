@@ -9,7 +9,7 @@ create table board2 (
 	boardUid number primary key,
 	b_title varchar2(40) ,
 	b_date date ,
-	b_content clob,
+	b_content varchar2(2000),
 	b_count number,
 	b_like number,
 	userUid number,
@@ -18,7 +18,7 @@ create table board2 (
 	references customers(userUid) on delete cascade
 )
 create table comm (
-	boardUid number primary key,
+	commUid number primary key,
 	c_date date not null,
 	c_content varchar2(100),
 	userUid number,
@@ -40,7 +40,9 @@ create table gallery (
 
 )
 
+
 create sequence cusNum start with 1 increment by 1;
 create sequence boardNum start with 1 increment by 1;
 create sequence commNum start with 1 increment by 1;
 create sequence galNum start with 1 increment by 1;
+

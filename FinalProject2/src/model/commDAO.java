@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class boardDAO {
+public class commDAO {
 	int cnt =0;
 	PreparedStatement psmt = null;
 	Connection conn = null;
@@ -40,15 +40,14 @@ public class boardDAO {
 				}
 	}
 	
-	public int insertData(boardVO vo) {
+	public int insertData(commVO vo) {
 		try {
 			conn();
-			String sql = "insert into board2 values(boardNum.nextval,?,sysdate,?,0,0,?)";
+			String sql = "insert into comm values(commNum.nextval,sysdate,?,?)";
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setString(1, vo.getB_title());
-			psmt.setString(2, vo.getContent());
-			psmt.setInt(3, vo.getUserUid());
+			psmt.setString(1, vo.getC_content());
+			psmt.setInt(2, vo.getUserUid());
 			
 			cnt = psmt.executeUpdate();
 			
@@ -60,15 +59,15 @@ public class boardDAO {
 		return cnt;
 	}
 	
-	public int deleteDate(boardVO vo) {
+	public int deleteDate(commVO vo) {
 		try {
 			conn();
-			String sql = "delete from board where boardUid = ?";
+			String sql = "delete from comm where commUid = ?";
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setInt(1, vo.getBoardUid());
-			
+			psmt.setInt(1, vo.getCommUid());
 			cnt = psmt.executeUpdate();
+			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
@@ -76,5 +75,4 @@ public class boardDAO {
 		}
 		return cnt;
 	}
-
 }

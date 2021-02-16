@@ -5,7 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class boardDAO {
+public class galleryDAO {
+
+	
 	int cnt =0;
 	PreparedStatement psmt = null;
 	Connection conn = null;
@@ -40,14 +42,14 @@ public class boardDAO {
 				}
 	}
 	
-	public int insertData(boardVO vo) {
+	public int insertData(galleryVO vo) {
 		try {
 			conn();
-			String sql = "insert into board2 values(boardNum.nextval,?,sysdate,?,0,0,?)";
+			String sql = "insert into gallery values(galNum.nextval,?,sysdate,?,0,0,?)";
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setString(1, vo.getB_title());
-			psmt.setString(2, vo.getContent());
+			psmt.setString(1, vo.getG_title());
+			psmt.setString(2, vo.getImgName());
 			psmt.setInt(3, vo.getUserUid());
 			
 			cnt = psmt.executeUpdate();
@@ -60,15 +62,16 @@ public class boardDAO {
 		return cnt;
 	}
 	
-	public int deleteDate(boardVO vo) {
+	public int deleteDate(galleryVO vo) {
 		try {
 			conn();
-			String sql = "delete from board where boardUid = ?";
+			String sql = "delete from gallery where galleryUid = ?";
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setInt(1, vo.getBoardUid());
-			
+			psmt.setInt(1, vo.getGalleryUid());
 			cnt = psmt.executeUpdate();
+			
+			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
@@ -76,5 +79,5 @@ public class boardDAO {
 		}
 		return cnt;
 	}
-
+	
 }
