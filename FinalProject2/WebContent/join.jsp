@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>채식레시피 - 로그인</title>
+<title>멍냥이 - 회원가입</title>
 <link rel="stylesheet" href="css/join.css">
 </head>
 <body>
