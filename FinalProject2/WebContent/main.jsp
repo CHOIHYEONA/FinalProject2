@@ -46,11 +46,11 @@
 		<!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">고양이</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">지도</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a></li>
 					<li><a href="http://localhost:8081/2021/main.jsp">샵</a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">지도</a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">고양이</a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
 				</ul>
 			</div>
 
