@@ -1,37 +1,37 @@
 create table customers (
-	userUid number primary key,
-	userId varchar2(40), 
-	userPw varchar2(40), 
-	userName varchar2(40), 
-	userTel varchar2(40) 
+	user_Uid number NOT NULL primary key,
+	user_Id varchar2(40) NOT NUTLL, 
+	user_Pw varchar2(40) NOT NULL, 
+	user_Name varchar2(40) NOT NULL, 
+	user_Tel varchar2(40) NOT NULL
 )
 
 create table board2 (
-	boardUid number primary key,
-	b_title varchar2(40) ,
-	b_date date ,
-	imgName varchar2(50),
-	b_content varchar2(2000),
-	b_count number,
-	b_like number,
-	userUid number,
+	board_Uid number NOT NULL primary key,
+	b_title varchar2(40) NOT NULL ,
+	b_date date NOT NULL,
+	imgName varchar2(50) NOT NULL,
+	b_content varchar2(2000) NOT NULL,
+	b_count number NOT NULL,
+	b_like number NOT NULL,
+	user_Uid number NOT NULL,
 	
-	constraint fk_customer_board foreign key(userUid)
-	references customers(userUid) on delete cascade
+	constraint fk_customer_board foreign key(user_Uid)
+	references customers(user_Uid) on delete cascade
 )
 
 create table comm (
-	commUid number primary key,
+	comm_Uid number NOT NULL primary key,
 	c_date date not null,
-	c_content varchar2(100),
-	userUid number,
-	boardUid number,
+	c_content varchar2(100) NOT NULL,
+	user_Uid number NOT NULL,
+	board_Uid number NOT NULL,
 	
-	constraint fk_customer_comm foreign key(userUid)
-	references customers(userUid) on delete cascade,
+	constraint fk_customer_comm foreign key(user_Uid)
+	references customers(user_Uid) on delete cascade,
 
-	constraint fk_board_comm foreign key(boardUid)
-	references board2(boardUid) on delete cascade
+	constraint fk_board_comm foreign key(board_Uid)
+	references board2(board_Uid) on delete cascade
 
 	)
 	
