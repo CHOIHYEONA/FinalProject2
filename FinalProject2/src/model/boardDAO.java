@@ -40,25 +40,7 @@ public class boardDAO {
 				}
 	}
 	
-	public int insertData(boardVO vo) {
-		try {
-			conn();
-			String sql = "insert into board2 values(boardNum.nextval,?,sysdate,?,0,0,?)";
-			psmt = conn.prepareStatement(sql);
-			
-			psmt.setString(1, vo.getB_title());
-			psmt.setString(2, vo.getContent());
-			psmt.setInt(3, vo.getUserUid());
-			
-			cnt = psmt.executeUpdate();
-			
-		}catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			close();
-		}
-		return cnt;
-	}
+	
 	
 	public int deleteDate(boardVO vo) {
 		try {

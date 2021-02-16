@@ -9,24 +9,27 @@ public class boardVO {
 	private int b_count;
 	private int b_like;
 	private int userUid;
-	public boardVO(int boardUid, String b_title, String b_date, String content, int b_count, int b_like, int userUid) {
+	private String imgName;
+
+
+	public boardVO(int boardUid, String b_title, String b_date, String b_content, int b_count, int b_like, int userUid,
+			String imgName) {
 		super();
 		this.boardUid = boardUid;
 		this.b_title = b_title;
 		this.b_date = b_date;
-		this.b_content = content;
-		this.b_count = b_count;
-		this.userUid = userUid;
-	}
-	
-	
-	public boardVO(String b_title, String b_content, int userUid) {
-		super();
-		this.b_title = b_title;
 		this.b_content = b_content;
+		this.b_count = b_count;
+		this.b_like = b_like;
 		this.userUid = userUid;
+		this.imgName = imgName;
 	}
-
+	public String getB_content() {
+		return b_content;
+	}
+	public String getImgName() {
+		return imgName;
+	}
 	public int getBoardUid() {
 		return boardUid;
 	}
@@ -36,9 +39,7 @@ public class boardVO {
 	public String getB_date() {
 		return b_date;
 	}
-	public String getContent() {
-		return b_content;
-	}
+	
 	public int getB_count() {
 		return b_count;
 	}
