@@ -1,0 +1,181 @@
+@charset "EUC-KR";
+
+body {
+	margin: 0px;
+}
+
+div {
+	margin: 0px;
+	float: left;
+}
+/*---------------------전체 화면---------------------*/
+.frame {
+	float: none;
+	width: 1200px;
+	height: 910px;
+	margin: auto;
+	background-color: rgb(250, 250, 250);
+}
+/*---------------------화면 상단---------------------*/
+.topFrame {
+	width: 100%;
+	height: 160px;
+}
+/*--------페이지 이름 + 아이콘 영역--------*/
+#top {
+	width: 100%;
+	height: 54%;
+}
+/*--------페이지 이름--------*/
+#top>h3 {
+	width: 300px;
+	height: 50px;
+	margin: 0px;
+	position: relative;
+	left: 25px;
+	top: 23px;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+/*--------아이콘--------*/
+#top>ul {
+	height: 60px;
+	padding: 10px 10px 10px 5px;
+	box-sizing: border-box;
+	margin: auto;
+	position: relative;
+	top: -30px;
+	left: 935px;
+	float: left;
+	list-style: none;
+}
+
+#top>ul>li {
+	height: 40px;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+}
+
+#top>ul>li>img {
+	width: 40px;
+	height: 40px;
+}
+/*--------경계 라인--------*/
+.UnderBar {
+	width: 100%;
+	height: 1%;
+	border-radius: 4px;
+	background-color: rgb(174, 174, 174);
+}
+/*--------상단 메뉴--------*/
+#topMenu {
+	width: 100%;
+	height: 45%;
+	position: relative;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+}
+
+/*---------------------화면 중간---------------------*/
+#mainFrame {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	padding: 0px 400px 100px 400px;
+	box-sizing: border-box;
+}
+/*-------- 로그인 영역 --------*/
+#mainContents {
+	width: 100%;
+	height: 100%;
+}
+#mainContents> :nth-child(1) {
+font-weight: bold; font-size: 32px; text-align: center;
+}
+#mainContents> :nth-child(2) {
+margin-top: 0px; margin-bottom: 30px; font-size: 16px; text-align: center; color: rgb(158, 158, 158);
+}
+
+#mainContents>form>input {
+	padding: 6px 12px;
+	margin-bottom: 30px;
+	width: 300px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgb(0 0 0/ 8%);
+	box-sizing: border-box;
+	resize: none;
+	font-size: 14px;
+}
+
+#mainContents>form>input:nth-last-child(1) {
+	box-shadow: none;
+	font-size: 16px;
+	margin: 0px;
+	color: rgb(64, 64, 64);
+	text-align: center;
+	border-radius: 4px;
+	border-color: rgb(175, 175, 175);
+	background-color: rgb(224, 224, 224);
+}
+/* 아이디 비밀번호 찾기, 회원가입등 */
+#mainContents>ul {
+	height:40px;
+	width: 317px;
+	margin: auto;
+	padding: 0px;
+	padding-top: 16px;
+	position: relative;
+	list-style: none;
+}
+
+#mainContents>ul>li {
+	height: 40px;
+	height: 25px;
+	width: auto;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+	border: 0px;
+	border-right: 1px;
+	border-color: rgb(175, 175, 175);
+	border-style:solid; 
+	font-size: 16px;
+    text-align: center;
+}
+#mainContents>ul>li:nth-last-child(1) {
+	border: 0px;
+}
+#mainContents>ul>li>a {
+	width: auto;
+	height: auto;
+	display: block;
+	text-decoration: none;
+	color: rgb(64, 64, 64);
+}
+
+/*---------------------화면 하단---------------------*/
+#footer {
+	width: 100%;
+	height: 100px;
+}
+
+#footer h3 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 10px;
+	margin-left: 100px;
+}
+
+#footer h5 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 10px;
+	margin-left: 100px;
+}

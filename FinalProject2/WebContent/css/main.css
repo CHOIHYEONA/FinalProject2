@@ -1,0 +1,273 @@
+@charset "EUC-KR";
+
+body {
+	margin: 0px;
+}
+
+div {
+	margin: 0px;
+	float: left;
+}
+/*---------------------전체 화면---------------------*/
+.frame {
+	float: none;
+	width: 1200px;
+	height: 2060px;
+	margin: auto;
+	background-color: rgb(250, 250, 250);
+}
+/*---------------------화면 상단---------------------*/
+.topFrame {
+	z-index: 1;
+	width: 1200px;
+	height: 88px;
+	position: fixed;
+  background-color: white;
+  
+}
+/*--------페이지 이름 + 아이콘 영역--------*/
+#top {
+	width: 100%;
+	height: 54%;
+	
+}
+/*--------페이지 이름--------*/
+#top>h3 {
+	width: 300px;
+	height: 50px;
+	margin: 0px;
+	position: relative;
+	left: 500px;
+	top: 23px;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+/*--------아이콘--------*/
+#top>ul {
+	height: 60px;
+	padding: 10px 10px 10px 5px;
+	box-sizing: border-box;
+	margin: auto;
+	position: relative;
+	top: -30px;
+	left: 935px;
+	float: left;
+	list-style: none;
+}
+
+#top>ul>li {
+	height: 40px;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+}
+
+#top>ul>li>img {
+	width: 40px;
+	height: 40px;
+}
+/*--------경계 라인--------*/
+.UnderBar {
+	width: 60%;
+	height : 2px;
+	position : relative;
+	top: 38px;
+	left : 250px;
+	border-radius: 4px;
+	background-color: rgb(174, 174, 174);
+}
+
+/*-- 메인 카테고리 리스트 --*/
+#topMenu>ul {
+	list-style: none;
+	height: 100%;
+	padding: 10px 10px 10px 10px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#topMenu>ul>li {
+	float: right;
+	width: 19%;
+	margin: 0% 1% 0% 0%;
+	height: 100%;
+	text-align: center;
+	line-height: 25px;
+}
+/*-- 메인 카테고리 링크 --*/
+#topMenu>ul>li>a {
+	display: block;
+	height: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	
+}
+/*---------------------화면 중간---------------------*/
+#mainFrame {
+	z-index: 2;
+	width: 100%;
+	height: 1700px;
+	padding-top: 88px;
+	
+}
+
+/*--------상단 메뉴--------*/
+#topMenu {
+	float : right;
+	width : 60%;
+	height: 60px;
+	position: relative;
+	right : 250px;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	
+}
+
+/*-------- 메인 사진 영역 --------*/
+#mainFrame>div:nth-child(2) {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	
+	
+}
+/*-- 메인 사진 --*/
+#mainFrame>div:nth-child(2)>img:nth-of-type(1) {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/*-------- 메인 사진 내부 검색창 --------*/
+#mainFrame>div:nth-child(2)>div {
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 50px;
+	position: relative;
+	top: 39%;
+}
+/*-- 검색창 내부 텍스트박스 --*/
+#mainFrame>div:nth-child(2)>div>input {
+	width: 100%;
+	height: 48px;
+	border-width: 2px;
+	border-color: #aaa;
+	border-style: solid;
+	border-radius: 5px;
+	margin: 0px;
+	padding: 7px;
+	box-sizing: border-box;
+}
+
+/*-- 검색창 내부 a태그 --*/
+#mainFrame>div:nth-child(2)>div>a {
+	height: 48px;
+	width: 48px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 93%;
+}
+/*-- 검색창 내부 검색 아이콘 --*/
+#mainFrame>div:nth-child(2)>img:nth-of-type(2) {
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+/*-------- 메인 콘텐츠 선택 영역 --------*/
+#mainFrame>div:nth-child(3) {
+	width: 100%;
+	height: 100px;
+}
+/*-- 메인 콘텐츠 선택 목록 --*/
+#mainFrame>div:nth-child(3)>div {
+	width: 160px;
+	height: 40px;
+	position: relative;
+	top: 50%;
+	left: 83%
+}
+/*-- 메인 콘텐츠 선택 목록 : 최신순 --*/
+#mainFrame>div:nth-child(3)>div>input:nth-child(1) {
+	width: 77px;
+	height: 40px;
+	position: relative;
+	left: 0%;
+}
+/*-- 메인 콘텐츠 선택 목록 : 추천순 --*/
+#mainFrame>div:nth-child(3)>div>input:nth-child(2) {
+	width: 77px;
+	height: 40px;
+	position: relative;
+	left: -3%;
+}
+/*-------- 메인 콘텐츠 영역 --------*/
+#mainContents {
+	width: 100%;
+	height: 1000px;
+	padding-top: 75px;
+}
+/*---- 음식 콘텐츠 영역 ----*/
+#mainContents>div {
+	width: 250px;
+	height: 370px;
+	margin: 75px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+#mainContents>div>a {
+	width: 250px;
+	height: 370px;
+	margin: 75px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/*-- 음식 사진 --*/
+#mainContents>div>img {
+	width: 246px;
+	height: 246px;
+	border-radius: 10px;
+}
+/*-- 음식 이름 --*/
+#mainContents>div>h4 {
+	margin: 0px;
+	padding: 10px 5px 10px 5px;
+}
+/*-- 음식 재료 목록 --*/
+#mainContents>div>h5 {
+	margin: 0px;
+	padding: 10px 5px 10px 5px;
+}
+
+/*---------------------화면 하단---------------------*/
+#footer {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 150px;
+}
+
+#footer h3 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 10px;
+	margin-left: 100px;
+}
+
+#footer h5 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 10px;
+	margin-left: 100px;
+}
