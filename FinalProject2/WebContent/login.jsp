@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피 - 로그인</title>
 <link rel="stylesheet" href="css/login.css">
