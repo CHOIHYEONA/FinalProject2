@@ -5,24 +5,26 @@ public class boardVO {
 	private int boardUid;
 	private String b_title;
 	private String b_date;
+	private String imgName;
 	private String b_content;
 	private int b_count;
 	private int b_like;
 	private int userUid;
-	private String imgName;
+	
 
 
-	public boardVO(int boardUid, String b_title, String b_date, String b_content, int b_count, int b_like, int userUid,
-			String imgName) {
+
+	public boardVO(int boardUid, String b_title, String b_date, String imgName, String b_content, int b_count,
+			int b_like, int userUid) {
 		super();
 		this.boardUid = boardUid;
 		this.b_title = b_title;
 		this.b_date = b_date;
+		this.imgName = imgName;
 		this.b_content = b_content;
 		this.b_count = b_count;
 		this.b_like = b_like;
 		this.userUid = userUid;
-		this.imgName = imgName;
 	}
 	public String getB_content() {
 		return b_content;

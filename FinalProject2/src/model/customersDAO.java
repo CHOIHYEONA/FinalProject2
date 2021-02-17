@@ -76,11 +76,11 @@ public class customersDAO {
 			rs = psmt.executeQuery();
 
 			if(rs.next()) {
-				int userUid = rs.getInt("userUid");
-				String userId = rs.getString("userId");
-				String userPw = rs.getString("userPw");
-				String userName = rs.getString("userName");
-				String userTel = rs.getString("userTel");
+				int userUid = rs.getInt("user_Uid");
+				String userId = rs.getString("user_Id");
+				String userPw = rs.getString("user_Pw");
+				String userName = rs.getString("user_Name");
+				String userTel = rs.getString("user_Tel");
 				
 				userInfo = new customersVO(userUid, userId, userPw, userName, userTel);
 			}
