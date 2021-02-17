@@ -62,7 +62,7 @@
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
 		  <hr>
-		  		<form action = "boardupload" enctpye = "multipart/form=data">
+		  		<form action = "boardupload" method = "post" enctype="multipart/form-data">
 		  			<span>제목</span>
 		  			<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
 		  			<table>

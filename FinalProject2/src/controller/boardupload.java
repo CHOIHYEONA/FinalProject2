@@ -23,39 +23,42 @@ public class boardupload extends HttpServlet {
 
 		request.setCharacterEncoding("euc-kr");
 		System.out.println("보드업로드");
-		String saveDri = request.getServletContext().getRealPath("files");
+		String saveDri ="C:\\Users\\Chosun\\git\\FinalProject2\\FinalProject2\\WebContent\\foldername";
 		//저장할 파일의 위치를 가져옴
 		System.out.println(saveDri);
 		int maxSize = 5*1024*1024;
 		//5MB 파일 크기 최대치 정해줌
 		String encoding = "EUC-KR";
-		MultipartRequest multi = new MultipartRequest(request,saveDri,maxSize,encoding,new DefaultFileRenamePolicy());
-	
+		MultipartRequest multi = new MultipartRequest(request,saveDri,maxSize, encoding ,new DefaultFileRenamePolicy());
 		String b_title = multi.getParameter("title");
-		String imgName = multi.getFilesystemName("imgName");
+		String filename=multi.getFilesystemName("filename");
 		String b_content = multi.getParameter("content");
+		 
+		// 업로드한 파일의 전체 경로를 DB에 저장하기 위함
+		String b_fileFullPath = saveDri + "/" + filename;
 		HttpSession session=request.getSession();
 		/*세션가져와야함 customersVO vo =(customersVO)session.getAttribute("getdto");*/
 		
-		String filename=multi.getFilesystemName("fileName");
+		
 		
 		int userUid = 2;
 		//String name = getdto.name();
 		//int userUid = getvo.userUid();
 		
-		System.out.println(b_title + imgName + b_content );
-		boardVO vo = new boardVO(b_title, imgName, b_content, userUid);
+		System.out.println(b_title + b_fileFullPath + b_content );
+		boardVO vo = new boardVO(b_title, b_fileFullPath, b_content, userUid);
 		boardDAO dao = new boardDAO();
 		int cnt = dao.insertData(vo);
 		
 		if(cnt>0) {
 			System.out.println("레시피 등록 완료 ! ");
-			response.sendRedirect("Myrecipelist.jsp");
+			
 		}
 		else {
 			
 			System.out.println("레시피 등록 실패 ! ");
 		}
+		response.sendRedirect("main.jsp");
 	
 	}
 
