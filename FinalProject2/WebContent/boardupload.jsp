@@ -43,7 +43,7 @@
 
 
 		<!---------- 페이지 중간 영역 ---------->
-		<div id="mainFrame">
+		<div id="mainFrame" align = "center">
 		
 		<!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
@@ -57,24 +57,34 @@
 			</div>
 			
 			  
+		<br><br><br><br><br>
 		
-		 <div id="rightm"  style=" float: left; display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
-		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">제목</font><input type="text" name="title" style="background-color: #ffffff; width: 300px; height: 38px;"/>
-                                
-                                <font style="font-weight: bold; font-family: 'Atomy-Bold';">ㅇㅅㅇ</font><br>
-                                <div style="width: 500px; height: 200px;">
-                                   <div style=" float: left; display: inline; width: 200px; height: 200px; padding-right: 10px;">
-                                      <div class="filebox1">
-                                      <input class="upload-name1" value="이미지를 넣어주세요" disabled="disabled" style="font-size: 15px;
-                                         width: 190px; height: 35.4px;"> 
-                                      <label for="ex_filename1" style="background-color:#f26964; color: white; font-size: 13px;" >파일 선택</label> 
-                                      <input type="file" name= "filename1" id="ex_filename1" class="upload-hidden"> </div>
-                                    </div>
-                                    <div style=" float: left; display: inline; width: 300px; height: 200px; margin: 0px auto;">
-                                      <textarea name ="coment1" rows="1" cols="10"></textarea>
-                                 </div>
-                              </div>
-
+		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
+		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
+		  <hr>
+		  			<table>
+		  				<tr>
+		  					<td width = "16px">제목</td>
+		  					<td><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></td>
+		  				</tr>
+		  				<tr>
+		  					<td>
+                                      <input type="file" name= "filename1" id="ex_filename1" class="upload-hidden">
+		  					</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<textarea name ="coment1" rows="10" cols="50"></textarea>
+							</td>
+		  				</tr>
+		  				<tr>
+		  					<td><input type="submit" value="제출"></td>
+		  					<td><input type="button" value="취소"></td>
+		  				</tr>
+		  				<tr></tr>
+		  			</table>
+							
+                       </div>
 
 
 </body>
