@@ -62,9 +62,9 @@
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
 		  <hr>
-		  				
-		  					<span>제목</span>
-		  					<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
+		  		<form action = "boardupload" enctpye = "multipart/form=data">
+		  			<span>제목</span>
+		  			<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
 		  			<table>
 		  				<tr>
 		  					<td>
@@ -76,13 +76,10 @@
 								<textarea name ="content" rows="10" cols="50"></textarea>
 							</td>
 		  				</tr>
-		  				<tr>
-		  					<td><input id = "submit" type="submit" value="제출"></td>
-		  					<td><input id = "cancel" type="button" value="취소"></td>
-		  				</tr>
-		  				<tr></tr>
 		  			</table>
-							
+		  					<span><input id = "submit" type="submit" value="제출"></span>
+		  					<span><input id = "cancel" type="button" value="취소" onclik = "location.href = 'main.jsp'" ></span>
+							</form>
                        </div>
                        </div>
                        </div>

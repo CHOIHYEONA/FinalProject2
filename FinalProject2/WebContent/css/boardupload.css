@@ -145,20 +145,20 @@ div {
 	
 }
 #submit{
-	height: 43%;
-	width: 26%;
+	height: 70px;
+	width: 150px;
 	padding: 6px 12px;
 	position: relative;
-	top: 27%;
+	top: 10%;
 	left: 3%;
 }
 #cancel{
-	height: 43%;
-	width: 26%;
+	height: 70px;
+	width: 150px;
 	padding: 6px 12px;
 	position: relative;
-	top: 27%;
-	left: 3%;
+	top: 10%;
+	left : 20%
 }
 /*---------------------화면 하단---------------------*/
 #footer {
