@@ -14,6 +14,13 @@ public class boardVO {
 
 
 
+	public boardVO(String b_title, String imgName, String b_content, int userUid) {
+		super();
+		this.b_title = b_title;
+		this.imgName = imgName;
+		this.b_content = b_content;
+		this.userUid = userUid;
+	}
 	public boardVO(int boardUid, String b_title, String b_date, String imgName, String b_content, int b_count,
 			int b_like, int userUid) {
 		super();
