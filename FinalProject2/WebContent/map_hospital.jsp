@@ -101,10 +101,11 @@
                 <form onsubmit="searchPlaces(); return false;">
                     키워드 : <input type="text" value = "광주 동물병원" placeholder = "검색할 주소 입력" id="keyword" size="15"> 
                     <button type="submit">검색하기</button> 
+                            <hr>
                 </form>
             </div>
         </div>
-        <hr>
+
         <ul id="placesList"></ul>
         <div id="pagination"></div>
     </div>
@@ -246,7 +247,7 @@ function displayPlaces(places) {
     removeMarker();
     
     for ( var i=0; i<places.length; i++ ) {
-
+		
         // 마커를 생성하고 지도에 표시합니다
         var placePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
             marker = addMarker(placePosition, i), 
@@ -292,7 +293,7 @@ function displayPlaces(places) {
 function getListItem(index, places) {
 
     var el = document.createElement('li'),
-    itemStr = '<span class="markerbg marker_' + (index+1) + '"></span>' +
+    itemStr = '<span class="markerbg marker_' + (index) + '"></span>' +
                 '<div class="info">' +
                 '   <h5>' + places.place_name + '</h5>';
 
