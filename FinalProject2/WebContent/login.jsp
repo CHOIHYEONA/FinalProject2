@@ -6,7 +6,7 @@
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
-<title>채식레시피 - 로그인</title>
+<title>멍냥이 - 로그인</title>
 <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
@@ -21,18 +21,10 @@
 
 			<!-- 최상단 영역 -->
 			<div id="top">
-				<h3>Vegetarianism</h3>
-				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/person.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/menu.png"></a></li>
-				</ul>
+				<a href = "main.jsp"><img src ="imgs/logo.png"></a>
+				
 			</div>
+
 
 
 			<!-- 밑줄 디자인 -->
@@ -50,8 +42,8 @@
 				<div id="mainContents" style="text-align: center;">
 					<span>로그인<br></span>
 					<span>
-						<br>Vegetarianism에 오신 것을 환영합니다.<br>보다 나은 서비스 제공을 위해 로그인
-						해주세요<br> <br> <br> <br>
+						<br>
+						<br> <br> <br> <br>
 					</span>
 					<form action="">
 						<input type="text" required="required" placeholder="아이디"><br>
@@ -72,7 +64,6 @@
 			<div id="footer">
 			<div class="UnderBar"></div>
 				<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-				<h5>이상현, 김은아, 송지원, 김읜한, 채평성</h5>
 			</div>
 		</div>
 	</div>
