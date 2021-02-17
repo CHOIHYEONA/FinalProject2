@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>병원위치 검색</title>
 <link rel="stylesheet" href="css/main.css">

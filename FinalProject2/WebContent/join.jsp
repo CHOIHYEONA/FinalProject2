@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>멍냥이 - 회원가입</title>
 <link rel="stylesheet" href="css/join.css">
