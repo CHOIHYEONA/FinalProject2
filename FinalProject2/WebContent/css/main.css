@@ -1,354 +1,368 @@
 @charset "EUC-KR";
 
 body {
-	margin: 0px;
+   margin: 0px;
 }
 
 div {
-	margin: 0px;
-	float: left;
+   margin: 0px;
+   float: left;
 }
 /*---------------------전체 화면---------------------*/
 .frame {
-	float: none;
-	width: 1200px;
-	height: 2060px;
-	margin: auto;
-	background-color: rgb(250, 250, 250);
+   float: none;
+   width: 1200px;
+   height: 2060px;
+   margin: auto;
+   background-color: rgb(250, 250, 250);
 }
 /*---------------------화면 상단---------------------*/
 .topFrame {
-	z-index: 1;
-	width: 1200px;
-	height: 88px;
-	position: fixed;
+   z-index: 1;
+   width: 1200px;
+   height: 88px;
+   position: fixed;
   background-color: white;
   
 }
 /*--------페이지 이름 + 아이콘 영역--------*/
 #top {
-	width: 100%;
-	height: 54%;
-	
+   width: 100%;
+   height: 54%;
+   
 }
 /*--------페이지 이름--------*/
 #top>h3 {
-	width: 300px;
-	height: 50px;
-	margin: 0px;
-	position: relative;
-	left: 550px;
-	top: 23px;
-	font-weight: bold;
-	font-size: 36px;
+   width: 300px;
+   height: 50px;
+   margin: 0px;
+   position: relative;
+   left: 550px;
+   top: 23px;
+   font-weight: bold;
+   font-size: 36px;
 }
 
 /*--------아이콘--------*/
 #top>ul {
-	height: 60px;
-	padding: 10px 10px 10px 5px;
-	box-sizing: border-box;
-	margin: auto;
-	position: relative;
-	top: -10px;
-	left: 1040px;
-	float: left;
-	list-style: none;
+   height: 60px;
+   padding: 10px 10px 10px 5px;
+   box-sizing: border-box;
+   margin: auto;
+   position: relative;
+   top: -10px;
+   left: 1040px;
+   float: left;
+   list-style: none;
 }
 
 
 #top>ul>li {
-	height: 40px;
-	float: left;
-	padding: 0px 10px 0px 10px;
-	box-sizing: border-box;
+   height: 40px;
+   float: left;
+   padding: 0px 10px 0px 10px;
+   box-sizing: border-box;
 }
 #top>ul>li>a {
-	display: block;
-	height: 100%;
-	font-size: 16px;
-	text-decoration: none;
-	color: black;
-	
+   display: block;
+   height: 100%;
+   font-size: 16px;
+   text-decoration: none;
+   color: black;
+   
 }
 
 /*--------경계 라인--------*/
 .UnderBar {
-	width: 60%;
-	height : 2px;
-	position : relative;
-	top: 38px;
-	left : 250px;
-	border-radius: 4px;
-	background-color: rgb(174, 174, 174);
+   width: 60%;
+   height : 2px;
+   position : relative;
+   top: 38px;
+   left : 250px;
+   border-radius: 4px;
+   background-color: rgb(174, 174, 174);
 }
 
 /*-- 메인 카테고리 리스트 --*/
 #topMenu>ul {
-	list-style: none;
-	height: 100%;
-	padding: 10px 10px 10px 10px;
-	
-	box-sizing: border-box;
+   list-style: none;
+   height: 100%;
+   padding: 10px 10px 10px 10px;
+   
+   box-sizing: border-box;
 }
 
 #topMenu>ul>li {
-	float: right;
-	width: 19%;
-	margin: 0% 1% 0% 0%;
-	height: 100%;
-	text-align: center;
-	line-height: 25px;
+   float: right;
+   width: 19%;
+   margin: 0% 1% 0% 0%;
+   height: 100%;
+   text-align: center;
+   line-height: 25px;
 }
 /*-- 메인 카테고리 링크 --*/
 #topMenu>ul>li>a {
-	display: block;
-	height: 100%;
-	font-size: 16px;
-	text-decoration: none;
-	color: black;
-	
+   display: block;
+   height: 100%;
+   font-size: 16px;
+   text-decoration: none;
+   color: black;
+   
 }
+
+/*--uploadbox--*/
+
+
 /*---------------------화면 중간---------------------*/
 #mainFrame {
-	z-index: 2;
-	width: 100%;
-	height: 1700px;
-	padding-top: 88px;
-	
+   z-index: 2;
+   width: 100%;
+   height: 1700px;
+   padding-top: 88px;
+   
 }
 
 /*--------상단 메뉴--------*/
 #topMenu {
-	float : right;
-	width : 60%;
-	height: 60px;
-	position: relative;
-	right : 250px;
-	padding: 10px 10px 10px 10px;
-	box-sizing: border-box;
-	top: 25px;
+   float : right;
+   width : 60%;
+   height: 60px;
+   position: relative;
+   right : 250px;
+   padding: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   top: 25px;
 }
-
+#uploadbox{
+	float : right;
+   width : 60%;
+   height: 60px;
+   position: relative;
+   right : 250px;
+   padding: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   top: 25px;
+	
+}
 /*-------- 메인 사진 영역 --------*/
 #mainFrame>div:nth-child(2) {
-	width: 100%;
-	height: 600px;
-	position: relative;
-	
-	
+   width: 100%;
+   height: 600px;
+   position: relative;
+   
+   
 }
 /*-- 메인 사진 --*/
 #mainFrame>div:nth-child(2)>img:nth-of-type(1) {
-	width: 1200px;
-	height: 600px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
+   width: 1200px;
+   height: 600px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
 }
 
 
 /*-------- 강아지뉴스 타이틀 영역 --------*/
 #mainFrame>div:nth-child(3) {
-	width: 100%;
-	height: 100px;
+   width: 100%;
+   height: 100px;
 }
 /*-- 강아지뉴스 제목 영역 --*/
 #mainFrame>div:nth-child(3)>div {
-	width: 160px;
-	height: 40px;
-	position: relative;
-	top: 50%;
-	left: 83%
+   width: 160px;
+   height: 40px;
+   position: relative;
+   top: 50%;
+   left: 83%
 }
 /*-- 강아지뉴스 --*/
 #mainFrame>div:nth-child(3)>div>span{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -580%;
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -580%;
 }
 /*-- 더보기 --*/
 #mainFrame>div:nth-child(3)>div>a{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -3%;
-	text-decoration: none;
-	color: black;
-	
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -3%;
+   text-decoration: none;
+   color: black;
+   
 }
 /*-------- 메인 강아지 콘텐츠 영역 --------*/
 #mainContents1 {
-	width: 100%;
-	height: 400px;
+   width: 100%;
+   height: 400px;
 
 }
 /*---- 강아지 뉴스 영역 ----*/
 #mainContents1>div {
-	width: 250px;
-	height: 300px;
-	margin: 25px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	cursor: pointer;
+   width: 250px;
+   height: 300px;
+   margin: 25px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   cursor: pointer;
 }
 
 #mainContents1>div>a {
-	width: 250px;
-	height: 370px;
-	margin: 75px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+   width: 250px;
+   height: 370px;
+   margin: 75px;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 /*-- 강아지 사진 --*/
 #mainContents1>div>img {
-	width: 246px;
-	height: 246px;
-	border-radius: 10px;
+   width: 246px;
+   height: 246px;
+   border-radius: 10px;
 }
 
 /*-- 강아지 제목  --*/
 #mainContents1>div>h5 {
-	margin: 0px;
-	padding: 10px 5px 10px 5px;
+   margin: 0px;
+   padding: 10px 5px 10px 5px;
 }
 
 
 
 /*-------- 고양이뉴스 타이틀 영역 --------*/
 #mainFrame>div:nth-child(5) {
-	width: 100%;
-	height: 100px;
+   width: 100%;
+   height: 100px;
 }
 /*-- 고양이뉴스 제목 영역 --*/
 #mainFrame>div:nth-child(5)>div {
-	width: 160px;
-	height: 40px;
-	position: relative;
-	top: 50%;
-	left: 83%
+   width: 160px;
+   height: 40px;
+   position: relative;
+   top: 50%;
+   left: 83%
 }
 /*-- 고양이뉴스 --*/
 #mainFrame>div:nth-child(5)>div>span{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -580%;
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -580%;
 }
 /*-- 더보기 --*/
 #mainFrame>div:nth-child(5)>div>a{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -3%;
-	text-decoration: none;
-	color: black;
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -3%;
+   text-decoration: none;
+   color: black;
 }
 
 /*-------- 메인 고양이 콘텐츠 영역 --------*/
 #mainContents2 {
-	width: 100%;
-	height: 400px;
+   width: 100%;
+   height: 400px;
 
 }
 /*---- 고양이 뉴스 영역 ----*/
 #mainContents2>div {
-	width: 250px;
-	height: 300px;
-	margin: 25px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	cursor: pointer;
+   width: 250px;
+   height: 300px;
+   margin: 25px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   cursor: pointer;
 }
 
 #mainContents2>div>a {
-	width: 250px;
-	height: 370px;
-	margin: 75px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+   width: 250px;
+   height: 370px;
+   margin: 75px;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 /*-- 고양이 사진 --*/
 #mainContents2>div>img {
-	width: 246px;
-	height: 246px;
-	border-radius: 10px;
+   width: 246px;
+   height: 246px;
+   border-radius: 10px;
 }
 
 /*-- 고양이 제목  --*/
 #mainContents2>div>h5 {
-	margin: 0px;
-	padding: 10px 5px 10px 5px;
+   margin: 0px;
+   padding: 10px 5px 10px 5px;
 }
 
 
 /*--------인기 커뮤니티 타이틀 영역 --------*/
 #mainFrame>div:nth-child(7) {
-	width: 100%;
-	height: 100px;
+   width: 100%;
+   height: 100px;
 }
 /*-- 인기 커뮤니티 제목 영역 --*/
 #mainFrame>div:nth-child(7)>div {
-	width: 160px;
-	height: 40px;
-	position: relative;
-	top: 50%;
-	left: 83%
+   width: 160px;
+   height: 40px;
+   position: relative;
+   top: 50%;
+   left: 83%
 }
 /*-- 인기커뮤니티 --*/
 #mainFrame>div:nth-child(7)>div>span{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -580%;
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -580%;
 }
 /*-- 더보기 --*/
 #mainFrame>div:nth-child(7)>div>a{
-	width: 77px;
-	height: 40px;
-	position: relative;
-	left: -3%;
-	text-decoration: none;
-	color: black;
-	
+   width: 77px;
+   height: 40px;
+   position: relative;
+   left: -3%;
+   text-decoration: none;
+   color: black;
+   
 }
 
 
 /*-------- 메인 인기 커뮤니티 콘텐츠 영역 --------*/
 #mainContents3 {
-	width: 100%;
-	height: 400px;
+   width: 100%;
+   height: 400px;
 
 }
 /*---- 인기 커뮤니티 영역 ----*/
 #mainContents3>div {
-	width: 250px;
-	height: 300px;
-	margin: 25px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	cursor: pointer;
+   width: 250px;
+   height: 300px;
+   margin: 25px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   cursor: pointer;
 }
 
 #mainContents3>div>a {
-	width: 250px;
-	height: 370px;
-	margin: 75px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+   width: 250px;
+   height: 370px;
+   margin: 75px;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 /*-- 인기커뮤니티 사진 --*/
 #mainContents3>div>img {
-	width: 246px;
-	height: 246px;
-	border-radius: 10px;
+   width: 246px;
+   height: 246px;
+   border-radius: 10px;
 }
 
 /*-- 인기커뮤니티 제목  --*/
 #mainContents3>div>h5 {
-	margin: 0px;
-	padding: 10px 5px 10px 5px;
+   margin: 0px;
+   padding: 10px 5px 10px 5px;
 }
 
 
@@ -356,24 +370,24 @@ div {
 
 /*---------------------화면 하단---------------------*/
 #footer {
-	width: 100%;
-	height: 100px;
-	position: relative;
-	top: 150px;
+   width: 100%;
+   height: 100px;
+   position: relative;
+   top: 150px;
 }
 
 #footer h3 {
-	float: left;
-	width: 100%;
-	height: auto;
-	margin: 10px;
-	margin-left: 100px;
+   float: left;
+   width: 100%;
+   height: auto;
+   margin: 10px;
+   margin-left: 100px;
 }
 
 #footer h5 {
-	float: left;
-	width: 100%;
-	height: auto;
-	margin: 10px;
-	margin-left: 100px;
+   float: left;
+   width: 100%;
+   height: auto;
+   margin: 10px;
+   margin-left: 100px;
 }

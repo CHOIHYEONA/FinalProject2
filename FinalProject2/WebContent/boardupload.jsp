@@ -7,7 +7,7 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/boardupload.css">
 </head>
 <body>
 
@@ -43,7 +43,7 @@
 
 
 		<!---------- 페이지 중간 영역 ---------->
-		<div id="mainFrame" align = "center">
+		<div id="mainFrame">
 		
 		<!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
@@ -62,28 +62,29 @@
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
 		  <hr>
+		  				
+		  					<span>제목</span>
+		  					<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
 		  			<table>
 		  				<tr>
-		  					<td width = "16px">제목</td>
-		  					<td><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></td>
-		  				</tr>
-		  				<tr>
 		  					<td>
-                                      <input type="file" name= "filename1" id="ex_filename1" class="upload-hidden">
+                                      <input type="file" name= "filename" id="ex_filename1" class="upload-hidden">
 		  					</td>
 		  				</tr>
 		  				<tr>
 							<td>
-								<textarea name ="coment1" rows="10" cols="50"></textarea>
+								<textarea name ="content" rows="10" cols="50"></textarea>
 							</td>
 		  				</tr>
 		  				<tr>
-		  					<td><input type="submit" value="제출"></td>
-		  					<td><input type="button" value="취소"></td>
+		  					<td><input id = "submit" type="submit" value="제출"></td>
+		  					<td><input id = "cancel" type="button" value="취소"></td>
 		  				</tr>
 		  				<tr></tr>
 		  			</table>
 							
+                       </div>
+                       </div>
                        </div>
 
 
