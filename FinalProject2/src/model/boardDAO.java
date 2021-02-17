@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class boardDAO {
 	int cnt =0;
@@ -39,7 +40,37 @@ public class boardDAO {
 					e.printStackTrace();
 				}
 	}
-	
+	public ArrayList<boardVO> getList(){
+		ArrayList<boardVO> b_list = new ArrayList<boardVO>();
+		try {
+			String sql = "select * from board2";
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int boardUid = rs.getInt("board_Uid");
+				String b_title = rs.getString("b_title");
+				String b_date = rs.getString("b_date");
+				String imgName = rs.getString("imgName");
+				String b_content = rs.getString("b_content");
+				int b_count = rs.getInt("b_count");
+				int b_like = rs.getInt("b_like");
+				int userUid = rs.getInt("user_Uid");
+				
+				boardVO vo = new boardVO(boardUid, b_title, b_date, imgName, b_content, b_count, b_like, userUid);
+				
+				b_list.add(vo);
+			
+		}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			close();
+		}
+		return b_list;
+		
+	}
 	public int insertData (boardVO vo) {
 		try {
 			conn();
