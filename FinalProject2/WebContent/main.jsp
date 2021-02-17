@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>채식레시피</title>
+<title>멍냥이</title>
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -19,16 +19,11 @@
 
 			<!-- 최상단 영역 -->
 			<div id="top">
-				<h3>Vegetarianism</h3>
+				<h3>멍냥이</h3>
 				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/login.jsp"><img
-							src="imgs/main/top/person.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/menu.png"></a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">로그인</a></li>
+					<li><a href="http://localhost:8081/2021/main.jsp">회원가입</a></li>
+			
 				</ul>
 			</div>
 
@@ -57,68 +52,109 @@
 
 			<!-- 메인 사진 영역 -->
 			<div>
-				<img src="imgs/main/middle/main.png">
-				<div>
-					<input type="text" name="ser"><a
-						href="http://localhost:8081/2021/main.jsp"><img
-						src="imgs/main/middle/search.png"></a>
-				</div>
+				<img src="imgs/main/middle/logo.png">
+			
 			</div>
 
 
-			<!-- 메인 컨텐츠 선택 버튼 -->
+			<!-- 강아지뉴스 타이틀 -->
 			<div>
-				<div>s
-					<input type="button" value="최신순"> <input type="button"
-						value="추천순">
+				<div>
+				    <span>강아지뉴스 </span>
+					<a href="http://localhost:8081/2021/main.jsp">더보기</a>
 				</div>
 			</div>
 
 
-			<!-- 메인 컨텐츠 -->
-			<div id="mainContents">
+			<!-- 강아지 컨텐츠 -->
+			<div id="mainContents1">
 				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
 				</div>
 				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
 				</div>
 				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
 				</div>
 				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
 				</div>
-				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
+			
+	        </div>
+	    
+	    
+	        <!-- 고양이뉴스 타이틀 -->
+			<div>
+				<div>
+				    <span>고양이뉴스 </span>
+					<a href="http://localhost:8081/2021/main.jsp">더보기</a>
 				</div>
-				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-					<img src="imgs/main/middle/food_1.png">
-					<h4>대창 구이</h4>
-					<h5>재료는 돈만 있으면 됨</h5>
-				</div>
-				<input type="button"
-					style="width: 100px; height: 40px; position: relative; top: 0%; left: 50%"
-					value="더보기">
 			</div>
-		</div>
+			
+			<!-- 고양이 컨텐츠 -->
+			<div id="mainContents2">
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+			
+	        </div>
+	        
+	          <!-- 인기 커뮤니티 타이틀 -->
+			<div>
+				<div>
+				    <span>인기 커뮤니티 </span>
+					<a href="http://localhost:8081/2021/main.jsp">더보기</a>
+				</div>
+			</div>
+			
+			<!-- 인기 커뮤니티 컨텐츠 -->
+			<div id="mainContents3">
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+				<div onclick="location.href='http://localhost:8081/2021/main.jsp'">
+					<img src="imgs/main/middle/logo.png">
+					<h5>제목</h5>
+				</div>
+			
+	        </div>
+	    
+	    			
+	    
 
 
 		<!---------- 페이지 하단 영역 ---------->
 		<div id="footer">
 			<div class="UnderBar"></div>
 			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-			<h5>이상현, 김은아, 송지원, 김읜한, 채평성</h5>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
 		</div>
 	</div>
 
