@@ -30,15 +30,9 @@
 
 			<!-- 밑줄 디자인 -->
 			<div class="UnderBar"></div>
-
 			
-		</div>
-
-
-		<!---------- 페이지 중간 영역 ---------->
-		<div id="mainFrame">
-		
-		<!-- 카테고리 선택 목록 -->
+			
+			<!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul>
 					<li><a href="http://localhost:8081/2021/main.jsp">샵</a></li>
@@ -48,6 +42,19 @@
 					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
 				</ul>
 			</div>
+			
+			
+
+			
+		</div>
+
+		<!---------- 페이지 중간 영역 ---------->
+		<div id="mainFrame">
+		
+			<div id="null">
+			     <!-- 다 바꾸기 귀찮아서 빈공백 -->
+			</div>
+
 
 
 			<!-- 메인 사진 영역 -->
