@@ -96,10 +96,24 @@
 
 
          <!-- 메인 사진 영역 -->
-         <div>
-            <img src="imgs/main/middle/logo.png">
-         
-         </div>
+<div class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <ul id="imgholder" class="imgs">
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+    </ul>
+    <div class="bullets">
+        <label for="slide1">&nbsp;</label>
+        <label for="slide2">&nbsp;</label>
+        <label for="slide3">&nbsp;</label>
+        <label for="slide4">&nbsp;</label>
+    </div>
+</div>
 
 
          <!-- 강아지뉴스 타이틀 -->
