@@ -24,8 +24,8 @@
          <div id="top">
             <h3>멍냥이</h3>
             <ul>
-               <li><a href="http://localhost:8081/2021/main.jsp">로그인</a></li>
-               <li><a href="http://localhost:8081/2021/main.jsp">회원가입</a></li>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
          
             </ul>
          </div>
@@ -59,7 +59,7 @@
 					<li>
 						<a href="http://localhost:8081/2021/main.jsp">지도</a>
 						<ul class="dep2">
-							<li><a href="">동물병원</a> </li>
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
 							<li><a href="">산책로</a> </li>
 						</ul>					
