@@ -10,7 +10,7 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피</title>
-<link rel="stylesheet" href="css/boardone.css">
+<link rel="stylesheet" href="css/boardone1.css">
 </head>
 <body>
 <%
@@ -65,10 +65,9 @@ int boardUid = 20;
 			
 		<br><br><br><br><br>
 		
-		 <div id="content">
-		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
+		 <div id="content1">
 		  					<span><%=vo.getB_title()%></span>
-		  					<span ><%=vo.getB_date()%></span>
+		  					<span><%=vo.getB_date()%></span>
 		  			<table>
 		  				<tr>
 		  					<td>

@@ -134,7 +134,17 @@ div {
    box-sizing: border-box;
    top: 25px;
 }
-
+#content1{
+	
+	float : right;
+   width : 60%;
+   height: 60px;
+   position: relative;
+   right : 250px;
+   padding: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   top: 25px;
+}
 #content{
 	float : right;
     width : 60%;
