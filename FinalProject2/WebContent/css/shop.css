@@ -1,0 +1,173 @@
+@charset "EUC-KR";
+
+
+ul, li{
+   list-style:none;
+}
+a{
+   text-decoration:none;
+   color:inherit;
+}
+
+
+body {
+   margin: 0px;
+}
+
+div {
+   margin: 0px;
+   float: left;
+}
+/*---------------------전체 화면---------------------*/
+.frame {
+   float: none;
+   width: 1200px;
+   height: 2060px;
+   margin: auto;
+   background-color: rgb(250, 250, 250);
+}
+/*---------------------화면 상단---------------------*/
+.topFrame {
+   z-index: 1;
+   width: 1200px;
+   height: 160px;
+   position: fixed;
+  background-color: white;
+  
+}
+/*--------페이지 이름 + 아이콘 영역--------*/
+#top {
+   width: 100%;
+   height: 54%;
+   
+}
+/*--------페이지 이름--------*/
+#top>a>img {
+   
+   width: 300px;
+   height: 150px;
+   margin: 0px;
+   position: relative;
+   left: 290px;
+   top: -10px;
+}
+
+/*--------아이콘--------*/
+#top>ul {
+   height: 60px;
+   padding: 10px 10px 10px 5px;
+   box-sizing: border-box;
+   margin: auto;
+   position: relative;
+   top: -10px;
+   left: 1040px;
+   float: left;
+   list-style: none;
+}
+
+
+#top>ul>li {
+   height: 40px;
+   float: left;
+   padding: 0px 10px 0px 10px;
+   box-sizing: border-box;
+}
+#top>ul>li>a {
+   display: block;
+   height: 100%;
+   font-size: 16px;
+   text-decoration: none;
+   color: black;
+   
+}
+
+/*--------경계 라인--------*/
+.UnderBar {
+   width: 60%;
+   height : 2px;
+   position : relative;
+   top: 38px;
+   left : 250px;
+   border-radius: 4px;
+   background-color: rgb(174, 174, 174);
+}
+
+/*-- 메인 카테고리 리스트 --*/
+
+
+
+#topMenu .dep1 {
+   font-size:0;
+}
+#topMenu .dep1 > li{
+   display:inline-block;
+   width:144px;
+   vertical-align:top;
+   background:#ddd;
+   text-align: center;
+   font-size:16px;
+
+}
+
+
+#topMenu .dep1>li:hover > .dep2{
+   display:block;
+   padding-left:0px;
+   
+   
+}
+
+#topMenu .dep1>li>a{
+   display:block;
+   padding : 10px 0;
+   
+}
+
+
+#topMenu .dep2{
+   display:none;
+   
+}
+
+#topMenu .dep2 a{
+   display:block;
+   padding : 10px 0;
+   
+}
+#topMenu .dep2 >li{
+   
+   background:#ddd;
+   text-align: center;
+   font-size:16px;
+   height: 25px;
+   width:144px;
+   display:inline-block;
+   
+}
+
+#topMenu .dep2 a:hover {
+   text-decoration: underline;
+   
+}
+
+/*---------------------화면 중간---------------------*/
+#mainFrame {
+   z-index: 2;
+   width: 100%;
+   height: 1700px;
+   padding-top: 88px;
+   
+}
+
+/*--------상단 메뉴--------*/
+#topMenu {
+
+   float : right;
+   width : 100%;
+   height: 60px;
+   position: relative;
+   left : 200px;
+   padding: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   top: 28px;
+}
