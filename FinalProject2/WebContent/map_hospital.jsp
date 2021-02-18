@@ -7,7 +7,7 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>병원위치 검색</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/map_hospital.css">
 <style>
 	.map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 	.map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
@@ -54,43 +54,71 @@
 	<!---------- 페이지 상단 영역 ---------->
 	<div class="topFrame">
 	
-		<!-- 최상단 영역 -->
-		<div id="top">
-			<h3>LOGO</h3>
-			<ul>
-				<li><a href="http://localhost:8081/2021/main.jsp"><img
-						src="imgs/main/top/search.png"></a></li>
-				<li><a href="http://localhost:8081/2021/main.jsp"><img
-						src="imgs/main/top/search.png"></a></li>
-				<li><a href="http://localhost:8081/2021/login.jsp"><img
-						src="imgs/main/top/person.png"></a></li>
-				<li><a href="http://localhost:8081/2021/main.jsp"><img
-						src="imgs/main/top/menu.png"></a></li>
-			</ul>
-		</div>
+
+         <!-- 최상단 영역 -->
+         <div id="top">
+            <h3><a href="main.jsp">멍냥이</a></h3>
+            <ul>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
+         
+            </ul>
+         </div>
 	
 		<!-- 밑줄 디자인 -->
 		<div class="UnderBar"></div>
-	</div>
+	
 
+
+          <!-- 카테고리 선택 목록 -->
+			<div id="topMenu">
+				<ul class="dep1">
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">강아지</a>
+						<ul class="dep2">
+							<li><a href="">건강</a> </li>
+							<li><a href="">행동</a> </li>
+							<li><a href="">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">고양이</a>
+						<ul class="dep2">
+							<li><a href="">건강</a> </li>
+							<li><a href="">행동</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">지도</a>
+						<ul class="dep2">
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
+							<li><a href="">공공장소</a> </li>
+							<li><a href="">산책로</a> </li>
+						</ul>					
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+						<ul class="dep2">
+						
+						</ul>					
+					
+					</li>
+					
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						<ul class="dep2">
+						
+						</ul>
+					</li>
+				</ul>
+			</div>
 
 <!---------- 페이지 중간 영역 ---------->
 <div id="mainFrame">
-
-	<!-- 카테고리 선택 목록 -->
-	<div id="topMenu">
-		<ul>
-			<li><a href="http://localhost:8081/2021/main.jsp">샵</a></li>
-			<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a></li>
-			<li><a href="http://localhost:8081/2021/main.jsp">지도</a></li>
-			<li><a href="http://localhost:8081/2021/main.jsp">고양이</a></li>
-			<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
-		</ul>
-	</div>
-	
-<br><br><br><br><br>
-
-<h2> 동물병원 위치</h2>
+			
+			<h2> 동물병원 위치</h2>
 
 <div class="map_wrap">
     <div id="map" style="width:90%;height:500px;position:relative;overflow:hidden;"></div>
@@ -293,7 +321,7 @@ function displayPlaces(places) {
 function getListItem(index, places) {
 
     var el = document.createElement('li'),
-    itemStr = '<span class="markerbg marker_' + (index) + '"></span>' +
+    itemStr = '<span class="markerbg marker_' + (index+1) + '"></span>' +
                 '<div class="info">' +
                 '   <h5>' + places.place_name + '</h5>';
 
@@ -389,6 +417,15 @@ function removeAllChildNods(el) {
     }
 }
 </script>
+</div>
+			
+			
+
+         
+ </div>
+
+
+
 </div>
 </body>
 </html>
