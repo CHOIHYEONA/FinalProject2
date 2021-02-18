@@ -7,7 +7,7 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/board.css">
 </head>
 <body>
 
@@ -55,21 +55,19 @@
 					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
 				</ul>
 			</div>
-			<div id = "new">
-				<input type = "button" value = "게시물작성" onclick = "boardWrite.jsp">
+
+			<br><br><br><br><br>
+			<br><br><br><br><br>
+			
+			<div id="boardwrite" >
+				<input type = "button" id="boardwrite" value = "게시물작성" >
 			</div>
-			<table width = "600ox" align = "center" >
-				<% int newline = 0;
-					int cnt = 0;
-				%>
+			
+			<
 			
 			
-			
-			
-			
-			</table>
 
-
+</div>
 
 		<!---------- 페이지 하단 영역 ---------->
 		<div id="footer">
