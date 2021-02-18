@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class commDAO {
 	int cnt =0;
@@ -39,15 +40,45 @@ public class commDAO {
 					e.printStackTrace();
 				}
 	}
-	
-	public int insertData(commVO vo) {
+	public ArrayList<commVO> selectData(int boardUid){
+		ArrayList<commVO> list = new ArrayList<commVO>();
 		try {
 			conn();
-			String sql = "insert into comm values(commNum.nextval,sysdate,?,?)";
+			String sql = "select * from comm where board_Uid = ?";
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setString(1, vo.getC_content());
-			psmt.setInt(2, vo.getUserUid());
+			psmt.setInt(1, boardUid);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int commUid = rs.getInt("comm_Uid");
+				String c_date = rs.getString("c_date");
+				String c_content = rs.getString("c_content");
+				int userUid = rs.getInt("user_Uid");
+				boardUid = rs.getInt("board_Uid");
+				
+				commVO vo = new commVO(commUid, c_date, c_content, userUid);
+				
+				list.add(vo);
+			
+		}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return list;
+	}
+	public int insertData(String content, int userUid, int boardUid) {
+		try {
+			conn();
+			String sql = "insert into comm values(commNum.nextval,sysdate,?,?,?)";
+			psmt = conn.prepareStatement(sql);
+			
+			psmt.setString(1, content);
+			psmt.setInt(2, userUid);
+			psmt.setInt(3, boardUid);
 			
 			cnt = psmt.executeUpdate();
 			

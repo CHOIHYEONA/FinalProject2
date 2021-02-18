@@ -1,3 +1,5 @@
+<%@page import="model.commVO"%>
+<%@page import="model.commDAO"%>
 <%@page import="model.boardVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.boardDAO"%>
@@ -17,6 +19,9 @@
 boardDAO dao = new boardDAO();
 int boardUid = 20;
  boardVO vo = dao.getOneBoard(boardUid);
+ commDAO comm_dao = new commDAO();
+ ArrayList<commVO> comm_list = new ArrayList<commVO>();
+		comm_list =  comm_dao.selectData(boardUid);
 
 %>
 
@@ -87,7 +92,7 @@ int boardUid = 20;
                        
                        <br><br><br><br>
                     <span>댓글 </span>   <hr>
-                       <form action = "comm">
+                       <form action = "commServiceCon">
                        <textarea name ="content" rows="3" cols="30"></textarea>
                        <input id = "submit" type="submit" value="등록">
                        
@@ -95,8 +100,12 @@ int boardUid = 20;
                        <hr>
                        <div>
                        <span>이름</span><br>
-                       <span><%=vo.getB_content()%></span><br>
-                       <span><%=vo.getB_date() %></span>
+                       <%for(int i=0;i<comm_list.size();i++){ %>
+                       <div>
+                       <span><%=comm_list.get(i).getC_content()%></span><br>
+                       <span><%=comm_list.get(i).getC_date() %></span>
+                       </div>
+                       <%} %>
                        </div>
                        
                        </div>
