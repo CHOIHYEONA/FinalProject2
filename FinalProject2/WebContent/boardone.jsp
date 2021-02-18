@@ -1,3 +1,6 @@
+<%@page import="model.boardVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.boardDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -7,11 +10,15 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피</title>
-<link rel="stylesheet" href="css/boardupload.css">
+<link rel="stylesheet" href="css/boardone.css">
 </head>
 <body>
+<%
+boardDAO dao = new boardDAO();
+int boardUid = 20;
+ boardVO vo = dao.getOneBoard(boardUid);
 
-
+%>
 
 	<div class="frame">
 
@@ -58,26 +65,41 @@
 			
 		<br><br><br><br><br>
 		
-		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
+		 <div id="content">
 		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
-		  		<form action = "boardupload" method = "post" enctype="multipart/form-data">
-		  			<span>제목</span>
-		  			<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
+		  					<span><%=vo.getB_title()%></span>
+		  					<span ><%=vo.getB_date()%></span>
 		  			<table>
 		  				<tr>
 		  					<td>
-                                      <input type="file" name= "filename" id="ex_filename1" class="upload-hidden">
+		  					<td><img src="./foldername/<%=vo.getImgName()%>" width = "400" height = "400">
 		  					</td>
 		  				</tr>
 		  				<tr>
 							<td>
-								<textarea name ="content" rows="10" cols="50"></textarea>
+								<span><%=vo.getB_content() %></span>
 							</td>
 		  				</tr>
 		  			</table>
-		  					<span><input id = "submit" type="submit" value="제출"></span>
-		  					<span><input id = "cancel" type="button" value="취소" onclik = "location.href = 'main.jsp'" ></span>
-							</form>
+					<hr>
+					<span>조회수 <%=vo.getB_count() %></span>
+					
+					<span>좋아요<%=vo.getB_like() %></span>
+                       
+                       <br><br><br><br>
+                    <span>댓글 </span>   <hr>
+                       <form action = "comm">
+                       <textarea name ="content" rows="3" cols="30"></textarea>
+                       <input id = "submit" type="submit" value="등록">
+                       
+                       </form>
+                       <hr>
+                       <div>
+                       <span>이름</span><br>
+                       <span><%=vo.getB_content()%></span><br>
+                       <span><%=vo.getB_date() %></span>
+                       </div>
+                       
                        </div>
                        </div>
                        </div>

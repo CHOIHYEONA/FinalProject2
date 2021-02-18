@@ -11,8 +11,7 @@ public class boardDAO {
 	PreparedStatement psmt = null;
 	Connection conn = null;
 	ResultSet rs = null;
-	customersVO userInfo = null;
-	
+	boardVO vo = null;	
 	public void conn() {
 		try {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -40,6 +39,38 @@ public class boardDAO {
 					e.printStackTrace();
 				}
 	}
+	
+	public boardVO getOneBoard(int boardUid) {
+		try {
+			conn();
+			String sql = "select * from board2 where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, boardUid);
+			
+			rs = psmt.executeQuery();
+			if(rs.next()) {
+				int board_Uid = rs.getInt("board_Uid");
+				String b_title = rs.getString("b_title");
+				String b_date = rs.getString("b_date");
+				String imgName = rs.getString("imgName");
+				String b_content = rs.getString("b_content");
+				int b_count = rs.getInt("b_count");
+				int b_like = rs.getInt("b_like");
+				int userUid = rs.getInt("user_Uid");
+				
+				vo = new boardVO(board_Uid, b_title, b_date, imgName, b_content, b_count, b_like, userUid);
+				
+				
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return vo;
+	}
+	
 	public ArrayList<boardVO> getList(){
 		ArrayList<boardVO> b_list = new ArrayList<boardVO>();
 		try {

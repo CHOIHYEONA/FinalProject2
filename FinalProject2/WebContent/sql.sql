@@ -20,6 +20,7 @@ create table board2 (
 	references customers(user_Uid) on delete cascade
 )
 select * from board2
+
 create table comm (
 	comm_Uid number NOT NULL primary key,
 	c_date date not null,
