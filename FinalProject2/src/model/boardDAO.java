@@ -43,6 +43,8 @@ public class boardDAO {
 	public ArrayList<boardVO> getList(){
 		ArrayList<boardVO> b_list = new ArrayList<boardVO>();
 		try {
+			conn();
+			
 			String sql = "select * from board2";
 			psmt = conn.prepareStatement(sql);
 			rs = psmt.executeQuery();
@@ -74,7 +76,7 @@ public class boardDAO {
 	public int insertData (boardVO vo) {
 		try {
 			conn();
-			String sql = "insert into board2 values(boardNum.nextval,?,sysdate,?,?,0,0,?)";
+			String sql = "insert into board2 values(boardNum.nextval,?,sysdate,?,?,1,1,?)";
 			
 			psmt = conn.prepareStatement(sql);
 			

@@ -145,6 +145,16 @@ div {
    top: 25px;
 	
 }
+#img{
+	float : right;
+   height: 60px;
+   position: relative;
+   right : 250px;
+   padding: 10px 10px 10px 10px;
+   box-sizing: border-box;
+   top: 25px;
+	
+}
 
 /*---------------------화면 하단---------------------*/
 #footer {

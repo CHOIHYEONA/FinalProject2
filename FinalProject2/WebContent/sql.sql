@@ -34,7 +34,7 @@ create table comm (
 	references board2(board_Uid) on delete cascade
 
 	)
-	
+	delete from board2
    
 
 create sequence cusNum start with 1 increment by 1;

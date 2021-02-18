@@ -1,3 +1,6 @@
+<%@page import="model.boardVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.boardDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -11,7 +14,13 @@
 </head>
 <body>
 
+<%
+boardDAO dao = new boardDAO();
+ArrayList<boardVO> board_list = new ArrayList<boardVO>();
+board_list = dao.getList();
+System.out.print(board_list.size());
 
+%>
 
 	<div class="frame">
 
@@ -58,13 +67,38 @@
 
 			<br><br><br><br><br>
 			<br><br><br><br><br>
-			
+			<%
+				int newLine = 0;
+			%>
 			<div id="boardwrite" >
 				<input type = "button" id="boardwrite" value = "게시물작성" >
 			</div>
 			
-			<
-			
+				<br><br><br><br><br>
+			<br><br><br><br><br>
+			<div id = "img">
+			 <table>
+				<%for(int i =0;i<board_list.size();i++){
+					
+					if(newLine==0){
+						out.print("<tr>");
+					}
+					newLine++;
+					%>
+			 		<td><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "190" height = "190">
+			 		<br>
+			 		조회수<%=board_list.get(i).getB_count() %>   좋아요<%=board_list.get(i).getB_like() %>
+			 		</td>
+			 	
+			 	<%
+			 	if(newLine == 3){
+			 		out.print("</tr>");
+			 		newLine = 0;
+			 	}
+			 
+				} %>
+			 </table>
+			</div>
 			
 
 </div>

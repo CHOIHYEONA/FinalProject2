@@ -13,7 +13,6 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import model.boardDAO;
 import model.boardVO;
-import model.customersVO;
 
 @WebServlet("/boardupload")
 public class boardupload extends HttpServlet {
@@ -30,11 +29,14 @@ public class boardupload extends HttpServlet {
 		//5MB 파일 크기 최대치 정해줌
 		String encoding = "EUC-KR";
 		MultipartRequest multi = new MultipartRequest(request,saveDri,maxSize, encoding ,new DefaultFileRenamePolicy());
+		
 		String b_title = multi.getParameter("title");
 		String filename=multi.getFilesystemName("filename");
 		String b_content = multi.getParameter("content");
-		 
+		
+		System.out.println(filename);
 		// 업로드한 파일의 전체 경로를 DB에 저장하기 위함
+		
 		String b_fileFullPath = saveDri + "/" + filename;
 		HttpSession session=request.getSession();
 		/*세션가져와야함 customersVO vo =(customersVO)session.getAttribute("getdto");*/
@@ -46,7 +48,7 @@ public class boardupload extends HttpServlet {
 		//int userUid = getvo.userUid();
 		
 		System.out.println(b_title + b_fileFullPath + b_content );
-		boardVO vo = new boardVO(b_title, b_fileFullPath, b_content, userUid);
+		boardVO vo = new boardVO(b_title,filename, b_content, userUid);
 		boardDAO dao = new boardDAO();
 		int cnt = dao.insertData(vo);
 		

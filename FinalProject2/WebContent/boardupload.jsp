@@ -56,12 +56,10 @@
 				</ul>
 			</div>
 			
-			  
 		<br><br><br><br><br>
 		
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  <font style="font-weight: bold; font-family: 'Atomy-Bold';">게시물 등록</font>
-		  <hr>
 		  		<form action = "boardupload" method = "post" enctype="multipart/form-data">
 		  			<span>제목</span>
 		  			<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
@@ -77,7 +75,7 @@
 							</td>
 		  				</tr>
 		  			</table>
-		  					<span><input id = "submit" type="submit" value="제출"></span>
+		  				j	<span><input id = "submit" type="submit" value="제출"></span>
 		  					<span><input id = "cancel" type="button" value="취소" onclik = "location.href = 'main.jsp'" ></span>
 							</form>
                        </div>
