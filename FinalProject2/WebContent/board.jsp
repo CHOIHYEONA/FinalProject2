@@ -120,7 +120,7 @@ System.out.print(board_list.size());
 					}
 					newLine++;
 					%>
-			 		<td><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "190" height = "190">
+			 		<td><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
 			 		<br>
 			 		조회수<%=board_list.get(i).getB_count() %>   좋아요<%=board_list.get(i).getB_like() %>
 			 		</td>
