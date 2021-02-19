@@ -114,6 +114,7 @@
 					</li>
 				</ul>
 			</div>
+	</div>
 
 <!---------- 페이지 중간 영역 ---------->
 <div id="mainFrame">
@@ -417,12 +418,19 @@ function removeAllChildNods(el) {
     }
 }
 </script>
-</div>
+
+	
+    </div>
 			
-			
+				<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			<div class="UnderBar1"></div>
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
 
          
- </div>
+ 
 
 
 

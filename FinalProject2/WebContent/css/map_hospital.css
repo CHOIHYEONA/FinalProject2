@@ -22,7 +22,7 @@ div {
 .frame {
    float: none;
    width: 1200px;
-   height: 2200px;
+   height: 850px;
    margin: auto;
    background-color: rgb(250, 250, 250);
 }
@@ -81,7 +81,9 @@ div {
    color: black;
    
 }
-
+#top>ul>li>a:hover{
+	text-decoration: underline;
+}
 /*--------경계 라인--------*/
 .UnderBar {
    width: 60%;
@@ -155,8 +157,8 @@ div {
 #mainFrame {
    z-index: 2;
    width: 100%;
-   height: 1700px;
-   padding-top: 88px;
+   height: 700px;
+   padding-top: 160px;
    
 }
 
@@ -182,4 +184,39 @@ div {
    box-sizing: border-box;
    top: 25px;
 	
+}
+
+
+/*---------------------화면 하단---------------------*/
+
+.UnderBar1 {
+   width: 60%;
+   height : 2px;
+   position : relative;
+   top: 42px;
+   left : 0px;
+   border-radius: 4px;
+   background-color: rgb(174, 174, 174);
+}
+#footer {
+   width: 100%;
+   height: 100px;
+   position: relative;
+   top: 150px;
+}
+
+#footer h3 {
+   float: left;
+   width: 100%;
+   height: auto;
+   margin: 10px;
+   margin-left: 0px;
+}
+
+#footer h5 {
+   float: left;
+   width: 100%;
+   height: auto;
+   margin: 10px;
+   margin-left: 0px;
 }
