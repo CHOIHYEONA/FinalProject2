@@ -42,15 +42,14 @@ div {
    
 }
 /*--------페이지 이름--------*/
-#top>h3 {
+#top>a>img {
    width: 300px;
-   height: 50px;
+   height: 150px;
    margin: 0px;
    position: relative;
-   left: 550px;
-   top: 23px;
-   font-weight: bold;
-   font-size: 36px;
+   left: 290px;
+   top: -10px;
+
 }
 
 /*--------아이콘--------*/
@@ -60,7 +59,7 @@ div {
    box-sizing: border-box;
    margin: auto;
    position: relative;
-   top: -10px;
+   top: 30px;
    left: 1040px;
    float: left;
    list-style: none;
@@ -72,6 +71,9 @@ div {
    float: left;
    padding: 0px 10px 0px 10px;
    box-sizing: border-box;
+}
+#top>ul>li>a:hover{
+	text-decoration: underline;
 }
 #top>ul>li>a {
    display: block;
@@ -87,7 +89,7 @@ div {
    width: 60%;
    height : 2px;
    position : relative;
-   top: 38px;
+   top: 90px;
    left : 250px;
    border-radius: 4px;
    background-color: rgb(174, 174, 174);
@@ -156,7 +158,7 @@ div {
    z-index: 2;
    width: 100%;
    height: 1700px;
-   padding-top: 88px;
+   padding-top: 120px;
    
 }
 
@@ -170,7 +172,7 @@ div {
 	left : 200px;
 	padding: 10px 10px 10px 10px;
 	box-sizing: border-box;
-	top: -33px;
+	top: 69px;
 }
 #uploadbox{
 	float : right;
@@ -479,6 +481,16 @@ ul.imgs li{
 
 
 /*---------------------화면 하단---------------------*/
+
+.UnderBar1 {
+   width: 60%;
+   height : 2px;
+   position : relative;
+   top: 42px;
+   left : 0px;
+   border-radius: 4px;
+   background-color: rgb(174, 174, 174);
+}
 #footer {
    width: 100%;
    height: 100px;
@@ -491,7 +503,7 @@ ul.imgs li{
    width: 100%;
    height: auto;
    margin: 10px;
-   margin-left: 100px;
+   margin-left: 0px;
 }
 
 #footer h5 {
@@ -499,5 +511,5 @@ ul.imgs li{
    width: 100%;
    height: auto;
    margin: 10px;
-   margin-left: 100px;
+   margin-left: 0px;
 }
