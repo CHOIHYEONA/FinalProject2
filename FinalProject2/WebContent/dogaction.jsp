@@ -7,7 +7,7 @@
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>멍냥이-행동</title>
-<link rel="stylesheet" href="css/action.css">
+<link rel="stylesheet" href="css/dogaction.css">
 </head>
 <body>
 	<div class="frame">
@@ -89,50 +89,50 @@
 				<p class="post-excerpt">강아지가 자기 발을 싹싹 핥는다든가 꼭꼭 씹듯이 발을 가만 두지 못하는 경우가 있는데요. 왜 자꾸 발을 핥는지와 대처법에 대해서 알아보겠습니다 …</p>
 				
 			</div>	
-		<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 10px;">
+		<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 30px;">
 		<a href="https://1boon.kakao.com/bemypet/5de9b98734431474e939de83"><img src= "imgs/dog/dog9.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 			<div
-				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 10px;">
+				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 30px;">
 								<br><br><br><br>
 				<h2 class="post-title"><a href="https://1boon.kakao.com/bemypet/5de9b98734431474e939de83">강아지가 낑낑 소리를 내는 이유는?</a></h2>
 				<p class="post-excerpt">강아지를 키우는 분들에게 익숙한 '낑낑'거리는 소리 보통 무언가를 조를 때 낑낑거리는데요. 사실 그 외에도 정말 다양한 이유가 있어요. 우리집 강아지,왜 낑낑 거리는 것일까요…</p>
 				
 			</div>
 			
-			<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 10px;">
+			<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 30px;">
 		<a href="https://mypetlife.co.kr/9022/"><img src= "imgs/dog/dog10.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 			<div
-				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 10px;">
+				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 30px;">
 								<br><br><br><br>
 				<h2 class="post-title"><a href="https://mypetlife.co.kr/9022/">강아지가 산책 중 풀을 먹는 이유는?</a></h2>
 				<p class="post-excerpt">산책을 하다보면 강아지가 자꾸 풀이나 잔디 등을 뜯어먹는 경우가 있다. 강아지는 먹을 수 있는 풀만 골라서 먹으니 괜찮다는 이야기도 있던데, 강아지는 대체 왜 풀을 먹는 것일까? 내가 너무 밥을 적게 준 것일까? 야채를 좋아하는 것일까? 정확히 강아지의 의도를 알 수는 없지만 몇 가지 대표적인 이유들이 제시되고 있다...</p>
 				
 			</div>
-						<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 10px;">
+						<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 30px;">
 		<a href="https://www.notepet.co.kr/news/article/article_view/?groupCode=AB400AD935&idx=16856"><img src= "imgs/dog/dog11.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 						<div
-				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 10px;">
+				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 30px;">
 								<br><br><br><br>
 				<h2 class="post-title"><a href="https://www.notepet.co.kr/news/article/article_view/?groupCode=AB400AD935&idx=16856">강아지가 밥을 안 먹는 이유는?</a></h2>
 				<p class="post-excerpt">사람이나 강아지나 밥을 먹는 것은 굉장히 중요한데요. 그런데 갑자기 강아지가 밥을 안 먹는다면? 매우 고민이 되는 문제겠죠. 그래서 오늘은 강아지가 밥을 안먹는 이유를 자세히 설명을 드리려고 합니다...</p>
 				
 			</div>
-			<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 10px;">
+			<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 30px;">
 		<a href="https://mypetlife.co.kr/87282/"><img src= "imgs/dog/dog12.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 						<div
-				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 10px;">
+				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 30px;">
 								<br><br><br><br>
 				<h2 class="post-title"><a href="https://mypetlife.co.kr/87282/">강아지 코골이 그 이유는?</a></h2>
 				<p class="post-excerpt">천사 같이 귀여운 얼굴에 언제나 아기 같은 반려견이 잠잘 때는 드르렁 소리를 내며 코를 곤다? 쌕쌕 귀여운 소리를 넘어 반려인까지 잠 못 이룰 정도로 심하게 강아지 코골이 한다면? 재밌다고 웃어넘길 것이 아니라 병원에 가야할지 진지하게 고민해 봐야 한다...</p>
