@@ -67,8 +67,12 @@
 				</ul>
 			</div>
 
-
+		
 		</div>
+		
+		      <!---------- 페이지 중간 영역 ---------->
+      <div id="mainFrame">
+      
 		<br><br><br><br><br><br><br><br><br>
 		<span style = " font-size:3em; margin-left: 15px;">
 		강아지 행동
@@ -136,8 +140,19 @@
 								<br><br><br><br>
 				<h2 class="post-title"><a href="https://mypetlife.co.kr/87282/">강아지 코골이 그 이유는?</a></h2>
 				<p class="post-excerpt">천사 같이 귀여운 얼굴에 언제나 아기 같은 반려견이 잠잘 때는 드르렁 소리를 내며 코를 곤다? 쌕쌕 귀여운 소리를 넘어 반려인까지 잠 못 이룰 정도로 심하게 강아지 코골이 한다면? 재밌다고 웃어넘길 것이 아니라 병원에 가야할지 진지하게 고민해 봐야 한다...</p>
-				
+
 			</div>
+
+		<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			<div class="UnderBar1"></div>
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
+			</div>	
+			
+		</div>
+		
 			
 			
 			
