@@ -57,7 +57,7 @@
 
          <!-- 최상단 영역 -->
          <div id="top">
-            <h3><a href="main.jsp">멍냥이</a></h3>
+              <a href="main.jsp"><img src="imgs/logo.png"></a>
             <ul>
                <li><a href="login.jsp">로그인</a></li>
                <li><a href="join.jsp">회원가입</a></li>
