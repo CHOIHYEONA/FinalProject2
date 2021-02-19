@@ -8,11 +8,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.c_title{
+font-weight:bold;
+   font-size: 20px;
+}
+#b_content{
+	padding :0;
+}
+
+
+</style>
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
 <title>채식레시피</title>
 <link rel="stylesheet" href="css/boardone1.css">
+
 </head>
 <body>
 <%
@@ -71,24 +83,35 @@ int boardUid = 20;
 		<br><br><br><br><br>
 		
 		 <div id="content1">
-		  					<span><%=vo.getB_title()%></span>
-		  					<span><%=vo.getB_date()%></span>
-		  			<table>
+		  			<table width = "100%" border-collapse = "collapse">
 		  				<tr>
-		  					<td>
-		  					<td><img src="./foldername/<%=vo.getImgName()%>" width = "400" height = "400">
-		  					</td>
+		  					<td class  = "c_title" width = "50%" font-size = "16px" font-weight = "bold" ><%=vo.getB_title()%></td>
+		  					<td align = "right" ><%=vo.getB_date()%></td>
 		  				</tr>
+		  				<tr >
+							<td colspan = "2"><hr></td>						
+						</tr>
 		  				<tr>
-							<td>
-								<span><%=vo.getB_content() %></span>
+		  					<td colspan = "2"><img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
+		  				</tr>
+		  				<tr >
+							<td id = "b_content" colspan = "2">
+								<%=vo.getB_content() %>
 							</td>
 		  				</tr>
+		  				<tr height="200px">
+							<td>
+								
+							</td>
+		  				</tr>
+						<tr >
+							<td colspan = "2"><hr></td>						
+						</tr>
+		  				<tr>
+							<td>조회수 <%=vo.getB_count() %></td>
+							<td>좋아요<%=vo.getB_like() %></td>
+						</tr>
 		  			</table>
-					<hr>
-					<span>조회수 <%=vo.getB_count() %></span>
-					
-					<span>좋아요<%=vo.getB_like() %></span>
                        
                        <br><br><br><br>
                     <span>댓글 </span>   <hr>
