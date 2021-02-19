@@ -33,42 +33,55 @@
 			<div class="UnderBar"></div>
 
 
-			<!-- 카테고리 선택 목록 -->
+          <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul class="dep1">
-					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">강아지</a>
 						<ul class="dep2">
-							<li><a href="">건강</a></li>
-							<li><a href="">행동</a></li>
-							<li><a href="">훈련</a></li>
-							<li><a href="">품종</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">고양이</a>
+							<li><a href="doghealth.jsp">건강</a> </li>
+							<li><a href="dogaction.jsp">행동</a> </li>
+							<li><a href="">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">고양이</a>
 						<ul class="dep2">
-							<li><a href="">건강</a></li>
-							<li><a href="">행동</a></li>
-							<li><a href="">품종</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">지도</a>
+							<li><a href="cathealth.jsp">건강</a> </li>
+							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">지도</a>
 						<ul class="dep2">
-							<li><a href="">동물병원</a></li>
-							<li><a href="">공공장소</a></li>
-							<li><a href="">산책로</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
+							<li><a href="">공공장소</a> </li>
+							<li><a href="">산책로</a> </li>
+						</ul>					
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
 						<ul class="dep2">
-
-						</ul></li>
-
-					<li><a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						
+						</ul>					
+					
+					</li>
+					
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
 						<ul class="dep2">
-
-						</ul></li>
+						
+						</ul>
+					</li>
 				</ul>
 			</div>
+			
+			
 
-		
-		</div>
+         
+      </div>
 		
 		      <!---------- 페이지 중간 영역 ---------->
       <div id="mainFrame">
