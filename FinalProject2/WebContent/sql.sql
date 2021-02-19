@@ -5,6 +5,7 @@ create table customers (
 	user_Name varchar2(40) NOT NULL, 
 	user_Tel varchar2(40) NOT NULL
 )
+select * from customers
 
 create table board2 (
 	board_Uid number NOT NULL primary key,

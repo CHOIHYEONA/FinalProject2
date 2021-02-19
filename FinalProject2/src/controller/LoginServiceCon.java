@@ -17,20 +17,24 @@ public class LoginServiceCon extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("로그인서비스콘");
+		request.setCharacterEncoding("euc-kr");
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
+		System.out.println(id);
+		System.out.println(pw);
 		
 		customersDAO dao = new customersDAO();
 		customersVO info = dao.login(id, pw);
+		
 		
 		if(info != null) {
 			System.out.println("로그인성공");
 			 HttpSession session = request.getSession();
 			 session.setAttribute("info", info);
+			
 		}else {
 			System.out.println("로그인실패");
 		}
-		
 		response.sendRedirect("main.jsp");
 	}
 

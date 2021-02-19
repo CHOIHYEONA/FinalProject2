@@ -45,9 +45,9 @@
 						<br>
 						<br> <br> <br> <br>
 					</span>
-					<form action="">
-						<input type="text" required="required" placeholder="아이디"><br>
-						<input type="password" required="required" placeholder="비밀번호"><br>
+					<form action="LoginServiceCon" method = "post">
+						<input type="text" name = "id" required="required" placeholder="아이디"><br>
+						<input type="password" name = "pw" required="required" placeholder="비밀번호"><br>
 						<br> <input type="submit" value="로그인">
 					</form>
 					<ul>
