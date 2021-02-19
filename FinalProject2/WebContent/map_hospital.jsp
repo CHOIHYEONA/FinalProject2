@@ -74,7 +74,7 @@
 			<div id="topMenu">
 				<ul class="dep1">
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">강아지</a>
+						<a href="doghealth.jsp">강아지</a>
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
@@ -83,7 +83,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">고양이</a>
+						<a href="cathealth.jsp">고양이</a>
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
@@ -91,7 +91,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">지도</a>
+						<a href="map_hospital.jsp">지도</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
