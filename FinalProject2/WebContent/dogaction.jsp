@@ -21,8 +21,8 @@
 				<a href="main.jsp"><img src="imgs/logo.png"></a>
 
 				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp">로그인</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">회원가입</a></li>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
 
 				</ul>
 			</div>
