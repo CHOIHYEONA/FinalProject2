@@ -33,45 +33,62 @@
 			<div class="UnderBar"></div>
 
 
-			<!-- 카테고리 선택 목록 -->
+          <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul class="dep1">
-					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a>
+					<li>
+						<a href="doghealth.jsp">강아지</a>
 						<ul class="dep2">
-							<li><a href="">건강</a></li>
-							<li><a href="">행동</a></li>
-							<li><a href="">훈련</a></li>
-							<li><a href="">품종</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">고양이</a>
+							<li><a href="doghealth.jsp">건강</a> </li>
+							<li><a href="dogaction.jsp">행동</a> </li>
+							<li><a href="">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="cathealth.jsp">고양이</a>
 						<ul class="dep2">
-							<li><a href="">건강</a></li>
-							<li><a href="">행동</a></li>
-							<li><a href="">품종</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">지도</a>
+							<li><a href="cathealth.jsp">건강</a> </li>
+							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="map_hospital.jsp">지도</a>
 						<ul class="dep2">
-							<li><a href="">동물병원</a></li>
-							<li><a href="">공공장소</a></li>
-							<li><a href="">산책로</a></li>
-						</ul></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
+							<li><a href="">공공장소</a> </li>
+							<li><a href="">산책로</a> </li>
+						</ul>					
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
 						<ul class="dep2">
-
-						</ul></li>
-
-					<li><a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						
+						</ul>					
+					
+					</li>
+					
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
 						<ul class="dep2">
-
-						</ul></li>
+						
+						</ul>
+					</li>
 				</ul>
 			</div>
+			
+			
 
-
-		</div>
+         
+      </div>
+		
+		      <!---------- 페이지 중간 영역 ---------->
+      <div id="mainFrame">		
+		
 		<br><br><br><br><br><br><br><br><br>
 		<span style = " font-size:3em; margin-left: 15px;">
-		강아지 행동
+		고양이 건강
 		</span>
 		<br>
 		<hr>
@@ -138,6 +155,20 @@
 				<p class="post-excerpt">말랑말랑 통통한 고양이의 뱃살, 만지는 것만으로도 하루의 피로가 가실만큼 사랑스럽다. 하지만 아무리 살이 쪄도 귀엽다 하더라도 고양이의 건강을 위해서는 적정 몸무게를 유지하는 것이 중요하다. 그렇다면 고양이 비만 측정 기준과 적정 몸무게, 그리고 이에 따른 일일 권장 칼로리를 알아보자...</p>
 				
 			</div>
+
+		<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			<div class="UnderBar1"></div>
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
+			
+			</div>
+			
+			
+			
+		</div>
+			
 			
 			
 </body>
