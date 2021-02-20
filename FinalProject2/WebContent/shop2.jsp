@@ -18,11 +18,11 @@
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
 
-            <ul>
-               <li><a href="http://localhost:8081/2021/main.jsp">로그인</a></li>
-               <li><a href="http://localhost:8081/2021/main.jsp">회원가입</a></li>
+				<ul>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
 
-            </ul>
+				</ul>
          </div>
 
 
@@ -31,42 +31,54 @@
          <div class="UnderBar"></div>
 
 
-         <!-- 카테고리 선택 목록 -->
-         <div id="topMenu">
-            <ul class="dep1">
-               <li><a href="http://localhost:8081/2021/main.jsp">강아지</a>
-                  <ul class="dep2">
-                     <li><a href="">건강</a></li>
-                     <li><a href="">행동</a></li>
-                     <li><a href="">훈련</a></li>
-                     <li><a href="">품종</a></li>
-                  </ul></li>
-               <li><a href="http://localhost:8081/2021/main.jsp">고양이</a>
-                  <ul class="dep2">
-                     <li><a href="">건강</a></li>
-                     <li><a href="">행동</a></li>
-                     <li><a href="">품종</a></li>
-                  </ul></li>
-               <li><a href="http://localhost:8081/2021/main.jsp">지도</a>
-                  <ul class="dep2">
-                     <li><a href="">동물병원</a></li>
-                     <li><a href="">공공장소</a></li>
-                     <li><a href="">산책로</a></li>
-                  </ul></li>
-               <li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
-                  <ul class="dep2">
-
-                  </ul></li>
-
-               <li><a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
-                  <ul class="dep2">
-
-                  </ul></li>
-            </ul>
-         </div>
-
+          <!-- 카테고리 선택 목록 -->
+			<div id="topMenu">
+				<ul class="dep1">
+					<li>
+						<a href="doghealth.jsp">강아지</a>
+						<ul class="dep2">
+							<li><a href="doghealth.jsp">건강</a> </li>
+							<li><a href="dogaction.jsp">행동</a> </li>
+							<li><a href="">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="cathealth.jsp">고양이</a>
+						<ul class="dep2">
+							<li><a href="cathealth.jsp">건강</a> </li>
+							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="map_hospital.jsp">지도</a>
+						<ul class="dep2">
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
+							<li><a href="">공공장소</a> </li>
+							<li><a href="">산책로</a> </li>
+						</ul>					
+					</li>
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+						<ul class="dep2">
+						
+						</ul>					
+					
+					</li>
+					
+					<li>
+						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						<ul class="dep2">
+						
+						</ul>
+					</li>
+				</ul>
+			</div>
 
       </div>
+      
+      
       <br>
       <br>
       <br>
@@ -76,6 +88,17 @@
       <br>
       <br>
       <br>
+      
+      		      <!---------- 페이지 중간 영역 ---------->
+      <div id="mainFrame">
+      
+      
+  		<br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		샵 정보
+		</span>
+		<br>
+		<br><br><br>
 
 
 		<!--샵1 -->
@@ -93,6 +116,8 @@
 			</a>
 			<p style="text-align: center;"> 애견용품 전문 쇼핑몰이에요. </p>
 		</div>
+		
+		<br><br><br><br><br><br><br><br><br>
 
 
 		<!--샵2 -->
@@ -112,6 +137,8 @@
 			<p style="text-align: center;"> 울지마마이펫은 사람과 동물의 소통을 제 1원칙으로 생각하는<br>
 			 순수 자연주의 펫스킨케어 전문기업 입니다. </p>
 		</div>
+		
+				<br><br><br><br><br><br><br><br><br>
 
 		<!--샵3 -->
 		<div
@@ -129,6 +156,8 @@
 			</a>
 			<p style="text-align: center;"> 펫츠비는 엄마,아빠의 마음으로 소중한 반려동물에게 더 좋은 제품을 제공하며,<br> 수의사와 함께 제품 엄선 및 펫츠비 전용 PB 상품을 개발해 판매하고 있습니다. </p>
 		</div>
+		
+				<br><br><br><br><br><br><br><br><br>
 
 		<!--샵4 -->
 		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
@@ -146,6 +175,8 @@
 			<p style="text-align: center;"> 펫프렌즈는 IT 기술 기반의 물류/배송 혁신을 바탕으로 반려동물 용품을 365일, 밤 12시까지,<br> 2시간 내로 고객이 있는 곳까지 배송하는 서비스입니다.</p>
 
 		</div>
+		
+				<br><br><br><br><br><br><br><br><br>
 
 		<!--샵5 -->
 
@@ -163,6 +194,17 @@
 			</a>
 			<p style="text-align: center;"> 애묘용품 전문 쇼핑몰이에요.</p>
 		</div>
+		
+				<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			<div class="UnderBar1"></div>
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
+			
+			</div>
+	
+	</div>
 		
 	</body>
 </html>
