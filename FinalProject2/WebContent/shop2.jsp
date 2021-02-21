@@ -39,7 +39,7 @@
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="">훈련</a> </li>
+							<li><a href="dogtraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -48,6 +48,7 @@
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="cattraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -60,7 +61,7 @@
 						</ul>					
 					</li>
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+						<a href="board.jsp">커뮤니티</a>
 						<ul class="dep2">
 						
 						</ul>					
@@ -68,14 +69,17 @@
 					</li>
 					
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						<a href="shop2.jsp">샵 추천</a>
 						<ul class="dep2">
 						
 						</ul>
 					</li>
 				</ul>
 			</div>
+			
+			
 
+         
       </div>
       
       
@@ -195,15 +199,18 @@
 			<p style="text-align: center;"> 애묘용품 전문 쇼핑몰이에요.</p>
 		</div>
 		
-				<!---------- 페이지 하단 영역 ---------->
+			</div>
+	
+	</div>
+	<div id="footermain">
+
+	
+		<!---------- 페이지 하단 영역 ---------->
 		<div id="footer">
-			<div class="UnderBar1"></div>
+			
 			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
 			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
 		</div>
-			
-			</div>
-	
 	</div>
 		
 	</body>

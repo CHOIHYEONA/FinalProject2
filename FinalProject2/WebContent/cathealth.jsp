@@ -33,7 +33,7 @@
 			<div class="UnderBar"></div>
 
 
-          <!-- 카테고리 선택 목록 -->
+           <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul class="dep1">
 					<li>
@@ -41,7 +41,7 @@
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="">훈련</a> </li>
+							<li><a href="dogtraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -50,6 +50,7 @@
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="cattraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -62,7 +63,7 @@
 						</ul>					
 					</li>
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+						<a href="board.jsp">커뮤니티</a>
 						<ul class="dep2">
 						
 						</ul>					
@@ -70,7 +71,7 @@
 					</li>
 					
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						<a href="shop2.jsp">샵 추천</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -155,13 +156,6 @@
 				<p class="post-excerpt">말랑말랑 통통한 고양이의 뱃살, 만지는 것만으로도 하루의 피로가 가실만큼 사랑스럽다. 하지만 아무리 살이 쪄도 귀엽다 하더라도 고양이의 건강을 위해서는 적정 몸무게를 유지하는 것이 중요하다. 그렇다면 고양이 비만 측정 기준과 적정 몸무게, 그리고 이에 따른 일일 권장 칼로리를 알아보자...</p>
 				
 			</div>
-
-		<!---------- 페이지 하단 영역 ---------->
-		<div id="footer">
-			<div class="UnderBar1"></div>
-			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
-		</div>
 			
 			</div>
 			
@@ -169,6 +163,16 @@
 			
 		</div>
 			
+	<div id="footermain">
+
+	
+		<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
+	</div>
 			
 			
 </body>

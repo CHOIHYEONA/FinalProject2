@@ -196,8 +196,36 @@ div {
    border-radius: 4px;
    background-color: rgb(174, 174, 174);
 }
+
 #footer {
-  padding-top: 230px;
-  float:left;
-  width: 100%;
+   width: 100%;
+   height: 150px;
+   position: relative;
+   top: 100px;
+   background-color: #48484d;
+}
+
+#footer h3 {
+   float: left;
+
+   height: auto;
+   margin: 10px;
+   margin-left: 0px;
+   
+    margin-top: 40px;
+   
+   left: 750px;
+    position: relative;
+        color: white;
+}
+
+#footer h5 {
+   float: left;
+
+   height: auto;
+    top: 60px;
+  left: 430px;
+
+  position: relative;
+      color: white;
 }

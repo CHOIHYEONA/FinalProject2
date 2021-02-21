@@ -43,7 +43,7 @@
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="">훈련</a> </li>
+							<li><a href="dogtraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -52,6 +52,7 @@
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="cattraining.html">훈련</a> </li>
 							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
@@ -64,7 +65,7 @@
 						</ul>					
 					</li>
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">커뮤니티</a>
+						<a href="board.jsp">커뮤니티</a>
 						<ul class="dep2">
 						
 						</ul>					
@@ -72,7 +73,7 @@
 					</li>
 					
 					<li>
-						<a href="http://localhost:8081/2021/main.jsp">샵 추천</a>
+						<a href="shop2.jsp">샵 추천</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -119,7 +120,7 @@
          <div>
             <div>
                 <span>강아지 </span>
-               <a href="http://localhost:8081/2021/main.jsp">더보기</a>
+               <a href="doghealth.jsp">더보기</a>
             </div>
          </div>
 
@@ -150,7 +151,7 @@
          <div>
             <div>
                 <span>고양이 </span>
-               <a href="http://localhost:8081/2021/main.jsp">더보기</a>
+               <a href="cathealth.jsp">더보기</a>
             </div>
          </div>
          
@@ -179,7 +180,7 @@
          <div>
             <div>
                 <span>인기 커뮤니티 </span>
-               <a href="http://localhost:8081/2021/main.jsp">더보기</a>
+               <a href="board.jsp">더보기</a>
             </div>
          </div>
          
