@@ -1,3 +1,4 @@
+<%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -8,6 +9,11 @@
 <link rel="stylesheet" href="css/shop.css">
 </head>
 <body>
+
+<%
+customersVO info = (customersVO)session.getAttribute("info");
+%>
+
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -17,14 +23,20 @@
          <!-- 최상단 영역 -->
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
-
-				<ul>
-               <li><a href="login.jsp">로그인</a></li>
-               <li><a href="join.jsp">회원가입</a></li>
-
-				</ul>
+            
+            <!-- 로그인성공시 -->
+            <%if(info!=null){ %>
+            <ul>
+               <li><a href="mypage.jsp"><img src="imgs/logout.png"></a></li>
+               <li><a href="logout"><img src="imgs/mypage.png"></a></li>
+            </ul>
+			<%}else{ %>            
+            <ul>
+               <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
+               <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
+            </ul>
+			<%} %>
          </div>
-
 
 
          <!-- 밑줄 디자인 -->
@@ -53,7 +65,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="map_hospital.jsp">지도</a>
+						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
@@ -75,7 +87,7 @@
 					
 					</li>					
 					<li>
-						<a href="shop2.jsp">샵 추천</a>
+						<a href="shop2.jsp">펫 용품샵</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -89,7 +101,7 @@
       </div>
       
       
-      		      <!---------- 페이지 중간 영역 ---------->
+      <!---------- 페이지 중간 영역 ---------->
       <div id="mainFrame">
       
       

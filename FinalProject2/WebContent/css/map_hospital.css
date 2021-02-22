@@ -1,5 +1,5 @@
 @charset "EUC-KR";
-
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 
 ul, li{
 	list-style:none;
@@ -16,13 +16,15 @@ body {
 
 div {
    margin: 0px;
-   
+ 
 }
+#topMenu .dep1>li>a{font-family: 'Hanna', serif;}
+#topMenu .dep2 a{font-family: 'Hanna', serif;}
 /*---------------------전체 화면---------------------*/
 .frame {
    float: none;
    width: 1200px;
-   height: 850px;
+   height: 900px;
    margin: auto;
    background-color: rgb(250, 250, 250);
 }
@@ -43,14 +45,15 @@ div {
 }
 /*--------페이지 이름--------*/
 #top>a>img {
+	
    width: 430px;
    height: 200px;
    margin: 0px;
    position: relative;
-   left: 220px;
+   left: 170px;
    top: -10px;
-
 }
+
 /*--------아이콘--------*/
 #top>ul {
    height: 60px;
@@ -59,7 +62,7 @@ div {
    margin: auto;
    position: relative;
    top: 30px;
-   left: 1040px;
+   left: 1000px;
    float: left;
    list-style: none;
 }
@@ -82,17 +85,21 @@ div {
 #top>ul>li>a:hover{
 	text-decoration: underline;
 }
+
+#top>ul>li>a>img{
+   width:80px;
+}
+
 /*--------경계 라인--------*/
 .UnderBar {
    width: 100%;
    height : 1px;
    position : relative;
    top: 79px;
-  
+
    border-radius: 4px;
    background-color: rgb(65 61 61);
 }
-
 
 /*-- 메인 카테고리 리스트 --*/
 
@@ -106,11 +113,12 @@ div {
 	display:inline-block;
 	width:200px;
 	vertical-align:top;
-	background:white;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
 
 }
+
 
 
 #topMenu .dep1>li:hover > .dep2{
@@ -123,6 +131,7 @@ div {
 #topMenu .dep1>li>a{
 	display:block;
 	padding : 10px 0;
+	font-size:20px;
 	
 }
 
@@ -130,7 +139,6 @@ div {
 #topMenu .dep2{
 	display:none;
 	background: whitesmoke;
-	
 }
 
 #topMenu .dep2 a{
@@ -140,7 +148,7 @@ div {
 }
 #topMenu .dep2 >li{
 	
-	background:#ddd;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
 	height: 40.91px;
@@ -158,8 +166,9 @@ div {
 #mainFrame {
    z-index: 2;
    width: 100%;
-   height: 600px;
-   padding-top: 220px;
+   height: 900px;
+   padding-top: 120px;
+   background-color: white;
    
 }
 
@@ -174,17 +183,6 @@ div {
 	box-sizing: border-box;
 	top: 79px;
 }
-#uploadbox{
-	float : right;
-   width : 60%;
-   height: 60px;
-   position: relative;
-   right : 250px;
-   padding: 10px 10px 10px 10px;
-   box-sizing: border-box;
-   top: 25px;
-	
-}
 
 
 /*---------------------화면 하단---------------------*/
@@ -193,11 +191,20 @@ div {
    width: 60%;
    height : 2px;
    position : relative;
-   top: 45px;
-
+   top: 55px;
+   left : 0px;
    border-radius: 4px;
    background-color: rgb(174, 174, 174);
 }
+#footermain{
+	width: 100%;
+    height: 200px;
+  
+    position: relative;
+    top: 200px;
+}
+
+
 
 #footer {
    width: 100%;
@@ -231,3 +238,4 @@ div {
   position: relative;
       color: white;
 }
+
