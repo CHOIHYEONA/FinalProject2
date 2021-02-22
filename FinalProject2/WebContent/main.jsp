@@ -72,7 +72,7 @@
 					
 					</li>
 					<li>
-						<a href="board.jsp">Ä¶¸°´õ</a>
+						<a href="calendar.html">Ä¶¸°´õ</a>
 						<ul class="dep2">
 						
 						</ul>					
