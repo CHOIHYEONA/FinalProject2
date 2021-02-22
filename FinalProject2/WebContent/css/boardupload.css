@@ -1,12 +1,24 @@
 @charset "EUC-KR";
 
+
+ul, li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+
+
 body {
    margin: 0px;
 }
 
 div {
    margin: 0px;
-   float: left;
+   
 }
 /*---------------------전체 화면---------------------*/
 .frame {
@@ -18,9 +30,9 @@ div {
 }
 /*---------------------화면 상단---------------------*/
 .topFrame {
-   z-index: 1;
+   z-index: 10;
    width: 1200px;
-   height: 88px;
+   height: 171px;
    position: fixed;
   background-color: white;
   
@@ -32,15 +44,13 @@ div {
    
 }
 /*--------페이지 이름--------*/
-#top>h3 {
-   width: 300px;
-   height: 50px;
+#top>a>img {
+  width: 430px;
+   height: 200px;
    margin: 0px;
    position: relative;
-   left: 550px;
-   top: 23px;
-   font-weight: bold;
-   font-size: 36px;
+   left: 220px;
+   top: -10px;
 }
 
 /*--------아이콘--------*/
@@ -50,7 +60,7 @@ div {
    box-sizing: border-box;
    margin: auto;
    position: relative;
-   top: -10px;
+   top: 30px;
    left: 1040px;
    float: left;
    list-style: none;
@@ -71,115 +81,130 @@ div {
    color: black;
    
 }
+#top>ul>li>a:hover{
+	text-decoration: underline;
+}
 
 /*--------경계 라인--------*/
 .UnderBar {
-   width: 60%;
-   height : 2px;
+   width: 100%;
+   height : 1px;
    position : relative;
-   top: 38px;
-   left : 250px;
+   top: 79px;
+
    border-radius: 4px;
-   background-color: rgb(174, 174, 174);
+   background-color: rgb(65 61 61);
 }
 
 /*-- 메인 카테고리 리스트 --*/
-#topMenu>ul {
-   list-style: none;
-   height: 100%;
-   padding: 10px 10px 10px 10px;
-   
-   box-sizing: border-box;
-}
 
-#topMenu>ul>li {
-   float: right;
-   width: 19%;
-   margin: 0% 1% 0% 0%;
-   height: 100%;
-   text-align: center;
-   line-height: 25px;
+
+#topMenu .dep1 {
+	font-size:0;
+	padding-left: 0px;
 }
-/*-- 메인 카테고리 링크 --*/
-#topMenu>ul>li>a {
-   display: block;
-   height: 100%;
-   font-size: 16px;
-   text-decoration: none;
-   color: black;
-   
+#topMenu .dep1 > li{
+	display:inline-block;
+	width:200px;
+	vertical-align:top;
+	background:white;
+	text-align: center;
+	font-size:16px;
+
 }
 
 
+#topMenu .dep1>li:hover > .dep2{
+	display:block;
+	padding-left:0px;
+	
+	
+}
 
+#topMenu .dep1>li>a{
+	display:block;
+	padding : 10px 0;
+	
+}
+
+
+#topMenu .dep2{
+	display:none;
+	background: whitesmoke;
+}
+
+#topMenu .dep2 a{
+	display:block;
+	padding : 10px 0;
+	
+}
+#topMenu .dep2 >li{
+	
+	background:#ddd;
+	text-align: center;
+	font-size:16px;
+	height: 40.91px;
+	width:200px;
+	display:inline-block;
+	
+}
+
+#topMenu .dep2 a:hover {
+	text-decoration: underline;
+	
+}
 
 /*---------------------화면 중간---------------------*/
 #mainFrame {
    z-index: 2;
    width: 100%;
    height: 1700px;
-   padding-top: 88px;
+   padding-top: 120px;
    
 }
 
 /*--------상단 메뉴--------*/
 #topMenu {
    float : right;
-   width : 60%;
+   width : 100%;
    height: 60px;
    position: relative;
-   right : 250px;
-   padding: 10px 10px 10px 10px;
+
+   
    box-sizing: border-box;
-   top: 25px;
-}
-#uploadbox{
-	float : right;
-   width : 60%;
-   height: 60px;
-   position: relative;
-   right : 500px;
-   padding: 10px 10px 10px 10px;
-   box-sizing: border-box;
-   top: 25px;
-	
-}
-#submit{
-	height: 70px;
-	width: 150px;
-	padding: 6px 12px;
-	position: relative;
-	top: 10%;
-	left: 3%;
-}
-#cancel{
-	height: 70px;
-	width: 150px;
-	padding: 6px 12px;
-	position: relative;
-	top: 10%;
-	left : 20%
+   top: 79px;
 }
 /*---------------------화면 하단---------------------*/
+
 #footer {
    width: 100%;
-   height: 100px;
+   height: 150px;
    position: relative;
-   top: 150px;
+   top: 100px;
+   background-color: #48484d;
 }
 
 #footer h3 {
    float: left;
-   width: 100%;
+
    height: auto;
    margin: 10px;
-   margin-left: 100px;
+   margin-left: 0px;
+   
+    margin-top: 40px;
+   
+   left: 660px;
+    position: relative;
+        color: white;
 }
 
 #footer h5 {
    float: left;
-   width: 100%;
+
    height: auto;
-   margin: 10px;
-   margin-left: 100px;
+    top: 60px;
+  left: 330px;
+
+  position: relative;
+      color: white;
 }

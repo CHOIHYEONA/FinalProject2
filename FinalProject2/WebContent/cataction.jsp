@@ -96,7 +96,7 @@
 	
 		<br><br><br><br><br><br><br><br><br>
 		<span style = " font-size:3em; margin-left: 15px;">
-		강아지 행동
+		고양이 행동
 		</span>
 		<br>
 		<hr>
