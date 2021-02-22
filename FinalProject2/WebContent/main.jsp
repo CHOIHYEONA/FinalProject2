@@ -83,8 +83,13 @@ customersVO info = (customersVO)session.getAttribute("info");
 						</ul>					
 					
 					</li>
+					
 					<li>
+						<%if(info!= null){ %>
 						<a href="calendar.html">캘린더</a>
+						<%}else{ %>
+						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
+						<%} %>
 						<ul class="dep2">
 						
 						</ul>					
