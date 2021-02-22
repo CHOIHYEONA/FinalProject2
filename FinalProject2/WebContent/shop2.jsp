@@ -112,15 +112,15 @@
 
 
 		<!--¼¥1 -->
-		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
+		<div style="width: 30%; height: 150px; border: 0; float: left;">
 
 
 			<a href="https://www.queenpuppy.co.kr" target="_blank"> <img
-				src="imgs/shop/puppy.jpg" style="width: 100%; height: 150px;"></a>
+				src="imgs/shop/a.png" style="width: 100%; height: 150px;"></a>
 
 		</div>
 
-		<div style="width: 65%; height: 150px; border: 1px solid white; float: right;">
+		<div style="width: 65%; height: 150px; border: 0; float: right;">
 			<a href="https://www.queenpuppy.co.kr" target="_blank">
 				<h2 style="text-align: center;">Äý ¾Ø ÆÛÇÇ</h2>
 			</a>
@@ -131,16 +131,16 @@
 
 
 		<!--¼¥2 -->
-		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
+		<div style="width: 30%; height: 150px; border: border: 0; float: left;">
 
 
 
 			<a href="http://www.dontcrymypet.com" target="_blank"> <img
-				src="imgs/shop/cry.jpg" style="width: 100%; height: 150px;"></a>
+				src="imgs/shop/b.png" style="width: 100%; height: 150px;"></a>
 
 
 		</div>
-		<div style="width: 65%; height: 150px; border: 1px solid white; float: right;">
+		<div style="width: 65%; height: 150px; bborder: 0; float: right;">
 			<a href="http://www.dontcrymypet.com" target="_blank">
 				<h2 style="text-align: center;">¿ïÁö¸¶ ¸¶ÀÌÆê</h2>
 			</a>
@@ -152,15 +152,15 @@
 
 		<!--¼¥3 -->
 		<div
-			style="width: 30%; height: 150px; border: 1px solid white; float: left;">
+			style="width: 30%; height: 150px; border: 0; float: left;">
 
 
 			<a href="https://www.petsbe.com" target="_blank"> <img
-				src="imgs/shop/petsbe.jpg" style="width: 100%; height: 150px;"></a>
+				src="imgs/shop/c.png" style="width: 100%; height: 150px;"></a>
 
 
 		</div>
-		<div style="width: 65%; height: 150px; border: 1px solid white; float: right;">
+		<div style="width: 65%; height: 150px; border: 0; float: right;">
 			<a href="https://www.petsbe.com" target="_blank">
 				<h2 style="text-align: center;">ÆêÃ÷ºñ</h2>
 			</a>
@@ -170,15 +170,15 @@
 				<br><br><br><br><br><br><br><br><br>
 
 		<!--¼¥4 -->
-		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
+		<div style="width: 30%; height: 150px; border: 0; float: left;">
 
 
 			<a href="https://www.pet-friends.co.kr" target="_blank"> <img
-				src="imgs/shop/fre.jpg" style="width: 100%; height: 150px;"></a>
+				src="imgs/shop/d.png" style="width: 100%; height: 150px;"></a>
 
 
 		</div>
-		<div style="width: 65%; height: 150px; border: 1px solid white; float: right;">
+		<div style="width: 65%; height: 150px; border: 0; float: right;">
 			<a href="https://www.pet-friends.co.kr" target="_blank">
 				<h2 style="text-align: center;">Æê ÇÁ·»Áî</h2>
 			</a>
@@ -190,15 +190,15 @@
 
 		<!--¼¥5 -->
 
-		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
+		<div style="width: 30%; height: 150px; border: 0; float: left;">
 
 
 			<a href="https://catpre.com" target="_blank"> <img
-				src="imgs/shop/cat.jpg" style="width: 100%; height: 150px;"></a>
+				src="imgs/shop/e.png" style="width: 100%; height: 150px;"></a>
 
 
 		</div>
-		<div style="width: 65%; height: 150px; border: 1px solid white; float: right;">
+		<div style="width: 65%; height: 150px; border: 0; float: right;">
 			<a href="https://catpre.com" target="_blank">
 				<h2 style="text-align: center;">°í¾çÀÌ ´ëÅë·É</h2>
 			</a>
