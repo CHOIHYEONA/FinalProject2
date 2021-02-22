@@ -102,10 +102,10 @@
     <input type="radio" name="slide" id="slide3">
     <input type="radio" name="slide" id="slide4">
     <ul id="imgholder" class="imgs">
-        <li><img src="imgs/main/middle/logo.png" width="1300px" height="600px"></li>
-        <li><img src="imgs/main/middle/logo.png" width="1300px" height="600px"></li>
-        <li><img src="imgs/main/middle/logo.png" width="1300px" height="600px"></li>
-        <li><img src="imgs/main/middle/logo.png" width="1300px" height="600px"></li>
+        <li><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
     </ul>
     <div class="bullets">
         <label for="slide1">&nbsp;</label>
@@ -119,7 +119,7 @@
          <!-- 강아지뉴스 타이틀 -->
          <div>
             <div>
-                <span>강아지 </span>
+                <h3>강아지 </h3>
                <a href="doghealth.jsp">더보기</a>
             </div>
          </div>
@@ -150,7 +150,7 @@
            <!-- 고양이뉴스 타이틀 -->
          <div>
             <div>
-                <span>고양이 </span>
+                <h3>고양이 </h3>
                <a href="cathealth.jsp">더보기</a>
             </div>
          </div>
@@ -179,7 +179,7 @@
              <!-- 인기 커뮤니티 타이틀 -->
          <div>
             <div>
-                <span>인기 커뮤니티 </span>
+                <h3>커뮤니티 </h3>
                <a href="board.jsp">더보기</a>
             </div>
          </div>
