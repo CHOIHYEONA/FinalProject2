@@ -60,11 +60,6 @@
 			</div>
 
 
-			<!---------- 페이지 하단 영역 ---------->
-			<div id="footer">
-			<div class="UnderBar"></div>
-				<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-			</div>
 		</div>
 	</div>
 </body>
