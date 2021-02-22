@@ -89,27 +89,18 @@
       </div>
       
       
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      
       		      <!---------- 페이지 중간 영역 ---------->
       <div id="mainFrame">
       
       
-  		<br><br>
+  		<br><br><br><br><br><br><br><br><br>
 		<span style = " font-size:3em; margin-left: 15px;">
 		샵 정보
 		</span>
+	<br>
+		<hr>
+		
 		<br>
-		<br><br><br>
-
 
 		<!--샵1 -->
 		<div style="width: 30%; height: 150px; border: 1px solid white; float: left;">
