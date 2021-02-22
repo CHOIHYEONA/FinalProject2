@@ -1,3 +1,4 @@
+<%@page import="model.customersVO"%>
 <%@page import="model.commVO"%>
 <%@page import="model.commDAO"%>
 <%@page import="model.boardVO"%>
@@ -28,12 +29,16 @@ font-weight:bold;
 </head>
 <body>
 <%
+customersVO info = (customersVO)session.getAttribute("info");
+
 boardDAO dao = new boardDAO();
-int boardUid = 20;
+
+int boardUid = Integer.parseInt(request.getParameter("boardUid"));
  boardVO vo = dao.getOneBoard(boardUid);
+ 
  commDAO comm_dao = new commDAO();
  ArrayList<commVO> comm_list = new ArrayList<commVO>();
-		comm_list =  comm_dao.selectData(boardUid);
+comm_list =  comm_dao.selectData(boardUid);
 
 %>
 
