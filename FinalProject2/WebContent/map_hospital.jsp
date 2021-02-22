@@ -106,7 +106,13 @@
 						</ul>					
 					
 					</li>
+					<li>
+						<a href="calendar.html">캘린더</a>
+						<ul class="dep2">
+						
+						</ul>					
 					
+					</li>					
 					<li>
 						<a href="shop2.jsp">샵 추천</a>
 						<ul class="dep2">

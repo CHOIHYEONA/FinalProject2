@@ -87,7 +87,7 @@ div {
 /*--------경계 라인--------*/
 .UnderBar {
    width: 100%;
-   height : 2px;
+   height : 1px;
    position : relative;
    top: 79px;
   
@@ -105,7 +105,7 @@ div {
 }
 #topMenu .dep1 > li{
 	display:inline-block;
-	width:240px;
+	width:200px;
 	vertical-align:top;
 	background:white;
 	text-align: center;
@@ -131,6 +131,7 @@ div {
 
 #topMenu .dep2{
 	display:none;
+	background: whitesmoke;
 	
 }
 
@@ -144,8 +145,8 @@ div {
 	background:#ddd;
 	text-align: center;
 	font-size:16px;
-	height: 25px;
-	width:144px;
+	height: 40.91px;
+	width:200px;
 	display:inline-block;
 	
 }

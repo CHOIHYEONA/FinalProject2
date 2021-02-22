@@ -33,7 +33,7 @@
 			<div class="UnderBar"></div>
 
 
-           <!-- 카테고리 선택 목록 -->
+          <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul class="dep1">
 					<li>
@@ -69,7 +69,13 @@
 						</ul>					
 					
 					</li>
+					<li>
+						<a href="calendar.html">캘린더</a>
+						<ul class="dep2">
+						
+						</ul>					
 					
+					</li>					
 					<li>
 						<a href="shop2.jsp">샵 추천</a>
 						<ul class="dep2">
