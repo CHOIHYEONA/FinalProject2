@@ -30,7 +30,7 @@ customersVO info = (customersVO)session.getAttribute("info");
             <!-- 로그인성공시 -->
             <%if(info!=null){ %>
             <ul>
-               <li><a href="mypage.jsp"><img src="imgs/logout.png"></a></li>
+               <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
                <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
 			<%}else{ %>            
