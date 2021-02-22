@@ -30,13 +30,13 @@ customersVO info = (customersVO)session.getAttribute("info");
             <!-- 로그인성공시 -->
             <%if(info!=null){ %>
             <ul>
-               <li><a href="mypage.jsp">마이페이지</a></li>
-               <li><a href="logout">로그아웃</a></li>
+               <li><a href="mypage.jsp"><img src="imgs/logout.png"></a></li>
+               <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
 			<%}else{ %>            
             <ul>
-               <li><a href="login.jsp">로그인</a></li>
-               <li><a href="join.jsp">회원가입</a></li>
+               <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
+               <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
             </ul>
 			<%} %>
          </div>
@@ -69,7 +69,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 						</ul>
 					</li>
 					<li>
-						<a href="map_hospital.jsp">지도</a>
+						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
@@ -96,7 +96,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 					
 					</li>					
 					<li>
-						<a href="shop2.jsp">샵 추천</a>
+						<a href="shop2.jsp">펫 용품샵</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -125,10 +125,10 @@ customersVO info = (customersVO)session.getAttribute("info");
     <input type="radio" name="slide" id="slide3">
     <input type="radio" name="slide" id="slide4">
     <ul id="imgholder" class="imgs">
-        <li><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></li>
-        <li><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
-        <li><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
-        <li><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
+        <li> <div onclick="location.href='doghealth.jsp'"><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></div></li>
+        <li><div onclick="location.href='cathealth.jsp'"><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></div><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
+        <li><div onclick="location.href='map_hospital.jsp'"><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
+        <li><div onclick="location.href='board.jsp'"><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
     </ul>
     <div class="bullets">
         <label for="slide1">&nbsp;</label>

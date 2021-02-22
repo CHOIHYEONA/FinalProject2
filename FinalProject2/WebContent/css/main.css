@@ -1,12 +1,12 @@
 @charset "EUC-KR";
-
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 
 ul, li{
-	list-style:none;
+   list-style:none;
 }
 a{
-	text-decoration:none;
-	color:inherit;
+   text-decoration:none;
+   color:inherit;
 }
 
 
@@ -18,6 +18,8 @@ div {
    margin: 0px;
    
 }
+#topMenu .dep1>li>a{font-family: 'Hanna', serif;}
+#topMenu .dep2 a{font-family: 'Hanna', serif;}
 /*---------------------전체 화면---------------------*/
 .frame {
    float: none;
@@ -47,7 +49,7 @@ div {
    height: 200px;
    margin: 0px;
    position: relative;
-   left: 220px;
+   left: 170px;
    top: -10px;
 
 }
@@ -60,7 +62,7 @@ div {
    margin: auto;
    position: relative;
    top: 30px;
-   left: 1040px;
+   left: 1000px;
    float: left;
    list-style: none;
 }
@@ -73,7 +75,7 @@ div {
    box-sizing: border-box;
 }
 #top>ul>li>a:hover{
-	text-decoration: underline;
+   text-decoration: underline;
 }
 #top>ul>li>a {
    display: block;
@@ -82,6 +84,9 @@ div {
    text-decoration: none;
    color: black;
    
+}
+#top>ul>li>a>img{
+   width:80px;
 }
 
 /*--------경계 라인--------*/
@@ -100,60 +105,61 @@ div {
 
 
 #topMenu .dep1 {
-	font-size:0;
-	padding-left: 0px;
+   font-size:0;
+   padding-left: 0px;
 }
 #topMenu .dep1 > li{
-	display:inline-block;
-	width:200px;
-	vertical-align:top;
-	background:white;
-	text-align: center;
-	font-size:16px;
+   display:inline-block;
+   width:200px;
+   vertical-align:top;
+   background:ghostwhite;
+   text-align: center;
+   font-size:16px;
 
 }
 
 
 
 #topMenu .dep1>li:hover > .dep2{
-	display:block;
-	padding-left:0px;
-	
-	
+   display:block;
+   padding-left:0px;
+   
+   
 }
 
 #topMenu .dep1>li>a{
-	display:block;
-	padding : 10px 0;
-	
+   display:block;
+   padding : 10px 0;
+   font-size:20px;
+   
 }
 
 
 #topMenu .dep2{
-	display:none;
-	background: whitesmoke;
-	
+   display:none;
+   background: whitesmoke;
+   
 }
 
 #topMenu .dep2 a{
-	display:block;
-	padding : 10px 0;
-	
+   display:block;
+   padding : 10px 0;
+   
 }
 #topMenu .dep2 >li{
-	
-	background:#ddd;
-	text-align: center;
-	font-size:16px;
-	height: 40.91px;
-	width:200px;
-	display:inline-block;
-	
+   
+   background:ghostwhite;
+   text-align: center;
+   font-size:16px;
+   height: 40.91px;
+   width:200px;
+   display:inline-block;
+   
 }
 
 #topMenu .dep2 a:hover {
-	text-decoration: underline;
-	
+   text-decoration: underline;
+   
 }
 
 /*---------------------화면 중간---------------------*/
@@ -169,17 +175,17 @@ div {
 /*--------상단 메뉴--------*/
 #topMenu {
 
-	float : right;
-	width : 100%;
-	height: 60px;
-	position: relative;
+   float : right;
+   width : 100%;
+   height: 60px;
+   position: relative;
 
 
-	box-sizing: border-box;
-	top: 79px;
+   box-sizing: border-box;
+   top: 79px;
 }
 #uploadbox{
-	float : right;
+   float : right;
    width : 60%;
    height: 60px;
    position: relative;
@@ -187,14 +193,14 @@ div {
    padding: 10px 10px 10px 10px;
    box-sizing: border-box;
    top: 25px;
-	
+   
 }
 /*-------- 메인 사진 영역 --------*/
 #mainFrame>div:nth-child(2) {
    width: 100%;
    height: 600px;
    position: relative;
-   margin-top:96px;
+   margin-top:93px;
    float:clear;
    
    
@@ -274,6 +280,11 @@ ul.imgs li{
 }
 
 
+.slider>#imgholder>li>div>img{
+   cursor: pointer;
+}
+
+
 
 /*-------- 강아지뉴스 타이틀 영역 --------*/
 #mainFrame>div:nth-child(3) {
@@ -310,14 +321,14 @@ ul.imgs li{
    
 }
 #mainFrame>div:nth-child(3)>div>a:after{
- 	 content: '\003E';
+     content: '\003E';
     font-weight: 600;
     font-size: 16px;
     color: black;
    
 }
 #mainFrame>div:nth-child(3)>div>a:hover{
-  	text-decoration: underline;
+     text-decoration: underline;
    
 }
 /*-------- 메인 강아지 콘텐츠 영역 --------*/
@@ -396,14 +407,14 @@ ul.imgs li{
 }
 
 #mainFrame>div:nth-child(5)>div>a:after{
- 	 content: '\003E';
+     content: '\003E';
     font-weight: 600;
     font-size: 16px;
     color: black;
    
 }
 #mainFrame>div:nth-child(5)>div>a:hover{
-  	text-decoration: underline;
+     text-decoration: underline;
    
 }
 
@@ -482,7 +493,7 @@ ul.imgs li{
 }
 
 #mainFrame>div:nth-child(7)>div>a:after{
- 	 content: '\003E';
+     content: '\003E';
     font-weight: 600;
     font-size: 16px;
     color: black;
@@ -544,7 +555,7 @@ ul.imgs li{
 }
 
 #footermain{
-	width: 100%;
+   width: 100%;
     height: 200px;
   
     position: relative;
