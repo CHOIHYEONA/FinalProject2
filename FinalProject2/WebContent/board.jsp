@@ -102,17 +102,25 @@ System.out.print(board_list.size());
 
 			<br><br><br><br><br>
 			<br><br><br><br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		커뮤니티
+		</span>
+		<br>
+		<hr>
 			<%
 				int newLine = 0;
 			%>
-			<div id="boardwrite" >
-				<input type = "button" id="boardwrite" value = "게시물작성" >
+			<br>
+			<div>
+				<a href = "boardupload.jsp">
+				<input type = "button" id="boardwrite" value = "게시물 작성" style="WIDTH: 160pt; HEIGHT: 40pt; float: right; font-size:20px;" >				</a>
+	
 			</div>
 			
 				<br><br><br><br><br>
 			<br><br><br><br><br>
 			<div id = "img">
-			 <table>
+			 <table style = "font-size : 20px;">
 				<%for(int i =0;i<board_list.size();i++){
 					
 					if(newLine==0){
@@ -120,9 +128,11 @@ System.out.print(board_list.size());
 					}
 					newLine++;
 					%>
-			 		<td><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
+					<td width = "100"></td>
+			 		<td align = "center"><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
 			 		<br>
-			 		조회수<%=board_list.get(i).getB_count() %>   좋아요<%=board_list.get(i).getB_like() %>
+			 		<%=board_list.get(i).getB_title() %>
+			 		<br><br><br><br><br><br>
 			 		</td>
 			 	
 			 	<%
