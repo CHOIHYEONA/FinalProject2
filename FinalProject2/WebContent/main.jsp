@@ -1,9 +1,11 @@
 
+<%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
+
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
@@ -12,7 +14,9 @@
 </head>
 <body>
 
-
+<%
+customersVO info = (customersVO)session.getAttribute("info");
+%>
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -22,11 +26,19 @@
          <!-- 최상단 영역 -->
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
+            
+            <!-- 로그인성공시 -->
+            <%if(info!=null){ %>
+            <ul>
+               <li><a href="mypage.jsp">마이페이지</a></li>
+               <li><a href="logout">로그아웃</a></li>
+            </ul>
+			<%}else{ %>            
             <ul>
                <li><a href="login.jsp">로그인</a></li>
                <li><a href="join.jsp">회원가입</a></li>
-         
             </ul>
+			<%} %>
          </div>
 
 

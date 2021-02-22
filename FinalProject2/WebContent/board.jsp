@@ -113,7 +113,7 @@ System.out.print(board_list.size());
 			<br>
 			<div>
 				<a href = "boardupload.jsp">
-				<input type = "button" id="boardwrite" value = "게시물 작성" style="WIDTH: 160pt; HEIGHT: 40pt; float: right; font-size:20px;" >				</a>
+				<input type = "button" id="boardwrite" value = "게시물 작성" style="WIDTH: 160pt; HEIGHT: 40pt; float: right; font-size:20px; left: 0px;" >				</a>
 	
 			</div>
 			
@@ -129,9 +129,9 @@ System.out.print(board_list.size());
 					newLine++;
 					%>
 					<td width = "100"></td>
-			 		<td align = "center"><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
+			 		<td align = "center"><a href = "boardone.jsp"><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
 			 		<br>
-			 		<%=board_list.get(i).getB_title() %>
+			 		<%=board_list.get(i).getB_title() %></a>
 			 		<br><br><br><br><br><br>
 			 		</td>
 			 	

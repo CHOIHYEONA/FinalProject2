@@ -174,33 +174,6 @@ div {
    box-sizing: border-box;
    top: 79px;
 }
-#uploadbox{
-	float : right;
-   width : 60%;
-   height: 60px;
-   position: relative;
-   right : 500px;
-   padding: 10px 10px 10px 10px;
-   box-sizing: border-box;
-   top: 25px;
-	
-}
-#submit{
-	height: 70px;
-	width: 150px;
-	padding: 6px 12px;
-	position: relative;
-	top: 10%;
-	left: 3%;
-}
-#cancel{
-	height: 70px;
-	width: 150px;
-	padding: 6px 12px;
-	position: relative;
-	top: 10%;
-	left : 20%
-}
 /*---------------------화면 하단---------------------*/
 
 #footer {
