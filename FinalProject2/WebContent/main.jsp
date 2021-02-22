@@ -83,8 +83,13 @@ customersVO info = (customersVO)session.getAttribute("info");
 						</ul>					
 					
 					</li>
+					
 					<li>
+						<%if(info!= null){ %>
 						<a href="calendar.html">Ä¶¸°´õ</a>
+						<%}else{ %>
+						<a href="login.jsp" onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">Ä¶¸°´õ</a>
+						<%} %>
 						<ul class="dep2">
 						
 						</ul>					
