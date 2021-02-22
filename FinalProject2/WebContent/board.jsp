@@ -16,7 +16,7 @@
 <body>
 
 <%
-
+customersVO info = (customersVO)session.getAttribute("info");
 boardDAO dao = new boardDAO();
 ArrayList<boardVO> board_list = new ArrayList<boardVO>();
 
@@ -116,8 +116,11 @@ System.out.print(board_list.size());
 			<br>
 			<div>
 				<a href = "boardupload.jsp">
+				<%if(info!= null){ %>
 				<input type = "button" id="boardwrite" value = "게시물 작성" style="WIDTH: 160pt; HEIGHT: 40pt; float: right; font-size:20px; left: 0px;" >				</a>
-	
+			<%}else{ %>
+				<input type = "button" id="boardwrite" value = "게시물 작성" onclick = " alert('로그인을 해주세요');return false;" style="WIDTH: 160pt; HEIGHT: 40pt; float: right; font-size:20px; left: 0px;" >				</a>
+			<%} %>
 			</div>
 			
 				<br><br><br><br><br>
