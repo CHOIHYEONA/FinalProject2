@@ -125,10 +125,10 @@ customersVO info = (customersVO)session.getAttribute("info");
     <input type="radio" name="slide" id="slide3">
     <input type="radio" name="slide" id="slide4">
     <ul id="imgholder" class="imgs">
-        <li> <div onclick="location.href='doghealth.jsp'"><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></div></li>
-        <li><div onclick="location.href='cathealth.jsp'"><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></div><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
-        <li><div onclick="location.href='map_hospital.jsp'"><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
-        <li><div onclick="location.href='board.jsp'"><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
+        <li> <div onclick="location.href='doghealth.jsp'"><img src="imgs/main/middle/1.png" width="1200px" height="600px"></div></li>
+        <li><div onclick="location.href='cathealth.jsp'"><img src="imgs/main/middle/2.png" width="1200px" height="600px"></div><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
+        <li><div onclick="location.href='map_hospital.jsp'"><img src="imgs/main/middle/3.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
+        <li><div onclick="location.href='board.jsp'"><img src="imgs/main/middle/4.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
     </ul>
     <div class="bullets">
         <label for="slide1">&nbsp;</label>
