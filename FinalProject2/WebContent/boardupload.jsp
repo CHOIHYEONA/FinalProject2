@@ -21,40 +21,88 @@
 
 			<!-- 최상단 영역 -->
 			<div id="top">
-				<h3>logo</h3>
+				<a href="main.jsp"><img src="imgs/logo.png"></a>
+
 				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/search.png"></a></li>
-					<li><a href="http://localhost:8081/2021/login.jsp"><img
-							src="imgs/main/top/person.png"></a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp"><img
-							src="imgs/main/top/menu.png"></a></li>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
+
 				</ul>
 			</div>
+
 
 
 			<!-- 밑줄 디자인 -->
 			<div class="UnderBar"></div>
 
-			
-		</div>
 
-
-		<!---------- 페이지 중간 영역 ---------->
-		<div id="mainFrame">
-		
-		<!-- 카테고리 선택 목록 -->
+          <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
-				<ul>
-					<li><a href="http://localhost:8081/2021/main.jsp">샵</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">커뮤니티</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">지도</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">고양이</a></li>
-					<li><a href="http://localhost:8081/2021/main.jsp">강아지</a></li>
+				<ul class="dep1">
+					<li>
+						<a href="doghealth.jsp">강아지</a>
+						<ul class="dep2">
+							<li><a href="doghealth.jsp">건강</a> </li>
+							<li><a href="dogaction.jsp">행동</a> </li>
+							<li><a href="dogtraining.html">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="cathealth.jsp">고양이</a>
+						<ul class="dep2">
+							<li><a href="cathealth.jsp">건강</a> </li>
+							<li><a href="cataction.jsp">행동</a> </li>
+							<li><a href="cattraining.html">훈련</a> </li>
+							<li><a href="">품종</a> </li>
+						</ul>
+					</li>
+					<li>
+						<a href="map_hospital.jsp">지도</a>
+						<ul class="dep2">
+							<li><a href="map_hospital.jsp">동물병원</a> </li>
+							<li><a href="">공공장소</a> </li>
+							<li><a href="">산책로</a> </li>
+						</ul>					
+					</li>
+					<li>
+						<a href="board.jsp">커뮤니티</a>
+						<ul class="dep2">
+						
+						</ul>					
+					
+					</li>
+					<li>
+						<a href="calendar.html">캘린더</a>
+						<ul class="dep2">
+						
+						</ul>					
+					
+					</li>					
+					<li>
+						<a href="shop2.jsp">샵 추천</a>
+						<ul class="dep2">
+						
+						</ul>
+					</li>
 				</ul>
 			</div>
+			
+			
+
+         
+      </div>
+		<!---------- 페이지 중간 영역 ---------->
+		<div id="mainFrame">
+		<br><br><br><br><br><br><br><br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		게시물 작성
+		</span>
+		<br>
+		<hr>
+		
+		<br>		
+
 			
 		<br><br><br><br><br>
 		
@@ -81,7 +129,18 @@
                        </div>
                        </div>
                        </div>
+                       
+                       
+	<div id="footermain">
 
+	
+		<!---------- 페이지 하단 영역 ---------->
+		<div id="footer">
+			
+			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+		</div>
+	</div>
 
 </body>
 </html>
