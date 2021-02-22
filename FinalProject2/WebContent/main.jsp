@@ -1,4 +1,5 @@
 
+
 <%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
    pageEncoding="EUC-KR"%>
@@ -55,8 +56,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="dogtraining.jsp">훈련</a> </li>
+							<li><a href="group.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -64,8 +65,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="cattraining.jsp">훈련</a> </li>
+							<li><a href="catgroup.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -73,7 +74,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
-							<li><a href="">산책로</a> </li>
+							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
