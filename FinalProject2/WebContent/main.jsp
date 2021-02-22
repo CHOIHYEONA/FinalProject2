@@ -71,7 +71,13 @@
 						</ul>					
 					
 					</li>
+					<li>
+						<a href="board.jsp">Ä¶¸°´õ</a>
+						<ul class="dep2">
+						
+						</ul>					
 					
+					</li>					
 					<li>
 						<a href="shop2.jsp">¼¥ ÃßÃµ</a>
 						<ul class="dep2">
@@ -104,8 +110,8 @@
     <ul id="imgholder" class="imgs">
         <li><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></li>
         <li><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
-        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
-        <li><img src="imgs/main/middle/logo.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
+        <li><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
     </ul>
     <div class="bullets">
         <label for="slide1">&nbsp;</label>
