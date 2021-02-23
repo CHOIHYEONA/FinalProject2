@@ -186,12 +186,13 @@ var markers = [];
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
-        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(35.14765613234792, 126.86010832677428), // 지도의 중심좌표
+        level: 6 // 지도의 확대 레벨
     };
 
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption); 
+
 
 var imageSrc = './imgs/map/mylocation.png', // 마커이미지의 주소입니다    
 imageSize = new kakao.maps.Size(32, 35), // 마커이미지의 크기입니다
@@ -226,7 +227,7 @@ if (navigator.geolocation) {
     
 } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
     
-    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+    var locPosition = new kakao.maps.LatLng(35.14765613234792, 126.86010832677428),    
         message = 'geolocation을 사용할수 없어요..'
         
     displayMarker(locPosition, message);
@@ -256,7 +257,27 @@ function displayMarker(locPosition, message) {
     
     // 지도 중심좌표를 접속위치로 변경합니다
     map.setCenter(locPosition);      
-}    
+} 
+<!--
+//================== 내 위치가 제대로 안떠서 광주에 임의의 내 위치 표시=====================
+var imageSrc = './imgs/map/mylocation.png', // 마커이미지의 주소입니다    
+imageSize = new kakao.maps.Size(38, 42), // 마커이미지의 크기입니다
+imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+  
+//마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+markerPosition = new kakao.maps.LatLng(35.1516879822425, 126.86009779838625); // 마커가 표시될 위치입니다
+
+//마커를 생성합니다
+var marker1 = new kakao.maps.Marker({
+position: markerPosition, 
+image: markerImage // 마커이미지 설정 
+});
+
+//마커가 지도 위에 표시되도록 설정합니다
+marker1.setMap(map);  
+-->
+// ==========================================================
 
 // 키워드로 장소를 검색합니다
 searchPlaces();
@@ -456,6 +477,8 @@ function removeAllChildNods(el) {
         el.removeChild (el.lastChild);
     }
 }
+ 
+
 </script>
 
 	
