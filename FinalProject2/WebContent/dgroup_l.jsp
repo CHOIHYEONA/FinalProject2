@@ -266,29 +266,53 @@ margin-right: 10px;
 		
 
 	<!-- 강아지 품종별  -->
-<div id="s_left_1" class="img_shadow"><img src="">1</a></div>
-<div id="contents_1" class="img_shadow"><img src="">2</a></div>
-<div id="s_right_1" class="img_shadow"><img src="">3</a></div>
+<div id="s_left_1" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l01.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="contents_1" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l02.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="s_right_1" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l03.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
 
 <br><br>
 
-<div id="s_left_2" class="img_shadow"><img src="">4</a></div>
-<div id="contents_2" class="img_shadow"><img src="">5</a></div>
-<div id="s_right_2" class="img_shadow"><img src="">6</a></div>
+<div id="s_left_2" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l04.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="contents_2" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l05.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="s_right_2" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l06.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
 
 <br><br>
 
-<div id="s_left_3" class="img_shadow"><img src="">7</a></div>
-<div id="contents_3" class="img_shadow"><img src="">8</a></div>
-<div id="s_right_3" class="img_shadow"><img src="">9</a></div>
+<div id="s_left_3" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l07.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="contents_3" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l08.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="s_right_3" class="img_shadow"><img src="imgs/dgroup_l/dgroup_l09.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+
 
 		
 		
 		
 		
 		
+	<!-- 마우스 오버시 이미지 확대  script -->
+	<script>
+  function zoomIn(event) {
+	  
+	event.target.style.transform = "scale(1.3)";
+    event.target.style.transition = "all 0.5s";
+    event.target.style.position = "relative";   //static -쌓임 (x), relative(O)
+    event.target.style.zIndex = "2";
+  }
+
+  function zoomOut(event) {
+	  event.target.style.transform = "scale(1)";
+    event.target.style.transition = "all 0.5s";
+  }	
 		
-	
+  </script>	
 	
 		
 	
