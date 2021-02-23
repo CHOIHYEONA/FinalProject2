@@ -1,5 +1,8 @@
 
 
+<%@page import="model.boardVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.boardDAO"%>
 <%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
    pageEncoding="EUC-KR"%>
@@ -17,6 +20,10 @@
 
 <%
 customersVO info = (customersVO)session.getAttribute("info");
+boardDAO dao = new boardDAO();
+ArrayList<boardVO> board_list = new ArrayList<boardVO>();
+
+board_list = dao.getList();
 %>
    <div class="frame">
 
@@ -36,6 +43,11 @@ customersVO info = (customersVO)session.getAttribute("info");
             </ul>
 			<%}else{ %>            
             <ul>
+            <li>
+            <a href="login.jsp" 
+   onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">클릭 시 팝업 창으로 이동합니다
+</a>
+</li>
                <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
                <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
             </ul>
@@ -221,21 +233,30 @@ customersVO info = (customersVO)session.getAttribute("info");
          
          <!-- 인기 커뮤니티 컨텐츠 -->
          <div id="mainContents3">
-            <div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-               <img src="imgs/main/middle/logo.png">
-               <h5>제목</h5>
+         
+            <div>
+            	<a href = "boardone.jsp?boardUid=<%=board_list.get(1).getBoardUid()%>">
+               <img src="./foldername/<%=board_list.get(1).getImgName()%>">
+               <h5><%=board_list.get(1).getB_title() %></h5>
+               </a>
             </div>
-            <div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-               <img src="imgs/main/middle/logo.png">
-               <h5>제목</h5>
+            <div>
+            <a href = "boardone.jsp?boardUid=<%=board_list.get(2).getBoardUid()%>">
+               <img src="./foldername/<%=board_list.get(2).getImgName()%>">
+               <h5><%=board_list.get(2).getB_title() %></h5>
+            </a>
             </div>
-            <div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-               <img src="imgs/main/middle/logo.png">
-               <h5>제목</h5>
+            <div>
+            <a href = "boardone.jsp?boardUid=<%=board_list.get(3).getBoardUid()%>">
+               <img src="./foldername/<%=board_list.get(3).getImgName()%>">
+               <h5><%=board_list.get(3).getB_title() %></h5>
+            </a>
             </div>
-            <div onclick="location.href='http://localhost:8081/2021/main.jsp'">
-               <img src="imgs/main/middle/logo.png">
-               <h5>제목</h5>
+            <div>
+            <a href = "boardone.jsp?boardUid=<%=board_list.get(4).getBoardUid()%>">
+               <img src="./foldername/<%=board_list.get(4).getImgName()%>">
+               <h5><%=board_list.get(4).getB_title() %></h5>
+               </a>
             </div>
          
            </div>
