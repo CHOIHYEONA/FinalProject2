@@ -123,7 +123,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  		<form action = "boardupload" method = "post" enctype="multipart/form-data">
-					力格 : 					
+					力格 <br>	<br>				
 		  			<span><input type="text" required="required" name = "title" placeholder = "郴侩阑 涝仿秦林技夸"></span>
 		  			<br><br>
 		  			<table>
@@ -133,16 +133,22 @@ customersVO info = (customersVO)session.getAttribute("info");
 		  					</td>
 		  				</tr>
 		  				<tr>
+		  					<td>
+		  					<br>
+		  					</td>
+		  				</tr>
+		  				<tr>
+		  				
 							<td>
-								<textarea name ="content" rows="15" cols="50"></textarea>
+								<textarea name ="content" rows="15" cols="50" style=" width: 392px; height: 411px; "></textarea>
 							</td>
 		  				</tr>
 		  			</table>
-		  					<br><br><br><hr>
-		  					<input id = "submit" type="submit" value="力免" style="WIDTH: 80pt; HEIGHT: 20pt; float: left; font-size:15px;"></span>
+		  					<br><br><br><hr style="    position: relative;  width: 395px; right: 200px; top: -49px; ">
+		  					<input id = "submit" type="submit" value="力免" style="WIDTH: 130pt; HEIGHT: 30pt; float: left; font-size:15px; position: relative; top: -35px; "></span>
 		  					
 		  					<a href = "board.jsp">
-		  					<input id = "cancel" type="button" value="秒家" style="WIDTH: 80pt; HEIGHT: 20pt; float:right; left: 0px; font-size:15px;"></span>
+		  					<input id = "cancel" type="button" value="秒家" style="WIDTH: 130pt; HEIGHT: 30pt; float:left; left: 0px; font-size:15px; position: relative; top: -35px; margin-left: 50px;"></span>
 		  					</a>
 		  					
 		  					</form>
