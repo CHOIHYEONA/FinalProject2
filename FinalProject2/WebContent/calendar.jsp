@@ -6,6 +6,8 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/calendar.css">
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 </head>
 <body>
 <div id="calendar-wrap">
