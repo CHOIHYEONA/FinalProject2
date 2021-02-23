@@ -13,6 +13,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import model.boardDAO;
 import model.boardVO;
+import model.customersVO;
 
 @WebServlet("/boardupload")
 public class boardupload extends HttpServlet {
@@ -39,13 +40,13 @@ public class boardupload extends HttpServlet {
 		
 		String b_fileFullPath = saveDri + "/" + filename;
 		HttpSession session=request.getSession();
-		/*세션가져와야함 customersVO vo =(customersVO)session.getAttribute("getdto");*/
+		customersVO info = (customersVO)session.getAttribute("info");
 		
 		
+
+		String name = info.getUserName();
+		int userUid = info.getUserUid();
 		
-		int userUid = 2;
-		//String name = getdto.name();
-		//int userUid = getvo.userUid();
 		
 		System.out.println(b_title + b_fileFullPath + b_content );
 		boardVO vo = new boardVO(b_title,filename, b_content, userUid);
@@ -60,7 +61,7 @@ public class boardupload extends HttpServlet {
 			
 			System.out.println("레시피 등록 실패 ! ");
 		}
-		response.sendRedirect("main.jsp");
+		response.sendRedirect("board.jsp");
 	
 	}
 

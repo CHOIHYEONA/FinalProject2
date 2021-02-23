@@ -40,6 +40,8 @@ public class commDAO {
 					e.printStackTrace();
 				}
 	}
+	
+	
 	public ArrayList<commVO> selectData(int boardUid){
 		ArrayList<commVO> list = new ArrayList<commVO>();
 		try {

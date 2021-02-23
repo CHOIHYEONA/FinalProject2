@@ -34,11 +34,13 @@ customersVO info = (customersVO)session.getAttribute("info");
 boardDAO dao = new boardDAO();
 
 int boardUid = Integer.parseInt(request.getParameter("boardUid"));
- boardVO vo = dao.getOneBoard(boardUid);
+String name = info.getUserName();
+boardVO vo = dao.getOneBoard(boardUid);
  
- commDAO comm_dao = new commDAO();
- ArrayList<commVO> comm_list = new ArrayList<commVO>();
+commDAO comm_dao = new commDAO();
+ArrayList<commVO> comm_list = new ArrayList<commVO>();
 comm_list =  comm_dao.selectData(boardUid);
+
 
 %>
 
@@ -90,7 +92,9 @@ comm_list =  comm_dao.selectData(boardUid);
 		 <div id="content1">
 		  			<table width = "100%" border-collapse = "collapse">
 		  				<tr>
-		  					<td class  = "c_title" width = "50%" font-size = "16px" font-weight = "bold" ><%=vo.getB_title()%></td>
+		  					<td class  = "c_title" width = "50%" font-size = "16px" font-weight = "bold" ><%=vo.getB_title()%>
+		  					 <td><span id="board_num"><%=vo.getBoardUid() %></span></td>
+		  					</td>
 		  					<td align = "right" ><%=vo.getB_date()%></td>
 		  				</tr>
 		  				<tr >
@@ -114,31 +118,86 @@ comm_list =  comm_dao.selectData(boardUid);
 						</tr>
 		  				<tr>
 							<td>조회수 <%=vo.getB_count() %></td>
-							<td>좋아요<%=vo.getB_like() %></td>
+							<td><input id="like_btn" type="button" value="좋아요" onclick = "like()">
+							<span id="like_result"></span>
+							</td>
 						</tr>
 		  			</table>
                        
                        <br><br><br><br>
                     <span>댓글 </span>   <hr>
                        <form action = "commServiceCon">
+                       <input type="hidden" name="boardUid" value="<%=vo.getBoardUid()%>">
                        <textarea name ="content" rows="3" cols="30"></textarea>
+                       
                        <input id = "submit" type="submit" value="등록">
                        
                        </form>
                        <hr>
-                       <div>
-                       <span>이름</span><br>
                        <%for(int i=0;i<comm_list.size();i++){ %>
                        <div>
+                       <span><%=name %></span><br>
                        <span><%=comm_list.get(i).getC_content()%></span><br>
                        <span><%=comm_list.get(i).getC_date() %></span>
+                       <br>
                        </div>
+                       <br>
                        <%} %>
-                       </div>
                        
                        </div>
                        </div>
                        </div>
+                       
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type = "text/javascript">
+			function like() {
+			var board_num = document.getElementById("board_num");
+			var btn_like = document.getElementById("like_btn");
+			//스크립트에서 var로 선언하는 변수는 겹쳐도 된다.
+			//스크립트안에서는 ==된다..
+			if(btn_like.value == "좋아요"){
+			$.ajax({
+				type : "post", //전송방식
+				url : "likeService",//서버파일이름
+				data : {"board_num":board_num.innerHTML}, //서버로 보내는 값
+				dataType : "text", //서버에서 오는 응답방식
+				success: function(data){
+					//alert(data);
+					var result = document.getElementById("like_result");
+					result.innerHTML = data;
+					
+					var btn_like = document.getElementById("like_btn");
+					btn_like.value = "좋아요취소"
+					
+				},
+				error : function(){
+					alert("요청실패");
+				}
+			});
+		}else{
+			$.ajax({
+				type : "post", //전송방식
+				url : "dislikeService",//서버파일이름
+				data : {"board_num":board_num.innerHTML}, //서버로 보내는 값
+				dataType : "text", //서버에서 오는 응답방식
+				success: function(data){
+					//alert(data);
+					var result = document.getElementById("like_result");
+					result.innerHTML = data;
+					
+					var btn_like = document.getElementById("like_btn");
+					btn_like.value = "좋아요"
+				},
+				error : function(){
+					alert("요청실패");
+				}
+			});
+		}
+		
+		
+		
+	}
+</script>
 
 
 </body>

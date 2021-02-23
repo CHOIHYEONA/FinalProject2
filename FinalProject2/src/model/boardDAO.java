@@ -144,5 +144,55 @@ public class boardDAO {
 		}
 		return cnt;
 	}
+	public int updateLike(int bn) {
+		try {
+			conn();
+			String sql = "update board2 set b_like =b_like+1 where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, bn);
+			
+			cnt = psmt.executeUpdate();
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
 
+}
+	public int selectLike(int bn) {
+		int like = 0;
+		try{
+			conn();
+			String sql = "select b_like from board2 where board_Uid = ?";
+				psmt = conn.prepareStatement(sql);
+				psmt.setInt(1, bn);
+				rs = psmt.executeQuery();
+				if(rs.next()) {
+					like = rs.getInt("b_like");
+				}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return like;
+	}
+	public int updateDislike(int bn) {
+		try {
+			conn();
+			String sql = "update board2 set b_like =b_like-1 where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, bn);
+			
+			cnt = psmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
+	}
 }

@@ -1,12 +1,16 @@
 package controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import model.boardVO;
 import model.commDAO;
 import model.commVO;
 import model.customersVO;
@@ -17,10 +21,18 @@ public class commServiceCon extends HttpServlet {
 		request.setCharacterEncoding("euc-kr");
 		System.out.println("commServiceCon");
 		
+		RequestDispatcher dispatcher=request.getRequestDispatcher("boardone.jsp");
+		HttpSession session=request.getSession();
+		customersVO info = (customersVO)session.getAttribute("info");
+		int userUid = info.getUserUid();
+		int boardUid = Integer.parseInt(request.getParameter("boardUid"));
 		String content = request.getParameter("content");
+		System.out.println("===================");
+		System.out.println(boardUid);
+		System.out.println(userUid);
+		System.out.println(content);
+		
 		commDAO dao = new commDAO();
-		int userUid = 2;
-		int boardUid = 20;
 		int cnt = dao.insertData(content, userUid,boardUid);
 		
 		if(cnt>0) {
@@ -29,7 +41,8 @@ public class commServiceCon extends HttpServlet {
 			System.out.println("댓글올리기 실패");
 			
 		}
-		response.sendRedirect("boardone.jsp");
+		
+		dispatcher.forward(request, response);
 	}
 
 }
