@@ -39,9 +39,18 @@ create table comm (
 	delete from comm
    
 	SELECT * FROM BOARD2
+CREATE TABLE CALENDAR (
+CAL_UID NUMBER NOT NULL PRIMARY KEY,
+CA_DATE VARCHAR2(50) NOT NULL, 
+CA_TEXT VARCHAR2(2000) NOT NULL,
+USER_UID NUMBER NOT NULL,
 
+constraint FK_CUSTOMER_CAL FOREIGN KEY(user_Uid)
+references CUSTOMERS(user_Uid) ON DELETE CASCADE
+) 
 create sequence cusNum start with 1 increment by 1;
 create sequence boardNum start with 1 increment by 1;
 create sequence commNum start with 1 increment by 1;
+CREATE SEQUENCE CALNUM START WITH 1 INCREMENT BY 1;
 
-
+SELECT * FROM CALENDAR

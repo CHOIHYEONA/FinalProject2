@@ -7,8 +7,6 @@
       integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel=" shortcut icon" href="imgs/favicon.ico">
-	<link rel="icon" href="imgs/favicon.ico">
   <script src="js/main.js"></script>
   <script src="js/data.js"></script>
   <title>Calendar</title>
@@ -33,8 +31,8 @@
     </div>
     <div class="todo-wrap">
       <div class="todo-title">Today List</div>
-      <form class="input-form">
-        <input type="text" placeholder="write here!!" class="input-box" />
+      <form class="input-form" >
+        <input type="text" id = "dotext" placeholder="write here!!" class="input-box" />
         <button type="submit" class="input-btn clickBtn">INPUT</button>
       </form>
       <ul class="todoList"></ul>
@@ -239,6 +237,24 @@ let DATA = {
 			  todoObj.id = DATA[currentDate].length;
 			  save();
 			  inputBox.value = '';
+				
+			  $.ajax({
+					type : "post", //전송방식
+					url : "calendarServiceCon",//서버파일이름
+					data : {"dotext":text,
+				        "currentdate":currentDate
+					}, //서버로 보내는 값
+					dataType : "text", //서버에서 오는 응답방식
+					success: function(data){
+						alert("요청성공");
+					},
+					error : function(){
+						alert("요청실패");
+					}
+				});
+			
+			
+			
 			}
 
 			function redrawLi() {
@@ -326,6 +342,7 @@ let DATA = {
 
 			function save() {
 			  localStorage.setItem(currentDate, JSON.stringify(DATA[currentDate]));
+			 
 			}
 
 			}

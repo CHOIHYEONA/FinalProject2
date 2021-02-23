@@ -252,16 +252,14 @@ margin-right: 10px;
       <!---------- 페이지 중간 영역 ---------->
     <div id="mainFrame">
       
-       <div id="null">
-              <!-- 다 바꾸기 귀찮아서 빈공백 -->
-       </div>
-         
-         
-  		<br><br><br><br><br><br>
-	
-
+ 		<br><br><br><br><br><br><br><br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		단모종
+		</span>
+		<br>
+		<hr>
 		
-		<br><br><br><br>
+		<br>
 		
 		
 
