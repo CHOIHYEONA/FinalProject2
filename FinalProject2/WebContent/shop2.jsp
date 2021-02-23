@@ -10,10 +10,10 @@
 </head>
 <body>
 
+
 <%
 customersVO info = (customersVO)session.getAttribute("info");
 %>
-
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -27,7 +27,7 @@ customersVO info = (customersVO)session.getAttribute("info");
             <!-- 로그인성공시 -->
             <%if(info!=null){ %>
             <ul>
-               <li><a href="mypage.jsp"><img src="imgs/logout.png"></a></li>
+               <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
                <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
 			<%}else{ %>            
@@ -39,10 +39,11 @@ customersVO info = (customersVO)session.getAttribute("info");
          </div>
 
 
-         <!-- 밑줄 디자인 -->
-         <div class="UnderBar"></div>
 
-
+			<!-- 밑줄 디자인 -->
+			<div class="UnderBar"></div>
+			
+			
           <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
 				<ul class="dep1">
@@ -51,8 +52,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="dogtraining.jsp">훈련</a> </li>
+							<li><a href="group.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -60,8 +61,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="cattraining.jsp">훈련</a> </li>
+							<li><a href="catgroup.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -69,7 +70,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
-							<li><a href="">산책로</a> </li>
+							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
@@ -79,8 +80,13 @@ customersVO info = (customersVO)session.getAttribute("info");
 						</ul>					
 					
 					</li>
+					
 					<li>
+						<%if(info!= null){ %>
 						<a href="calendar.html">캘린더</a>
+						<%}else{ %>
+						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
+						<%} %>
 						<ul class="dep2">
 						
 						</ul>					

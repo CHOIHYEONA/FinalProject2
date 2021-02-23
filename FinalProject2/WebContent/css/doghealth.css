@@ -1,5 +1,5 @@
 @charset "EUC-KR";
-
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 
 ul, li{
 	list-style:none;
@@ -18,6 +18,8 @@ div {
    margin: 0px;
  
 }
+#topMenu .dep1>li>a{font-family: 'Hanna', serif;}
+#topMenu .dep2 a{font-family: 'Hanna', serif;}
 /*---------------------전체 화면---------------------*/
 .frame {
    float: none;
@@ -48,7 +50,7 @@ div {
    height: 200px;
    margin: 0px;
    position: relative;
-   left: 220px;
+   left: 170px;
    top: -10px;
 }
 
@@ -60,7 +62,7 @@ div {
    margin: auto;
    position: relative;
    top: 30px;
-   left: 1040px;
+   left: 1000px;
    float: left;
    list-style: none;
 }
@@ -82,6 +84,10 @@ div {
 }
 #top>ul>li>a:hover{
 	text-decoration: underline;
+}
+
+#top>ul>li>a>img{
+   width:80px;
 }
 
 /*--------경계 라인--------*/
@@ -107,11 +113,12 @@ div {
 	display:inline-block;
 	width:200px;
 	vertical-align:top;
-	background:white;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
 
 }
+
 
 
 #topMenu .dep1>li:hover > .dep2{
@@ -124,6 +131,7 @@ div {
 #topMenu .dep1>li>a{
 	display:block;
 	padding : 10px 0;
+	font-size:20px;
 	
 }
 
@@ -140,7 +148,7 @@ div {
 }
 #topMenu .dep2 >li{
 	
-	background:#ddd;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
 	height: 40.91px;
@@ -158,8 +166,9 @@ div {
 #mainFrame {
    z-index: 2;
    width: 100%;
-   height: 1700px;
+   height: 2000px;
    padding-top: 120px;
+   background-color: white;
    
 }
 
@@ -187,6 +196,15 @@ div {
    border-radius: 4px;
    background-color: rgb(174, 174, 174);
 }
+#footermain{
+	width: 100%;
+    height: 200px;
+  
+    position: relative;
+    top: 200px;
+}
+
+
 
 #footer {
    width: 100%;
@@ -220,3 +238,4 @@ div {
   position: relative;
       color: white;
 }
+
