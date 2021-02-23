@@ -269,7 +269,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 광산구 광산로19번길 24</div>' + 
 			            '                <div class="jibun ellipsis"> (지번) 송정동 837-14 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/운천저수지" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/라라브레드" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -287,7 +287,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 동구 동명로14번길 12</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 동명동 154-47</div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/5.18 기념공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/티앗" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -306,7 +306,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 동구 제봉로110번길 20</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 장동 82-1 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/중외공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/장진우식당" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -326,7 +326,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 동구 동계천로 169-3</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 동명동 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/우치공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/블루웨일" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -345,7 +345,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 서구 상무자유로 137-10 봉령빌딩 1층 </div>' + 
 			            '                <div class="jibun ellipsis">(지번) 치평동 1237-9 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/전남산림자원연구소 메타세콰이어길" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/마포선장 상무직영점" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -364,7 +364,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 동구 장동로 19 1층</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 장동 84-2 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/풍암 호수공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/소복" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -383,7 +383,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 서구 금화로85번길 4-28</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 금호동 762-9</div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/월산 근린공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/똔꼬집" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -402,7 +402,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 서구 내방로 348</div>' + 
 			            '                <div class="jibun ellipsis">(지번) 화정동 69-3 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/동림동 산동교" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/파쿠야" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -421,7 +421,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 서구 상무누리로 15 1층</div>' + 
 			            '                <div class="jibun ellipsis"> (지번) 마륵동 171-3 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/광주 사직공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/카페 304" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -440,7 +440,7 @@
 			            '            <div class="desc">' + 
 			            '                <div class="ellipsis">광주 남구 제중로46번길 14 1층</div>' + 
 			            '                <div class="jibun ellipsis"> (지번) 양림동 318 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/승천보" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/카페 밀당" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
