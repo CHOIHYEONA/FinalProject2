@@ -6,8 +6,11 @@
 <head>
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <title>강아지 종류</title>
 <link rel="stylesheet" href="css/catgroup.css">
+
 <style type="text/css">
 
 

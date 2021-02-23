@@ -8,7 +8,7 @@
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
-<title>병원위치 검색</title>
+<title>멍냥이 병원위치</title>
 <link rel="stylesheet" href="css/map_hospital.css">
 <style>
 	.map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
