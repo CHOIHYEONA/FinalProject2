@@ -5,7 +5,7 @@
 <head>
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>고양이 종류 - 장모종</title>
+<title>고양이 종류 - 단모종</title>
 <link rel="stylesheet" href="css/main.css">
 <style type="text/css">
 
@@ -266,29 +266,29 @@ margin-right: 10px;
 		
 
 	<!-- 강아지 품종별  -->
-<div id="s_left_1" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s01.png" onmouseenter="zoomIn(event)"
+<div id="s_left_1" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short01.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
-<div id="contents_1" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s02.png" onmouseenter="zoomIn(event)"
+<div id="contents_1" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short02.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
-<div id="s_right_1" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s03.png" onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"></a></div>
-
-<br><br>
-
-<div id="s_left_2" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s04.png" onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"></a></div>
-<div id="contents_2" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s05.png" onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"></a></div>
-<div id="s_right_2" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s06.png" onmouseenter="zoomIn(event)"
+<div id="s_right_1" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short03.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
 
 <br><br>
 
-<div id="s_left_3" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s07.png" onmouseenter="zoomIn(event)"
+<div id="s_left_2" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short04.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
-<div id="contents_3" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s08.png" onmouseenter="zoomIn(event)"
+<div id="contents_2" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short05.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
-<div id="s_right_3" class="img_shadow"><img src="imgs/dgroup_s/dgroup_s09.png" onmouseenter="zoomIn(event)"
+<div id="s_right_2" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short06.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+
+<br><br>
+
+<div id="s_left_3" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short07.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="contents_3" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short08.png" onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"></a></div>
+<div id="s_right_3" class="img_shadow"><img src="imgs/cgroup_short/cgroup_short09.png" onmouseenter="zoomIn(event)"
       onmouseleave="zoomOut(event)"></a></div>
 
 		
