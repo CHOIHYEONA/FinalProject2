@@ -6,15 +6,14 @@
 <head>
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
 <title>고양이 종류 - 장모종</title>
 <link rel="stylesheet" href="css/main.css">
-=======
+
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <title>강아지 종류 - 소형견</title>
 <link rel="stylesheet" href="css/dgroup_s.css">
->>>>>>> branch 'master' of https://github.com/CHOIHYEONA/FinalProject2.git
 <style type="text/css">
 
 

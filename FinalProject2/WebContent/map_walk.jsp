@@ -143,7 +143,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 			<script>
 			var mapContainer = document.getElementById('map'), // 지도의 중심좌표
 			    mapOption = { 
-			        center: new kakao.maps.LatLng(35.148317, 126.867804), // 지도의 중심좌표(조대 아이티 : 35.139900, 126.934189)
+			        center: new kakao.maps.LatLng(35.14765613234792, 126.86010832677428), // 지도의 중심좌표(조대 아이티 : 35.139900, 126.934189)
 			        level: 6 // 지도의 확대 레벨
 			    }; 
 			
@@ -219,7 +219,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 			  
 			//마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
 			var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-			markerPosition = new kakao.maps.LatLng(35.1476879822425, 126.86009779838625); // 마커가 표시될 위치입니다
+			markerPosition = new kakao.maps.LatLng(35.14765613234792, 126.86010832677428); // 마커가 표시될 위치입니다
 			
 			//마커를 생성합니다
 			var marker = new kakao.maps.Marker({
