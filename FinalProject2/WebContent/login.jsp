@@ -53,18 +53,13 @@
 					<ul>
 						<li><a href="http://localhost:8081/2021/main.jsp">아이디 찾기</a></li>
 						<li><a href="http://localhost:8081/2021/main.jsp">비밀번호 찾기</a></li>
-						<li><a href="http://localhost:8081/2021/join.jsp">회원가입</a></li>
+						<li><a href="join.jsp">회원가입</a></li>
 					</ul>
 
 				</div>
 			</div>
 
 
-			<!---------- 페이지 하단 영역 ---------->
-			<div id="footer">
-			<div class="UnderBar"></div>
-				<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-			</div>
 		</div>
 	</div>
 </body>

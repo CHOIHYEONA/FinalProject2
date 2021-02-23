@@ -1,4 +1,5 @@
 
+
 <%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
    pageEncoding="EUC-KR"%>
@@ -55,8 +56,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="dogtraining.jsp">훈련</a> </li>
+							<li><a href="group.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -64,8 +65,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="cattraining.jsp">훈련</a> </li>
+							<li><a href="catgroup.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -73,7 +74,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
-							<li><a href="">산책로</a> </li>
+							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
@@ -119,6 +120,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 
 
          <!-- 메인 사진 영역 -->
+<<<<<<< HEAD
 <div class="slider">
     <input type="radio" name="slide" id="slide1" checked>
     <input type="radio" name="slide" id="slide2">
@@ -129,12 +131,35 @@ customersVO info = (customersVO)session.getAttribute("info");
         <li><div onclick="location.href='cathealth.jsp'"><img src="imgs/main/middle/2.png" width="1200px" height="600px"></div><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></li>
         <li><div onclick="location.href='map_hospital.jsp'"><img src="imgs/main/middle/3.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></li>
         <li><div onclick="location.href='board.jsp'"><img src="imgs/main/middle/4.png" width="1200px" height="600px"></div><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></li>
+=======
+<div id="slider-wrap">
+    <ul id="slider">
+        <li>
+
+          <div onclick="location.href='doghealth.jsp'"><img src="imgs/main/middle/maindog.png" width="1200px" height="600px"></div>
+        </li>
+
+        <li>
+         <div onclick="location.href='cathealth.jsp'"><img src="imgs/main/middle/maincat.png" width="1200px" height="600px"></div>
+        </li>
+
+        <li>
+           <div onclick="location.href='map_hospital.jsp'"><img src="imgs/main/middle/mainmap.png" width="1200px" height="600px"></div>
+        </li>
+
+        <li>
+           <div onclick="location.href='board.jsp'"><img src="imgs/main/middle/mainborad.png" width="1200px" height="600px"></div>
+        </li>
+
+>>>>>>> branch 'master' of https://github.com/CHOIHYEONA/FinalProject2.git
     </ul>
-    <div class="bullets">
-        <label for="slide1">&nbsp;</label>
-        <label for="slide2">&nbsp;</label>
-        <label for="slide3">&nbsp;</label>
-        <label for="slide4">&nbsp;</label>
+
+    <div class="slider-btns" id="next"><span>▶</span></div>
+    <div class="slider-btns" id="previous"><span>◀</span></div>
+
+    <div id="slider-pagination-wrap">
+        <ul>
+        </ul>
     </div>
 </div>
 
@@ -247,5 +272,88 @@ customersVO info = (customersVO)session.getAttribute("info");
 		</div>
 	</div>
          <a class="top-btn" href="#mainFrame">TOP</a>
+         
+   <script type="text/javascript"></script>
+   <script>
+         //slide-wrap
+var slideWrapper = document.getElementById('slider-wrap');
+//current slideIndexition
+var slideIndex = 0;
+//items
+var slides = document.querySelectorAll('#slider-wrap ul li');
+//number of slides
+var totalSlides = slides.length;
+//get the slide width
+var sliderWidth = slideWrapper.clientWidth;
+//set width of items
+slides.forEach(function (element) {
+    element.style.width = sliderWidth + 'px';
+})
+//set width to be 'x' times the number of slides
+var slider = document.querySelector('#slider-wrap ul#slider');
+slider.style.width = sliderWidth * totalSlides + 'px';
+
+// next, prev
+var nextBtn = document.getElementById('next');
+var prevBtn = document.getElementById('previous');
+nextBtn.addEventListener('click', function () {
+    plusSlides(1);
+});
+prevBtn.addEventListener('click', function () {
+    plusSlides(-1);
+});
+
+// hover
+slideWrapper.addEventListener('mouseover', function () {
+    this.classList.add('active');
+    clearInterval(autoSlider);
+});
+slideWrapper.addEventListener('mouseleave', function () {
+    this.classList.remove('active');
+    autoSlider = setInterval(function () {
+        plusSlides(1);
+    }, 3000);
+});
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlides(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    slideIndex = n;
+    if (slideIndex == -1) {
+        slideIndex = totalSlides - 1;
+    } else if (slideIndex === totalSlides) {
+        slideIndex = 0;
+    }
+
+    slider.style.left = -(sliderWidth * slideIndex) + 'px';
+    pagination();
+}
+
+//pagination
+slides.forEach(function () {
+    var li = document.createElement('li');
+    document.querySelector('#slider-pagination-wrap ul').appendChild(li);
+})
+
+function pagination() {
+    var dots = document.querySelectorAll('#slider-pagination-wrap ul li');
+    dots.forEach(function (element) {
+        element.classList.remove('active');
+    });
+    dots[slideIndex].classList.add('active');
+}
+
+pagination();
+ var autoSlider = setInterval(function () {
+     plusSlides(1);
+ }, 3000);
+   </script>      
 </body>
 </html>

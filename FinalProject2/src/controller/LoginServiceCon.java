@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,13 +31,16 @@ public class LoginServiceCon extends HttpServlet {
 		
 		if(info != null) {
 			System.out.println("로그인성공");
-			 HttpSession session = request.getSession();
-			 session.setAttribute("info", info);
+			HttpSession session = request.getSession();
+			session.setAttribute("info", info);
 			
+			response.sendRedirect("main.jsp");
 		}else {
+			response.setContentType("text/html; charset=euc-kr");
+			PrintWriter out = response.getWriter();
 			System.out.println("로그인실패");
+		    out.print("<script>alert('로그인에 실패했습니다.'); location.href='login.jsp'; </script>");
 		}
-		response.sendRedirect("main.jsp");
 	}
 
 }

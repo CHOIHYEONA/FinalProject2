@@ -1,3 +1,4 @@
+<%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -6,7 +7,7 @@
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>강아지 종류</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/catgroup.css">
 <style type="text/css">
 
 
@@ -52,7 +53,9 @@ float:right;
 </head>
 <body>
 
-
+<%
+customersVO info = (customersVO)session.getAttribute("info");
+%>
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -62,11 +65,19 @@ float:right;
          <!-- 최상단 영역 -->
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
+            
+            <!-- 로그인성공시 -->
+            <%if(info!=null){ %>
             <ul>
-               <li><a href="login.jsp">로그인</a></li>
-               <li><a href="join.jsp">회원가입</a></li>
-         
+               <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
+               <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
+			<%}else{ %>            
+            <ul>
+               <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
+               <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
+            </ul>
+			<%} %>
          </div>
 
 
@@ -83,8 +94,8 @@ float:right;
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="dogtraining.jsp">훈련</a> </li>
+							<li><a href="group.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -92,16 +103,16 @@ float:right;
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="cattraining.jsp">훈련</a> </li>
+							<li><a href="catgroup.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
-						<a href="map_hospital.jsp">지도</a>
+						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
-							<li><a href="">산책로</a> </li>
+							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
@@ -113,7 +124,18 @@ float:right;
 					</li>
 					
 					<li>
-						<a href="shop2.jsp">샵 추천</a>
+						<%if(info!= null){ %>
+						<a href="calendar.html">캘린더</a>
+						<%}else{ %>
+						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
+						<%} %>
+						<ul class="dep2">
+						
+						</ul>					
+					
+					</li>					
+					<li>
+						<a href="shop2.jsp">펫 용품샵</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -125,20 +147,17 @@ float:right;
 
          
       </div>
-
       <!---------- 페이지 중간 영역 ---------->
     <div id="mainFrame">
-      
-       <div id="null">
-              <!-- 다 바꾸기 귀찮아서 빈공백 -->
-       </div>
-         
-         
-  		<br><br><br><br><br><br>
-	
-
+ 
+ 		<br><br><br><br><br><br><br><br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		고양이 품종
+		</span>
+		<br>
+		<hr>
 		
-		<br><br><br><br>
+		<br>
 		
 		
 
@@ -165,7 +184,7 @@ float:right;
 		
 
 
-
+	</div>
 
 			
 	</div>
@@ -177,7 +196,7 @@ float:right;
 			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
 		</div>
 	</div>
-         <a class="top-btn" href="#mainFrame">TOP</a>
+       
          
    <script>
 /*    		var img_shadow = document.getElementById('img_shadow');
