@@ -93,7 +93,7 @@ comm_list =  comm_dao.selectData(boardUid);
 		  			<table width = "100%" border-collapse = "collapse">
 		  				<tr>
 		  					<td class  = "c_title" width = "50%" font-size = "16px" font-weight = "bold" ><%=vo.getB_title()%>
-		  					 <td><span id="board_num"><%=vo.getBoardUid() %></span></td>
+		  					 <td></td>
 		  					</td>
 		  					<td align = "right" ><%=vo.getB_date()%></td>
 		  				</tr>
