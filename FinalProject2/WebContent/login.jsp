@@ -53,7 +53,7 @@
 					<ul>
 						<li><a href="http://localhost:8081/2021/main.jsp">아이디 찾기</a></li>
 						<li><a href="http://localhost:8081/2021/main.jsp">비밀번호 찾기</a></li>
-						<li><a href="http://localhost:8081/2021/join.jsp">회원가입</a></li>
+						<li><a href="join.jsp">회원가입</a></li>
 					</ul>
 
 				</div>
