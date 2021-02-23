@@ -1,5 +1,7 @@
 @charset "EUC-KR";
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+#mainFrame>span{font-family: 'Do Hyeon', Sans Serif;};
 
 ul, li{
 	list-style:none;

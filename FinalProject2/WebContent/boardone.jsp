@@ -68,6 +68,11 @@ comm_list =  comm_dao.selectData(boardUid);
 			<%} %>
          </div>
 
+
+
+			<!-- 밑줄 디자인 -->
+			<div class="UnderBar"></div>
+			
 			
           <!-- 카테고리 선택 목록 -->
 			<div id="topMenu">
@@ -94,7 +99,7 @@ comm_list =  comm_dao.selectData(boardUid);
 						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
-							<li><a href="">공공장소</a> </li>
+							<li><a href="map_place.jsp">동반가능장소</a> </li>
 							<li><a href="map_walk">산책로</a> </li>
 						</ul>					
 					</li>

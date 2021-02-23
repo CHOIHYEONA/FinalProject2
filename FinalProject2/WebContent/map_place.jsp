@@ -1,3 +1,4 @@
+<%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -29,8 +30,9 @@
 </head>
 <body>
 
-
-
+<%
+customersVO info = (customersVO)session.getAttribute("info");
+%>
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -39,12 +41,20 @@
 
          <!-- 최상단 영역 -->
          <div id="top">
-              <a href="main.jsp"><img src="imgs/logo.png"></a>
+            <a href="main.jsp"><img src="imgs/logo.png"></a>
+            
+            <!-- 로그인성공시 -->
+            <%if(info!=null){ %>
             <ul>
-               <li><a href="login.jsp">로그인</a></li>
-               <li><a href="join.jsp">회원가입</a></li>
-         
+               <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
+               <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
+			<%}else{ %>            
+            <ul>
+               <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
+               <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
+            </ul>
+			<%} %>
          </div>
 
 
@@ -61,8 +71,8 @@
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="dogtraining.jsp">훈련</a> </li>
+							<li><a href="group.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -70,16 +80,16 @@
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.html">훈련</a> </li>
-							<li><a href="">품종</a> </li>
+							<li><a href="cattraining.jsp">훈련</a> </li>
+							<li><a href="catgroup.jsp">품종</a> </li>
 						</ul>
 					</li>
 					<li>
 						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
-							<li><a href="">공공장소</a> </li>
-							<li><a href="">산책로</a> </li>
+							<li><a href="map_place.jsp">동반가능장소</a> </li>
+							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
@@ -91,7 +101,11 @@
 					</li>
 					
 					<li>
+						<%if(info!= null){ %>
 						<a href="calendar.html">캘린더</a>
+						<%}else{ %>
+						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
+						<%} %>
 						<ul class="dep2">
 						
 						</ul>					
@@ -105,11 +119,25 @@
 					</li>
 				</ul>
 			</div>
+			
+			
 
+         
       </div>
 
       <!---------- 페이지 중간 영역 ---------->
       <div id="mainFrame">
+      
+           
+      
+  		<br><br><br><br><br><br><br><br><br>
+		<span style = " font-size:3em; margin-left: 15px;">
+		동반가능장소
+		</span>
+	<br>
+		<hr>
+		
+		<br>      
       
       
       	<div id="map" style="width:90%;height:500px;"></div>
@@ -672,7 +700,7 @@
 			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
 		</div>
 	</div>
-         <a class="top-btn" href="#mainFrame">TOP</a>
+      
       
 
 
