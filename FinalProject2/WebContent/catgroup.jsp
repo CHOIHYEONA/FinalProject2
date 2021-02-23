@@ -165,10 +165,10 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 
 	<!-- 강아지 품종별 3분류 -->
-<div id="s_left" class="img_shadow"><a href="dgroup_s.jsp"> 
+<div id="s_left" class="img_shadow"><a href="cgroup_short.jsp"> 
 <img src="imgs/group/catgroup1.png"></a></div>
 
-<div id="s_right" class="img_shadow"><a href="dgroup_l.jsp">
+<div id="s_right" class="img_shadow"><a href="cgroup_long.jsp">
 <img src="imgs/group/catgroup2.png"></a></div>
 
 		

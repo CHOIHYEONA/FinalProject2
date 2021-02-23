@@ -1,4 +1,3 @@
-<%@page import="model.customersVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -7,7 +6,7 @@
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
-<title>멍냥이 산책로</title>
+<title>멍냥이 동반가능장소</title>
 <link rel="stylesheet" href="css/map_hospital.css">
 <style>
     .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
@@ -24,16 +23,14 @@
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-  
-    
+
 </style>
 
 </head>
 <body>
 
-<%
-customersVO info = (customersVO)session.getAttribute("info");
-%>
+
+
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->
@@ -42,20 +39,12 @@ customersVO info = (customersVO)session.getAttribute("info");
 
          <!-- 최상단 영역 -->
          <div id="top">
-            <a href="main.jsp"><img src="imgs/logo.png"></a>
-            
-            <!-- 로그인성공시 -->
-            <%if(info!=null){ %>
+              <a href="main.jsp"><img src="imgs/logo.png"></a>
             <ul>
-               <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
-               <li><a href="logout"><img src="imgs/mypage.png"></a></li>
+               <li><a href="login.jsp">로그인</a></li>
+               <li><a href="join.jsp">회원가입</a></li>
+         
             </ul>
-			<%}else{ %>            
-            <ul>
-               <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
-               <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
-            </ul>
-			<%} %>
          </div>
 
 
@@ -72,8 +61,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="doghealth.jsp">건강</a> </li>
 							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.jsp">훈련</a> </li>
-							<li><a href="group.jsp">품종</a> </li>
+							<li><a href="dogtraining.html">훈련</a> </li>
+							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -81,8 +70,8 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="cathealth.jsp">건강</a> </li>
 							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.jsp">훈련</a> </li>
-							<li><a href="catgroup.jsp">품종</a> </li>
+							<li><a href="cattraining.html">훈련</a> </li>
+							<li><a href="">품종</a> </li>
 						</ul>
 					</li>
 					<li>
@@ -90,7 +79,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
 							<li><a href="">공공장소</a> </li>
-							<li><a href="map_walk.jsp">산책로</a> </li>
+							<li><a href="">산책로</a> </li>
 						</ul>					
 					</li>
 					<li>
@@ -102,11 +91,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 					</li>
 					
 					<li>
-						<%if(info!= null){ %>
 						<a href="calendar.html">캘린더</a>
-						<%}else{ %>
-						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
-						<%} %>
 						<ul class="dep2">
 						
 						</ul>					
@@ -120,23 +105,12 @@ customersVO info = (customersVO)session.getAttribute("info");
 					</li>
 				</ul>
 			</div>
-			
-			
 
-         
       </div>
+
       <!---------- 페이지 중간 영역 ---------->
       <div id="mainFrame">
       
-      
-  		<br><br><br><br><br><br><br><br><br>
-		<span style = " font-size:3em; margin-left: 15px;">
-		산책로 위치
-		</span>
-	<br>
-		<hr>
-		
-		<br>      
       
       	<div id="map" style="width:90%;height:500px;"></div>
 			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ff9056a863fcaf2be7d5a378f84ab5d3"></script>
@@ -235,45 +209,45 @@ customersVO info = (customersVO)session.getAttribute("info");
 			// 지도에 마커를 표시합니다 
 			var marker1 = new kakao.maps.Marker({
 				map: map, 
-			    position: new kakao.maps.LatLng(35.148091, 126.854813)
+			    position: new kakao.maps.LatLng(35.139231, 126.793466)
 			});	
 			var marker2 = new kakao.maps.Marker({
 			 	map: map, 
-				position: new kakao.maps.LatLng(35.157258, 126.858145)
+				position: new kakao.maps.LatLng(35.149996, 126.924343)
 			});
 			 
 			var marker3 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.182337, 126.885370)
+				position: new kakao.maps.LatLng(35.149044, 126.924014)
 			});
 			//
 			var marker4 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.223890, 126.891649)
+				position: new kakao.maps.LatLng(35.149223, 126.927804)
 			});
 			var marker5 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.006743, 126.825680)
+				position: new kakao.maps.LatLng(35.152360, 126.849512)
 			});
 			var marker6 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.127934, 126.870096)
+				position: new kakao.maps.LatLng(35.148462, 126.924067)
 			});
 			var marker7 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.140540, 126.898824)
+				position: new kakao.maps.LatLng(35.133396, 126.858908)
 			});
 			var marker8 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.190732, 126.862812)
+				position: new kakao.maps.LatLng(35.157194, 126.878614)
 			});
 			var marker9 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.142024, 126.911641)
+				position: new kakao.maps.LatLng(35.144419, 126.840320)
 			});
 			var marker10 = new kakao.maps.Marker({
 				map: map, 
-				position: new kakao.maps.LatLng(35.067588, 126.761091)
+				position: new kakao.maps.LatLng(35.138594, 126.915240)
 			});
 			
 			
@@ -285,17 +259,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content1 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            운천 저수지' + 
+			            '            라라브레드' + 
 			            '            <div class="close" onclick="closeOverlay1()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/unchun.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/lalabread.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주광역시 서구 쌍촌동 869-9</div>' + 
-			            '                <div class="jibun ellipsis">(Tel) 062-360-7990 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/운천저수지" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 광산구 광산로19번길 24</div>' + 
+			            '                <div class="jibun ellipsis"> (지번) 송정동 837-14 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/라라브레드" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -303,17 +277,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content2 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            5.18 기념공원' + 
+			            '            티앗' + 
 			            '            <div class="close" onclick="closeOverlay2()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/518.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/teaat.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 서구 내방로 152</div>' + 
-			            '                <div class="jibun ellipsis">(우) 61965 (지번) 쌍촌동 1268</div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/5.18 기념공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 동구 동명로14번길 12</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 동명동 154-47</div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/티앗" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -322,17 +296,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content3 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            중외공원' + 
+			            '            장진우식당' + 
 			            '            <div class="close" onclick="closeOverlay3()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/joongwhy.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/jangjinwoo.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 북구 하서로 50</div>' + 
-			            '                <div class="jibun ellipsis">(지번) 운암동 164 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/중외공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 동구 제봉로110번길 20</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 장동 82-1 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/장진우식당" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -342,17 +316,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content4 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            우치공원' + 
+			            '            블루웨일' + 
 			            '            <div class="close" onclick="closeOverlay4()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/uchipark.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/bluewhale.jpg" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 북구 우치로 677</div>' + 
-			            '                <div class="jibun ellipsis">(지번) 생용동 산 127-2 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/우치공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 동구 동계천로 169-3</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 동명동 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/블루웨일" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -361,17 +335,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content5 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            전남산림자원연구소 메타세콰이어길' + 
+			            '            마포선장 상무직영점' + 
 			            '            <div class="close" onclick="closeOverlay5()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/meta.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/maposunjang.jpg" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">전남 나주시 다도면 풍산리 산 1-1 </div>' + 
-			            '                <div class="jibun ellipsis">(지번) 산포면 산제리 산 23-7 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/전남산림자원연구소 메타세콰이어길" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 서구 상무자유로 137-10 봉령빌딩 1층 </div>' + 
+			            '                <div class="jibun ellipsis">(지번) 치평동 1237-9 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/마포선장 상무직영점" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -380,17 +354,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content6 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            풍암 호수공원' + 
+			            '            소복' + 
 			            '            <div class="close" onclick="closeOverlay6()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/poongam.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/sobok.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 서구 풍암동 460</div>' + 
-			            '                <div class="jibun ellipsis">(지번) 운암동 164 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/풍암 호수공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 동구 장동로 19 1층</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 장동 84-2 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/소복" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -399,17 +373,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content7 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '           월산 근린공원' + 
+			            '           똔꼬집' + 
 			            '            <div class="close" onclick="closeOverlay7()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/wolsan.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/ddonggozip.jpg" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 남구 월산로 52</div>' + 
-			            '                <div class="jibun ellipsis">(지번) 월산동 153-8 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/월산 근린공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 서구 금화로85번길 4-28</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 금호동 762-9</div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/똔꼬집" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -418,17 +392,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content8 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            동림동 산동교' + 
+			            '            파쿠야' + 
 			            '            <div class="close" onclick="closeOverlay8()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/sandong.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/pakuya.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 북구 동림동</div>' + 
-			            '                <div class="jibun ellipsis"> </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/동림동 산동교" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 서구 내방로 348</div>' + 
+			            '                <div class="jibun ellipsis">(지번) 화정동 69-3 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/파쿠야" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -437,17 +411,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content9 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            광주 사직공원' + 
+			            '            카페 304' + 
 			            '            <div class="close" onclick="closeOverlay9()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/sazicpark.PNG" width="73" height="70">' +
+			            '                <img src="./imgs/map/cafe304.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 남구 양림동 108-10</div>' + 
-			            '                <div class="jibun ellipsis">  </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/광주 사직공원" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 서구 상무누리로 15 1층</div>' + 
+			            '                <div class="jibun ellipsis"> (지번) 마륵동 171-3 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/카페 304" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -456,17 +430,17 @@ customersVO info = (customersVO)session.getAttribute("info");
 			var content10 = '<div class="wrap">' + 
 			            '    <div class="info">' + 
 			            '        <div class="title">' + 
-			            '            승천보' + 
+			            '            카페 밀당' + 
 			            '            <div class="close" onclick="closeOverlay10()" title="닫기"></div>' + 
 			            '        </div>' + 
 			            '        <div class="body">' + 
 			            '            <div class="img">' +
-			            '                <img src="./imgs/map/seungchun.jpg" width="73" height="70">' +
+			            '                <img src="./imgs/map/mildang.PNG" width="73" height="70">' +
 			            '           </div>' + 
 			            '            <div class="desc">' + 
-			            '                <div class="ellipsis">광주 남구 승촌보길 90</div>' + 
-			            '                <div class="jibun ellipsis">지번) 승촌동 495-4 </div>' + 
-			            '                <div><a href="https://map.kakao.com/link/search/승천보" target="_blank" class="link">상세보기</a></div>' + 
+			            '                <div class="ellipsis">광주 남구 제중로46번길 14 1층</div>' + 
+			            '                <div class="jibun ellipsis"> (지번) 양림동 318 </div>' + 
+			            '                <div><a href="https://map.kakao.com/link/search/카페 밀당" target="_blank" class="link">상세보기</a></div>' + 
 			            '            </div>' + 
 			            '        </div>' + 
 			            '    </div>' +    
@@ -698,7 +672,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
 		</div>
 	</div>
-       
+         <a class="top-btn" href="#mainFrame">TOP</a>
       
 
 
