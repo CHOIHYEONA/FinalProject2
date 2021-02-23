@@ -5,6 +5,8 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <title>멍냥이 - 샵</title>
 <link rel="stylesheet" href="css/shop.css">
 </head>

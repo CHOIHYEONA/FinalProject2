@@ -7,7 +7,7 @@
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
 <meta charset="EUC-KR">
-<title>멍냥이 커뮤니티</title>
+<title>멍냥이 산책로</title>
 <link rel="stylesheet" href="css/map_hospital.css">
 <style>
     .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
@@ -24,7 +24,8 @@
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-
+  
+    
 </style>
 
 </head>

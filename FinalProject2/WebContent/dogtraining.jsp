@@ -137,34 +137,34 @@ customersVO info = (customersVO)session.getAttribute("info");
 	<div id="list">
 	
 	    <dl class="movs">
-	     <dd class="thumb"><a href="#"><img src="imgs/dog/dog1.jpg" alt="" width ="100%"  height="100%"><span class="time">02:19</span></a><em></em></dd>
+	     <dd class="thumb"><a href="#"><img src="imgs/dog/dogsit.jpg" alt="" width ="100%"  height="100%"><span class="time">02:19</span></a><em></em></dd>
 	        <dt><a href="#">앉아</a></dt>
 	        <dd class="desc"><a href="#">강아지가 앉아를 알아듣습니다</a></dd>
 	        <dd class="url"><iframe src="https://www.youtube.com/embed/qG3cZgje2CE?rel=0"></iframe></dd>
 	    </dl>
 	
 	    <dl class="movs">
-	     <dd class="thumb"><a href="#"><img src="imgs/dog/dog1.jpg" alt="" width="100%" height="100%"><span class="time">02:22</span></a><em></em></dd>
+	     <dd class="thumb"><a href="#"><img src="imgs/dog/dogwait.jpg" alt="" width="100%" height="100%"><span class="time">02:22</span></a><em></em></dd>
 	        <dt><a href="#">기다려</a></dt>
 	        <dd class="desc"><a href="#">강아지가 기다려를 알아듣습니다</a></dd>
 	        <dd class="url"><iframe src="https://www.youtube.com/embed/aFojR9xDl30?rel=0"></iframe></dd>
 	    </dl>
 	
 	    <dl class="movs">
-	     <dd class="thumb"><a href="#"><img src="imgs/dog/dog1.jpg" alt="" width ="100%"  height="100%"><span class="time">02:16</span></a><em></em></dd>
+	     <dd class="thumb"><a href="#"><img src="imgs/dog/Getdown.jpg" alt="" width ="100%"  height="100%"><span class="time">02:16</span></a><em></em></dd>
 	        <dt><a href="#">엎드려</a></dt>
 	        <dd class="desc"><a href="#">강아지가 엎드려를 알아듣습니다</a></dd>
 	        <dd class="url"><iframe src="https://www.youtube.com/embed/q9JscWEpBpI?rel=0"></iframe></dd>
 	    </dl>
 	    
 	     <dl class="movs">
-	     <dd class="thumb"><a href="#"><img src="imgs/dog/dog1.jpg" alt="" width ="100%"  height="100%"><span class="time">02:21</span></a><em></em></dd>
+	     <dd class="thumb"><a href="#"><img src="imgs/dog/doghand.jpg" alt="" width ="100%"  height="100px"><span class="time">02:21</span></a><em></em></dd>
 	        <dt><a href="#">손</a></dt>
 	        <dd class="desc"><a href="#">강아지가 주인에게 손을 줍니다</a></dd>
 	        <dd class="url"><iframe src="https://www.youtube.com/embed/1s-V_JMmfhk?rel=0"></iframe></dd>
 	    </dl>
 	    <dl class="movs">
-	     <dd class="thumb"><a href="#"><img src="imgs/dog/dog1.jpg" alt="" width ="100%"  height="100%"><span class="time">05:32</span></a><em></em></dd>
+	     <dd class="thumb"><a href="#"><img src="imgs/dog/dogcry.jpg" alt="" width ="100%"  height="100px"><span class="time">05:32</span></a><em></em></dd>
 	        <dt><a href="#">짖기</a></dt>
 	        <dd class="desc"><a href="#">강아지가 짖어 하면 짖습니다</a></dd>
 	        <dd class="url"><iframe src="https://www.youtube.com/embed/LuGkDzv1Kjc?rel=0"></iframe></dd>

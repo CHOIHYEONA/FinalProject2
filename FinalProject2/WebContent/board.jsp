@@ -142,7 +142,8 @@ System.out.print(board_list.size());
 			
 				<br><br><br><br><br>
 			<br><br><br><br><br>
-			<div id = "img">
+			    <pre>               닉네임                                                 닉네임</pre>	
+			  <div id = "img">
 			 <table style = "font-size : 20px;">
 				<%for(int i =0;i<board_list.size();i++){
 					

@@ -134,34 +134,34 @@ customersVO info = (customersVO)session.getAttribute("info");
 <div id="list">
 
     <dl class="movs">
-     <dd class="thumb"><a href="#"><img src="imgs/cat/cat7.png" alt="" width ="100%"  height="100%"><span class="time">06:27</span></a><em></em></dd>
+     <dd class="thumb"><a href="#"><img src="imgs/cat/catsit.jpg" alt="" width ="100%"  height="100px"><span class="time">06:27</span></a><em></em></dd>
         <dt><a href="#">앉아</a></dt>
         <dd class="desc"><a href="#">고양이가 앉아를 알아듣습니다</a></dd>
         <dd class="url"><iframe src="https://www.youtube.com/embed/C9tJVVUx_VY?rel=0"></iframe></dd>
     </dl>
 
     <dl class="movs">
-     <dd class="thumb"><a href="#"><img src="imgs/cat/cat7.png" alt="" width="100%" height="100%"><span class="time">02:22</span></a><em></em></dd>
+     <dd class="thumb"><a href="#"><img src="imgs/cat/catwait.jpg" alt="" width="100%" height="100px"><span class="time">02:22</span></a><em></em></dd>
         <dt><a href="#">기다려</a></dt>
         <dd class="desc"><a href="#">고양이가 기다려를 알아듣습니다</a></dd>
         <dd class="url"><iframe src="https://www.youtube.com/embed/w6tB3S5Hxc4?rel=0"></iframe></dd>
     </dl>
 
     <dl class="movs">
-     <dd class="thumb"><a href="#"><img src="imgs/cat/cat7.png" alt="" width ="100%"  height="100%"><span class="time">02:16</span></a><em></em></dd>
+     <dd class="thumb"><a href="#"><img src="imgs/cat/catdownsit.jpg" alt="" width ="100%"  height="100px"><span class="time">02:16</span></a><em></em></dd>
         <dt><a href="#">엎드려</a></dt>
         <dd class="desc"><a href="#">고양이가 엎드려를 알아듣습니다</a></dd>
         <dd class="url"><iframe src="https://www.youtube.com/embed/q9JscWEpBpI?rel=0"></iframe></dd>
     </dl>
     
      <dl class="movs">
-     <dd class="thumb"><a href="#"><img src="imgs/cat/cat7.png" alt="" width ="100%"  height="100%"><span class="time">02:21</span></a><em></em></dd>
+     <dd class="thumb"><a href="#"><img src="imgs/cat/cathand.jpg" alt="" width ="100%"  height="100px"><span class="time">02:21</span></a><em></em></dd>
         <dt><a href="#">손</a></dt>
         <dd class="desc"><a href="#">고양이가 주인에게 손을 줍니다</a></dd>
         <dd class="url"><iframe src="https://www.youtube.com/embed/EbL3qNLEPhk?rel=0"></iframe></dd>
     </dl>
     <dl class="movs">
-     <dd class="thumb"><a href="#"><img src="imgs/cat/cat7.png" alt="" width ="100%"  height="100%"><span class="time">05:32</span></a><em></em></dd>
+     <dd class="thumb"><a href="#"><img src="imgs/cat/catcry.jpg" alt="" width ="100%"  height="100px"><span class="time">05:32</span></a><em></em></dd>
         <dt><a href="#">짖기</a></dt>
         <dd class="desc"><a href="#">고양이가 짖어 하면 짖습니다</a></dd>
         <dd class="url"><iframe src="https://www.youtube.com/embed/LuGkDzv1Kjc?rel=0"></iframe></dd>

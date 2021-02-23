@@ -6,8 +6,11 @@
 <head>
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=" shortcut icon" href="imgs/favicon.ico">
+<link rel="icon" href="imgs/favicon.ico">
 <title>강아지 종류</title>
 <link rel="stylesheet" href="css/catgroup.css">
+
 <style type="text/css">
 
 
@@ -162,10 +165,10 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 
 	<!-- 강아지 품종별 3분류 -->
-<div id="s_left" class="img_shadow"><a href="dgroup_s.jsp"> 
+<div id="s_left" class="img_shadow"><a href="cgroup_short.jsp"> 
 <img src="imgs/group/catgroup1.png"></a></div>
 
-<div id="s_right" class="img_shadow"><a href="dgroup_l.jsp">
+<div id="s_right" class="img_shadow"><a href="cgroup_long.jsp">
 <img src="imgs/group/catgroup2.png"></a></div>
 
 		
