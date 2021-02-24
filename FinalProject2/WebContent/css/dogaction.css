@@ -173,7 +173,9 @@ div {
    background-color: white;
    
 }
-
+#mainFrame>div>a>img{
+	border-radius: 10px;
+}
 /*--------상단 메뉴--------*/
 #topMenu {
 
