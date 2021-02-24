@@ -144,6 +144,22 @@ public class boardDAO {
 		}
 		return cnt;
 	}
+	public void updatecount(int bn) {
+		try {
+			conn();
+			String sql = "update board2 set b_count =b_count+1 where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, bn);
+			
+			cnt = psmt.executeUpdate();
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		
+	}
 	public int updateLike(int bn) {
 		try {
 			conn();
