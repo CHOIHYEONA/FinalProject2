@@ -124,7 +124,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 	
 	
   <div id="player">
- <div id="player_screen"><div class="top_img"><img src="imgs/cat/cat6.png" alt="" width ="100%"  height="100%"></div><iframe src="http://www.youtube.com/embed/hrCfpDLFU5Q?rel=0" width="400" height="225" frameborder="0" allowfullscreen="true"></iframe></div>
+ <div id="player_screen"><div class="top_img"><img src="imgs/cat/cat6.png" alt="" width ="100%"  height="100%"></div><iframe src="https://www.youtube.com/embed/C9tJVVUx_VY?rel=0" width="400" height="225" frameborder="0" allowfullscreen="true"></iframe></div>
     <dl id="player_text">
      <dt><a href="#">고양이 훈련영상 입니다.</a></dt>
         <dd><a href="#">고양이의 기본 훈련 영상을 알려줍니다</a></dd>
