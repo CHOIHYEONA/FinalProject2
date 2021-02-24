@@ -195,7 +195,8 @@ comm_list =  comm_dao.selectData(boardUid);
 						</tr>
 		  				<tr>
 							<td>조회수 <%=vo.getB_count() %></td>
-							<td><input id="like_btn" type="button" value="좋아요" onclick = "like()" style=" float: right;">
+							<td>
+							<input id="like_btn" type="image" src = "imgs/like.png" value = "좋아요" onclick = "like()" style=" width : 20px; height :20px;float: right;">
 							<span id="like_result"></span>
 							</td>
 						</tr>
@@ -214,7 +215,7 @@ comm_list =  comm_dao.selectData(boardUid);
                        <hr>
                        <%for(int i=0;i<comm_list.size();i++){ %>
                        <div>
-                       <span><%=name %></span><br>
+                       <span><%=name %>님</span><br>
                        <span><%=comm_list.get(i).getC_content()%></span><br>
                        <span><%=comm_list.get(i).getC_date() %></span>
                        <br>
@@ -255,6 +256,7 @@ comm_list =  comm_dao.selectData(boardUid);
 					result.innerHTML = data;
 					
 					var btn_like = document.getElementById("like_btn");
+					btn_like.src = "imgs/redlike.png"
 					btn_like.value = "좋아요취소"
 					
 				},
@@ -274,6 +276,7 @@ comm_list =  comm_dao.selectData(boardUid);
 					result.innerHTML = data;
 					
 					var btn_like = document.getElementById("like_btn");
+					btn_like.src = "imgs/like.png"
 					btn_like.value = "좋아요"
 				},
 				error : function(){
