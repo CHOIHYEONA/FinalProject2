@@ -1,5 +1,8 @@
 @charset "EUC-KR";
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+#main-content>p{font-family: 'Noto Sans KR', sans-serif;}\
 
 ul, li{
 	list-style:none;
@@ -166,7 +169,8 @@ div {
 }
 
 #main-content>ul>li{
-	list-style:circle;
+	list-style:disc;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 #main-content>p{
