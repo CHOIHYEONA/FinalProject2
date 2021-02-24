@@ -16,7 +16,7 @@ public class calendarServiceCon extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("calendarServiceCon");
 		
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("utf-8");
 
 		HttpSession session=request.getSession();
 		customersVO info = (customersVO)session.getAttribute("info");
@@ -25,7 +25,7 @@ public class calendarServiceCon extends HttpServlet {
 		String text = request.getParameter("dotext");
 		int userUid = info.getUserUid();
 		System.out.println(date);
-		System.out.println(text);
+		System.out.println("!!:"+text);
 		
 		calendarDAO dao = new calendarDAO();
 		int cnt = dao.insertData(date, text, userUid);

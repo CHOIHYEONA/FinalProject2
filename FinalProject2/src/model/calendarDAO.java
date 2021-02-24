@@ -84,7 +84,7 @@ public class calendarDAO {
 			conn();
 			String sql = "insert into CALENDAR values(CALNUM.NEXTVAL,?,?,?)";
 			psmt = conn.prepareStatement(sql);
-			
+			System.out.println("dao : "+text);
 			psmt.setString(1, date);
 			psmt.setString(2, text);
 			psmt.setInt(3, userUid);
