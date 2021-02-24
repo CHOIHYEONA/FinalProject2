@@ -249,4 +249,24 @@ public class boardDAO {
 		}
 		return cnt;
 	}
+	public int deleteboard(int boardUid) {
+		try {
+			conn();
+			String sql = "delete from board2 where board_Uid =?";
+			
+			psmt = conn.prepareStatement(sql);
+			
+			psmt.setInt(1, boardUid);
+			
+			cnt = psmt.executeUpdate();
+			
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
+	}
 }
