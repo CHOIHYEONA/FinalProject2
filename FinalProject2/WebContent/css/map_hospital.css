@@ -12,6 +12,10 @@ a{
 	color:inherit;
 }
 
+.myinfo {
+	text-align : center;
+	width : 130px;
+}
 
 body {
    margin: 0px;
