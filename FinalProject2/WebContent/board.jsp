@@ -80,7 +80,7 @@ System.out.print(board_list.size());
 						<a href="map_hospital.jsp">장소</a>
 						<ul class="dep2">
 							<li><a href="map_hospital.jsp">동물병원</a> </li>
-							<li><a href="">공공장소</a> </li>
+							<li><a href="map_place.jsp">동반가능장소</a> </li>
 							<li><a href="map_walk.jsp">산책로</a> </li>
 						</ul>					
 					</li>

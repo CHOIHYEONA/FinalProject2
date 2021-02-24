@@ -17,6 +17,7 @@ public class calendarServiceCon extends HttpServlet {
 		System.out.println("calendarServiceCon");
 		
 		request.setCharacterEncoding("euc-kr");
+
 		HttpSession session=request.getSession();
 		customersVO info = (customersVO)session.getAttribute("info");
 		
@@ -30,7 +31,9 @@ public class calendarServiceCon extends HttpServlet {
 		int cnt = dao.insertData(date, text, userUid);
 		
 		if(cnt>0) {
+			
 			System.out.println("자료등록ㅇㅇ! ");
+			
 			
 		}
 		else {
