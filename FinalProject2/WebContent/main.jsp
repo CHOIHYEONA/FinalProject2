@@ -43,14 +43,14 @@ if(cal_list.size()>0){
 String c_date = cal_list.get(0).getCa_date();
 	if(date.equals(c_date)){
 		for(int i=0 ; i<cal_list.size();i++){
-		String content = cal_list.get(i).getCa_date() + "은 "+ cal_list.get(i).getCa_text() +"하는 날 입니다." ;
+		String content = "오늘의 일정은 "+ cal_list.get(i).getCa_text() ;
 					
 		%>
-<script type = "text/javascript">
-var content = "<%=content%>";
-alert(content);
+		<script type = "text/javascript">
+			var content = "<%=content%>";
+			alert(content);
 
-</script>
+		</script>
 <%
 		}
 	}
