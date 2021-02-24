@@ -588,7 +588,7 @@ div {
 /*-- 인기커뮤니티 사진 --*/
 #mainContents3>div>a>img {
    width: 246px;
-   height: 246px;
+   height: 200px;
    border-radius: 10px;
 }
 

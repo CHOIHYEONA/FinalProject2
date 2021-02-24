@@ -78,11 +78,7 @@ board_list = dao.getList();
             </ul>
 			<%}else{ %>            
             <ul>
-            <li>
-            <a href="login.jsp" 
-   onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">클릭 시 팝업 창으로 이동합니다
-</a>
-</li>
+ 
                <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
                <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
             </ul>
