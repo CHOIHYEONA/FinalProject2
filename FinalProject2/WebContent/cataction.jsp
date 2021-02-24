@@ -132,14 +132,14 @@ customersVO info = (customersVO)session.getAttribute("info");
 				
 			</div>	
 		<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px; margin-top: 30px;">
-		<a href="https://mypetlife.co.kr/96057/"><img src= "imgs/cat/cat2.jpg" width ="100%"  height="300"></a>
+		<a href="cataction-page.jsp"><img src= "imgs/cat/cat2.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 			<div
 				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px; margin-top: 30px;">
 								<br><br><br><br>
-				<h2 class="post-title"><a href="https://mypetlife.co.kr/96057/">고양이가 심심할때 하는 행동은?</a></h2>
+				<h2 class="post-title"><a href="cataction-page.jsp">고양이가 심심할때 하는 행동은?</a></h2>
 				<p class="post-excerpt">고양이는 하루에 3분의 2를 거의 자면서 보내는데요. 물론 이렇게 잠을 자고 휴식을 취하는 시간은 고양이에게 매우 소중한 시간이예요. 하지만 매일 반복되는 일상은 고양이를 심심하게 할 수 있어요. 고양이가 심심할 때 보이는 행동을 알아 두고 적절한 대처를 해주도록 합시다…</p>
 				
 			</div>
