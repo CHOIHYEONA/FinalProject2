@@ -88,8 +88,8 @@
       <div id="mainFrame">
       
 		<br><br><br><br><br><br><br><br><br>
-		<span style = " font-size:3em; margin-left: 15px;">
-		강아지 구토 유도, 과산화수소로 하면 안 되는 이유는?
+		<span style = "font-size:3em;">
+		강아지 구토 유도,<br> 과산화수소로 하면 안 되는 이유는?
 		</span>
 		<br>
 		<hr>
