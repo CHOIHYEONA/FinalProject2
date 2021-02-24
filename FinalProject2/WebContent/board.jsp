@@ -153,7 +153,7 @@ System.out.print(board_list.size());
 					newLine++;
 					%>
 					<td width = "100"></td>
-			 		<td align = "center"><a href = "boardone.jsp?boardUid=<%=board_list.get(i).getBoardUid()%>"><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
+			 		<td align = "center"><a id = "title" href = "boardone.jsp?boardUid=<%=board_list.get(i).getBoardUid()%>"><img src="./foldername/<%=board_list.get(i).getImgName()%>" width = "270" height = "270">
 			 		<br>
 			 		<%=board_list.get(i).getB_title() %></a>
 			 		<br><br><br><br><br><br>

@@ -1,6 +1,7 @@
 @charset "EUC-KR";
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 #mainFrame>span{font-family: 'Do Hyeon', Sans Serif;};
 
 ul, li{
@@ -11,6 +12,14 @@ a{
 	color:inherit;
 }
 
+#title, #submit, #cancel{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 20px;
+	}
+#ex_filename1, #content {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+}
 
 body {
    margin: 0px;
