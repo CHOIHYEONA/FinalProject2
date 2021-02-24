@@ -165,9 +165,13 @@ comm_list =  comm_dao.selectData(boardUid);
 						</tr> 
 						    
 		  				<tr>
-		  					<td colspan = "2"><img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
+		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "게시물수정" style = "float:right;"></a>
+		  					<td colspan = "2">
+		  					<img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
+		  					</td>
 		  					<br><br>
 		  				</tr>
+		  				
 		  				
 		  				<tr >
 							<td id = "b_content" colspan = "2">

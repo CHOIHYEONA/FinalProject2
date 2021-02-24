@@ -211,4 +211,42 @@ public class boardDAO {
 		}
 		return cnt;
 	}
+	public int updateall(boardVO vo2) {
+		
+		try {
+			conn();
+			String sql = "update board2 set b_title = ?,imgName = ?, b_content = ? where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, vo2.getB_title());
+			psmt.setString(2, vo2.getImgName());
+			psmt.setString(3, vo2.getB_content());
+			psmt.setInt(4, vo2.getBoardUid());
+			
+			cnt = psmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
+	}
+	public int update(boardVO vo2) {
+		try {
+			conn();
+			String sql = "update board2 set b_title = ?, b_content = ? where board_Uid = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, vo2.getB_title());
+			psmt.setString(2, vo2.getB_content());
+			psmt.setInt(3, vo2.getBoardUid());
+			
+			cnt = psmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
+	}
 }
