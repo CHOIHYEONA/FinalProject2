@@ -218,7 +218,7 @@ if (navigator.geolocation) {
             lon = position.coords.longitude; // 경도
         
         var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-            message = '<div style="padding:5px; width:100px;"> 현재위치 </div>'; // 인포윈도우에 표시될 내용입니다
+            message = '<div style="padding:5px;"> 현재위치 </div>'; // 인포윈도우에 표시될 내용입니다
         
         // 마커와 인포윈도우를 표시합니다
         displayMarker(locPosition, message);
@@ -253,30 +253,12 @@ function displayMarker(locPosition, message) {
     });
     
     // 인포윈도우를 마커위에 표시합니다 
-    //infowindow.open(map, marker);
+    infowindow.open(map, marker);
     
     // 지도 중심좌표를 접속위치로 변경합니다
     map.setCenter(locPosition);      
 } 
-<!--
-//================== 내 위치가 제대로 안떠서 광주에 임의의 내 위치 표시=====================
-var imageSrc = './imgs/map/mylocation.png', // 마커이미지의 주소입니다    
-imageSize = new kakao.maps.Size(38, 42), // 마커이미지의 크기입니다
-imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-  
-//마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-markerPosition = new kakao.maps.LatLng(35.1516879822425, 126.86009779838625); // 마커가 표시될 위치입니다
 
-//마커를 생성합니다
-var marker1 = new kakao.maps.Marker({
-position: markerPosition, 
-image: markerImage // 마커이미지 설정 
-});
-
-//마커가 지도 위에 표시되도록 설정합니다
-marker1.setMap(map);  
--->
 // ==========================================================
 
 // 키워드로 장소를 검색합니다
