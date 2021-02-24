@@ -29,7 +29,7 @@ div {
 .frame {
    float: none;
    width: 1200px;
-   height: 2100px;
+   height: 3600px;
    margin: auto;
    background-color: white;
 }
@@ -251,4 +251,29 @@ div {
 
   position: relative;
       color: white;
+}
+
+.top-btn{
+position: fixed;
+    right: 150px;
+    bottom: 70px;
+    border: 0;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    /*
+    background-image: url(../images/icon/icon_topbt.png); 
+    background-repeat: no-repeat;
+    background-position: center 18px;
+    font-family: 'NanumSquareRoundB';
+    */
+    box-shadow: rgb(90 93 96 / 15%) 0px 2px 5px;
+    font-size: 13px;
+    color: #393837;
+    padding-top: 0px;
+    z-index: 1;
+    outline: none;
+    text-align:center;
+    line-height: 60px;
 }
