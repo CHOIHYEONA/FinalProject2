@@ -1,5 +1,8 @@
 
 
+<%@page import="java.util.Calendar"%>
+<%@page import="model.calendarVO"%>
+<%@page import="model.calendarDAO"%>
 <%@page import="model.boardVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.boardDAO"%>
@@ -23,8 +26,40 @@ customersVO info = (customersVO)session.getAttribute("info");
 boardDAO dao = new boardDAO();
 ArrayList<boardVO> board_list = new ArrayList<boardVO>();
 
-board_list = dao.getList();
-%>
+calendarDAO c_dao = new calendarDAO();
+ArrayList<calendarVO> cal_list = new ArrayList<calendarVO>();
+
+Calendar cal = Calendar.getInstance();
+String year =  String.valueOf(cal.get(Calendar.YEAR));
+String month =  String.valueOf(cal.get(Calendar.MONTH)+1);
+String day= String.valueOf(cal.get(Calendar.DATE));
+String date = year+"-"+month+"-"+day;
+System.out.print(date);
+
+if(info!= null) {
+	int userUid = info.getUserUid();
+cal_list = c_dao.getList(date,userUid);
+if(cal_list.size()>0){
+String c_date = cal_list.get(0).getCa_date();
+	if(date.equals(c_date)){
+		for(int i=0 ; i<cal_list.size();i++){
+		String content = cal_list.get(i).getCa_date() + "은 "+ cal_list.get(i).getCa_text() +"하는 날 입니다." ;
+					
+		%>
+<script type = "text/javascript">
+var content = "<%=content%>";
+alert(content);
+
+</script>
+<%
+		}
+	}
+	}
+}
+
+board_list = dao.getList(); 
+
+%> 
    <div class="frame">
 
       <!---------- 페이지 상단 영역 ---------->

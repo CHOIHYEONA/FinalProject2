@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class calendarDAO {
 
@@ -48,6 +49,36 @@ public class calendarDAO {
 					e.printStackTrace();
 				}
 	}
+	public ArrayList<calendarVO> getList(String date, int userUid){
+		ArrayList<calendarVO> c_list = new ArrayList<calendarVO>();
+		try {
+			conn();
+			
+			String sql = "select * from calendar where CA_DATE = ? and USER_UID=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, date);
+			psmt.setInt(2, userUid);
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int calUid = rs.getInt("CAL_UID");
+				String ca_date = rs.getString("CA_DATE");
+				String ca_text = rs.getString("CA_TEXT");
+				
+				calendarVO vo = new calendarVO(calUid, ca_date, ca_text, userUid);
+				c_list.add(vo);
+			
+		}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			close();
+		}
+		return c_list;
+		
+	}
+	
 	public int insertData(String date, String text, int userUid) {
 		try {
 			conn();
