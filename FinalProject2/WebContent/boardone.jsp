@@ -39,6 +39,7 @@ String name = info.getUserName();
 
 int userUid = info.getUserUid();
 
+int board_num = Integer.parseInt(request.getParameter("boardUid"));
 boardVO vo = dao.getOneBoard(boardUid);
 int userUid2 = vo.getUserUid(); 
 commDAO comm_dao = new commDAO();
@@ -194,7 +195,7 @@ comm_list =  comm_dao.selectData(boardUid);
 						</tr>
 		  				<tr>
 							<td>조회수 <%=vo.getB_count() %></td>
-							<td><input id="like_btn" type="button" value="좋아요" onclick = "like()" style="  float: right;">
+							<td><input id="like_btn" type="button" value="좋아요" onclick = "like()" style=" float: right;">
 							<span id="like_result"></span>
 							</td>
 						</tr>
@@ -238,7 +239,7 @@ comm_list =  comm_dao.selectData(boardUid);
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script type = "text/javascript">
 			function like() {
-			var board_num = document.getElementById("board_num");
+			var board_num = <%= boardUid%>
 			var btn_like = document.getElementById("like_btn");
 			//스크립트에서 var로 선언하는 변수는 겹쳐도 된다.
 			//스크립트안에서는 ==된다..
@@ -246,7 +247,7 @@ comm_list =  comm_dao.selectData(boardUid);
 			$.ajax({
 				type : "post", //전송방식
 				url : "likeService",//서버파일이름
-				data : {"board_num":board_num.innerHTML}, //서버로 보내는 값
+				data : {"board_num":<%= boardUid%>}, //서버로 보내는 값
 				dataType : "text", //서버에서 오는 응답방식
 				success: function(data){
 					//alert(data);
@@ -265,7 +266,7 @@ comm_list =  comm_dao.selectData(boardUid);
 			$.ajax({
 				type : "post", //전송방식
 				url : "dislikeService",//서버파일이름
-				data : {"board_num":board_num.innerHTML}, //서버로 보내는 값
+				data : {"board_num":<%= boardUid%>}, //서버로 보내는 값
 				dataType : "text", //서버에서 오는 응답방식
 				success: function(data){
 					//alert(data);
