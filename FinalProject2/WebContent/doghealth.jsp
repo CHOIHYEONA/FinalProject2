@@ -119,14 +119,14 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 		<br>
 		<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px;">
-		<a href="https://mypetlife.co.kr/97927/"><img src= "imgs/dog/dog4.jpg" width ="100%"  height="300"></a>
+		<a href="doghealth-page.jsp"><img src= "imgs/dog/dog4.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>
 			<div
 				style="width: 50%; height: 300px; border: 0; float: right; margin-right: 100px;">
 								<br><br><br><br>
-				<h2 class="post-title"><a href="https://mypetlife.co.kr/97927/">강아지 구토 유도, 과산화수소로 하면 안 되는 이유는?</a></h2>
+				<h2 class="post-title"><a href="doghealth-page.jsp">강아지 구토 유도, 과산화수소로 하면 안 되는 이유는?</a></h2>
 				<p class="post-excerpt">포도나 초콜릿 같은 음식은 강아지에게 중독 증상을 일으킬 수 있어 매우 위험합니다. 그래서 이런 음식을 강아지가 먹은 경우, 응급 처치로 …</p>
 				
 			</div>	
