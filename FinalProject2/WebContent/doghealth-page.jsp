@@ -1,14 +1,14 @@
 
 <%@page import="model.customersVO"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
-<meta charset="EUC-KR">
-<title>¸Û³ÉÀÌ-°Ç°­</title>
+<meta charset="UTF-8">
+<title>ë©ëƒ¥ì´-ê±´ê°•</title>
 <style>
 
 
@@ -25,15 +25,15 @@ customersVO info = (customersVO)session.getAttribute("info");
 %>
    <div class="frame">
 
-      <!---------- ÆäÀÌÁö »ó´Ü ¿µ¿ª ---------->
+      <!---------- íŽ˜ì´ì§€ ìƒë‹¨ ì˜ì—­ ---------->
       <div class="topFrame">
 
 
-         <!-- ÃÖ»ó´Ü ¿µ¿ª -->
+         <!-- ìµœìƒë‹¨ ì˜ì—­ -->
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
             
-            <!-- ·Î±×ÀÎ¼º°ø½Ã -->
+            <!-- ë¡œê·¸ì¸ì„±ê³µì‹œ -->
             <%if(info!=null){ %>
             <ul>
                <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
@@ -49,41 +49,41 @@ customersVO info = (customersVO)session.getAttribute("info");
 
 
 
-			<!-- ¹ØÁÙ µðÀÚÀÎ -->
+			<!-- ë°‘ì¤„ ë””ìžì¸ -->
 			<div class="UnderBar"></div>
 			
 			
-          <!-- Ä«Å×°í¸® ¼±ÅÃ ¸ñ·Ï -->
+          <!-- ì¹´í…Œê³ ë¦¬ ì„ íƒ ëª©ë¡ -->
 			<div id="topMenu">
 				<ul class="dep1">
 					<li>
-						<a href="doghealth.jsp">°­¾ÆÁö</a>
+						<a href="doghealth.jsp">ê°•ì•„ì§€</a>
 						<ul class="dep2">
-							<li><a href="doghealth.jsp">°Ç°­</a> </li>
-							<li><a href="dogaction.jsp">Çàµ¿</a> </li>
-							<li><a href="dogtraining.jsp">ÈÆ·Ã</a> </li>
-							<li><a href="group.jsp">Ç°Á¾</a> </li>
+							<li><a href="doghealth.jsp">ê±´ê°•</a> </li>
+							<li><a href="dogaction.jsp">í–‰ë™</a> </li>
+							<li><a href="dogtraining.jsp">í›ˆë ¨</a> </li>
+							<li><a href="group.jsp">í’ˆì¢…</a> </li>
 						</ul>
 					</li>
 					<li>
-						<a href="cathealth.jsp">°í¾çÀÌ</a>
+						<a href="cathealth.jsp">ê³ ì–‘ì´</a>
 						<ul class="dep2">
-							<li><a href="cathealth.jsp">°Ç°­</a> </li>
-							<li><a href="cataction.jsp">Çàµ¿</a> </li>
-							<li><a href="cattraining.jsp">ÈÆ·Ã</a> </li>
-							<li><a href="catgroup.jsp">Ç°Á¾</a> </li>
+							<li><a href="cathealth.jsp">ê±´ê°•</a> </li>
+							<li><a href="cataction.jsp">í–‰ë™</a> </li>
+							<li><a href="cattraining.jsp">í›ˆë ¨</a> </li>
+							<li><a href="catgroup.jsp">í’ˆì¢…</a> </li>
 						</ul>
 					</li>
 					<li>
-						<a href="map_hospital.jsp">Àå¼Ò</a>
+						<a href="map_hospital.jsp">ìž¥ì†Œ</a>
 						<ul class="dep2">
-							<li><a href="map_hospital.jsp">µ¿¹°º´¿ø</a> </li>
-							<li><a href="map_place.jsp">µ¿¹Ý°¡´ÉÀå¼Ò</a> </li>
-							<li><a href="map_walk.jsp">»êÃ¥·Î</a> </li>
+							<li><a href="map_hospital.jsp">ë™ë¬¼ë³‘ì›</a> </li>
+							<li><a href="map_place.jsp">ë™ë°˜ê°€ëŠ¥ìž¥ì†Œ</a> </li>
+							<li><a href="map_walk.jsp">ì‚°ì±…ë¡œ</a> </li>
 						</ul>					
 					</li>
 					<li>
-						<a href="board.jsp">Ä¿¹Â´ÏÆ¼</a>
+						<a href="board.jsp">ì»¤ë®¤ë‹ˆí‹°</a>
 						<ul class="dep2">
 						
 						</ul>					
@@ -92,9 +92,9 @@ customersVO info = (customersVO)session.getAttribute("info");
 					
 					<li>
 						<%if(info!= null){ %>
-						<a href="calendar.html">Ä¶¸°´õ</a>
+						<a href="calendar.html">ìº˜ë¦°ë”</a>
 						<%}else{ %>
-						<a href="login.jsp" onclick = " alert('·Î±×ÀÎÀ» ÇØÁÖ¼¼¿ä');return false;">Ä¶¸°´õ</a>
+						<a href="login.jsp" onclick = " alert('ë¡œê·¸ì¸ì„ í•´ì£¼ì„¸ìš”');return false;">ìº˜ë¦°ë”</a>
 						<%} %>
 						<ul class="dep2">
 						
@@ -102,7 +102,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 					
 					</li>					
 					<li>
-						<a href="shop2.jsp">Æê ¿ëÇ°¼¥</a>
+						<a href="shop2.jsp">íŽ« ìš©í’ˆìƒµ</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -115,36 +115,39 @@ customersVO info = (customersVO)session.getAttribute("info");
          
       </div>
 		
-		      <!---------- ÆäÀÌÁö Áß°£ ¿µ¿ª ---------->
+		      <!---------- íŽ˜ì´ì§€ ì¤‘ê°„ ì˜ì—­ ---------->
       <div id="mainFrame">
       
 		<br><br><br><br><br><br><br><br><br>
 		<span style = "font-size:3em;">
-		°­¾ÆÁö ±¸Åä À¯µµ,<br> °ú»êÈ­¼ö¼Ò·Î ÇÏ¸é ¾È µÇ´Â ÀÌÀ¯´Â?
+		ê°•ì•„ì§€ êµ¬í†  ìœ ë„,<br> ê³¼ì‚°í™”ìˆ˜ì†Œë¡œ í•˜ë©´ ì•ˆ ë˜ëŠ” ì´ìœ ëŠ”?
 		</span>
 		<br>
 		<hr>
 		
 		<div id ="main-content">
-			<p> &nbsp;Æ÷µµ³ª ÃÊÄÝ¸´ °°Àº À½½ÄÀº °­¾ÆÁö¿¡°Ô Áßµ¶ Áõ»óÀ» ÀÏÀ¸Å³ ¼ö ÀÖ¾î ¸Å¿ì À§ÇèÇÕ´Ï´Ù. ±×·¡¼­ ÀÌ·± À½½ÄÀ» °­¾ÆÁö°¡ ¸ÔÀº °æ¿ì, ÀÀ±Þ Ã³Ä¡·Î °ú»êÈ­¼ö¼Ò Èñ¼®¾×À» »ç¿ëÇÏ¿© ±¸Åä À¯µµ¸¦ ÇÏ±âµµ ÇÏÁÒ. ÇÏÁö¸¸ Áý¿¡¼­ °ú»êÈ­¼ö¼Ò Èñ¼®¾×À¸·Î °­¾ÆÁö ±¸Åä À¯µµ ½Ãµµ¸¦ ÇÏ´Â °Ç ¸Å¿ì À§ÇèÇØ¼­ ÇÏÁö ¾Ê´Â °Ô ÁÁ½À´Ï´Ù.</p>
-			<h2>°­¾ÆÁö ±¸Åä À¯µµ À§ÇèÇÑ ÀÌÀ¯</h2>
-			<h3>1. À§, ½ÄµµÀÇ Á¡¸· ÃâÇ÷</h3>
-			<p>&nbsp; °ú»êÈ­¼ö¼Ò Èñ¼®¾×ÀÌ ÀÀ±Þ Ã³Ä¡¹ýÀÌ µÉ ¼ø ÀÖ¾î¿ä. ÇÏÁö¸¸ °ú»êÈ­¼ö¼Ò´Â À§, ½Äµµ Á¡¸·¿¡ ¸Å¿ì ÀÚ±ØÀûÀÎ È­ÇÐ ¹°ÁúÀÌÁÒ. º´¿ø¿¡¼­ ¿Ã¹Ù¸£°Ô °ú»êÈ­¼ö¼Ò Èñ¼®¾×À¸·Î ±¸Åä À¯µµ¸¦ ÇØµµ, °­¾ÆÁö¿¡ µû¶ó ½Äµµ³ª À§ Á¡¸·¿¡¼­ ÃâÇ÷ÀÌ »ý±â´Â ¾ÆÀÌµéµµ ÀÖ´Ù°í ÇÕ´Ï´Ù.</p>
-			<p>Æ¯È÷ °ú»êÈ­¼ö¼Ò Èñ¼®¾×À» ±ÇÀå·® ÀÌ»ó »ç¿ëÇÑ´Ù¸é Àå±â¿¡ È­»óÀÌ³ª ±Ë¾ç, ½ÉÇÏ¸é »ç¸ÁÀ» ÇÒ °¡´É¼ºµµ ÀÖÀ¸´Ï, Àü¹®°¡ÀÇ Ã³Ä¡¸¦ ¹Þ´Â °Ô ¾ÈÀüÇÕ´Ï´Ù. </p>
-			<h3>2. Áú½ÄÀÇ À§Çè</h3>
-			<p>&nbsp; °­¾ÆÁö ±¸Åä À¯µµ ºÎÀÛ¿ëÀ¸·Î ¿ÀÈ÷·Á ±¸Åä°¡ Æó·Î ³Ñ¾î°¡ Áú½ÄÇÒ ¼ö ÀÖ¾î¿ä. ÀÌ¶§, Æó·Å °°Àº ½É°¢ÇÑ ÇÕº´Áõ¿¡ °É¸± ¼öµµ ÀÖÁÒ. Æ¯È÷ ¼±ÃµÀûÀ¸·Î È£Èí±â°¡ ¾àÇÏ°Ô ÅÂ¾î³µ°Å³ª, ºÒµ¶Ã³·³ ¸Ó¸®°¡ ³³ÀÛÇØ È£Èí±â°¡ ¾àÇÑ ´ÜµÎÁ¾Àº ±¸Åä°¡ ±âµµ·Î ³Ñ¾î°¡±â ½±½À´Ï´Ù. </p>
-			<p>¶ÇÇÑ, °­¾ÆÁö°¡ ÀÚµÎ ¾¾°°ÀÌ Å©°í ³¯Ä«·Î¿î ÀÌ¹°ÁúÀ» »ïÄ×´Ù¸é, ±¸Åä¸¦ ÇÏ¸é¼­ Áú½ÄÀº ¹°·Ð ½Äµµ°¡ Âõ¾îÁú À§Çèµµ ÀÖ¾î¿ä.</p>
-			<h3>3. ÀÀ±Þ Ã³Ä¡ ºÒ°¡´É</h3>
-			<p>&nbsp; °ú»êÈ­¼ö¼Ò Èñ¼®¾×À» »ç¿ëÇßÁö¸¸, °­¾ÆÁö°¡ ±¸Åä¸¦ ÇÏÁö ¾ÊÀ» ¼ö ÀÖ¾î¿ä. ÀÌ¶§, °ú»êÈ­¼ö¼Ò Èñ¼®¾×À» ÅäÇÏÁö ¾ÊÀ¸¸é, À§±Ë¾ç °°Àº ºÎÀÛ¿ëÀÌ »ý±æ ¼ö ÀÖ´Âµ¥¿ä. ±×·¡¼­ ´Ù¸¥ ±¸Åä À¯¹ßÁ¦¸¦ »ç¿ëÇØ ±¸Åä¸¦ À¯µµÇØ¾ß ÇÕ´Ï´Ù. ÇÏÁö¸¸ ÀÌ´Â Àü¹®ÀÇ¾àÇ°ÀÌ±â ¶§¹®¿¡ ²À Àü¹®°¡ÀÇ Ã³Ä¡°¡ ÇÊ¿äÇÏÁÒ.  </p>
-			<p>ÀÌÃ³·³ ÀÀ±Þ »óÈ²ÀÌ »ý°åÀ» ¶§, º¸È£ÀÚ°¡ Áý¿¡¼­ ´ëÃ³ÇÏ±â ¸Å¿ì ¾î·Á¿ö¿ä. µû¶ó¼­ º´¿ø¿¡ ¹æ¹®ÇÏ´Â °Ô ÈÎ¾À ¾ÈÀüÇÑ ¹æ¹ýÀÔ´Ï´Ù. </p>
-			<h3>4. ¹«¾ùÀ» »ïÄ×´ÂÁö ¸ð¸¦ ¼ö ÀÖ¾î</h3>
-			<p>&nbsp; °­¾ÆÁö°¡ ¹«¾ùÀ» »ïÄ×´ÂÁö ¸ð¸£´Â °æ¿ì¿¡µµ ±¸Åä À¯µµ´Â Àý´ë ÇÏ¸é ¾È µÅ¿ä. ¿ÀÈ÷·Á ½Äµµ³ª À§°¡ ´ÙÄ¥ ¼ö ÀÖ±â ¶§¹®ÀÎµ¥¿ä. </p>	
-			<p>Æ¯È÷ °­¾ÆÁö°¡ È­ÇÐ ¹°ÁúÀ» »ïÄ×À» °æ¿ì, È­ÇÐ ¹°ÁúÀÌ °ú»êÈ­¼ö¼Ò¿Í °áÇÕÇÏ¸é Àå±â°¡ µ¥ÀÏ ¼öµµ ÀÖ¾î ÇÔºÎ·Î »ç¿ëÇØ¼± ¾È µË´Ï´Ù.</p>
-			<h2>°­¾ÆÁö ±¸Åä À¯µµ, ÀÌ·² ¶© ±ÝÁö</h2>
-			<p>&nbsp; °­¾ÆÁö »óÅÂ¿¡ µû¶ó °ú»êÈ­¼ö¼Ò Èñ¼®¾×À» ¸Ô¿´À» ¶§, ÇÕº´ÁõÀÌ³ª ÀÀ±Þ »óÈ²ÀÌ ¹ß»ýÇÒ ¼ö ÀÖ¾î¿ä. °­¾ÆÁö ±¸Åä À¯µµ, Æ¯È÷ ¾Æ·¡ÀÇ °æ¿ì Àý´ë ÇØ¼­´Â ¾È µË´Ï´Ù. </p>
-			<ul><li>ÀÇ½ÄÀÌ ¾øÀ½</li><li>ÃÖ±Ù¿¡ ¼ö¼úÀ» ÇÑ °æ¿ì</li><li>¹ßÀÛÀ» ÇÏ°í ÀÖ°Å³ª °¡´É¼ºÀÌ ÀÖ´Â °­¾ÆÁö</li><li>È£Èí °ï¶õ</li><li>ÀÌ¹Ì Åä¸¦ ÇÑ °æ¿ì</li></ul>
-			<h2>±¸Åä À¯µµ´Â º´¿ø¿¡¼­</h2>
-			<p>&nbsp; ÇØ¿ÜÀÇ °æ¿ì ¿ì¸®³ª¶óº¸´Ù µ¿¹° º´¿øÀÌ ÈÎ¾À ¸Ö¾î¼­ ÀÀ±ÞÃ³Ä¡¸¦ ±ÇÇÏ±âµµ ÇØ¿ä. ÇÏÁö¸¸ ºñ±³Àû ¿ì¸®³ª¶óÀÇ °æ¿ì 24½Ã°£ µ¿¹° º´¿øÀ» ½±°Ô Ã£À» ¼ö ÀÖÁÒ. ±×·¯´Ï º´¿ø¿¡ °¥ ¼ö ¾ø´Â Æ¯º°ÇÑ »óÈ²ÀÌ ¾Æ´Ñ °æ¿ì, °¡´ÉÇÑ »¡¸® º´¿øÀ¸·Î °¡ ¾ÈÀüÇÏ°Ô Ã³Ä¡¸¦ ¹Þµµ·Ï ÇØ¿ä.</p>
+			<p> &nbsp;í¬ë„ë‚˜ ì´ˆì½œë¦¿ ê°™ì€ ìŒì‹ì€ ê°•ì•„ì§€ì—ê²Œ ì¤‘ë… ì¦ìƒì„ ì¼ìœ¼í‚¬ ìˆ˜ ìžˆì–´ ë§¤ìš° ìœ„í—˜í•©ë‹ˆë‹¤. ê·¸ëž˜ì„œ ì´ëŸ° ìŒì‹ì„ ê°•ì•„ì§€ê°€ ë¨¹ì€ ê²½ìš°, ì‘ê¸‰ ì²˜ì¹˜ë¡œ ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì„ ì‚¬ìš©í•˜ì—¬ êµ¬í†  ìœ ë„ë¥¼ í•˜ê¸°ë„ í•˜ì£ . í•˜ì§€ë§Œ ì§‘ì—ì„œ ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ìœ¼ë¡œ ê°•ì•„ì§€ êµ¬í†  ìœ ë„ ì‹œë„ë¥¼ í•˜ëŠ” ê±´ ë§¤ìš° ìœ„í—˜í•´ì„œ í•˜ì§€ ì•ŠëŠ” ê²Œ ì¢‹ìŠµë‹ˆë‹¤.</p>
+			<img src = "./imgs/dog/dog100.jpg">
+			<h2>ðŸš¨ê°•ì•„ì§€ êµ¬í†  ìœ ë„ ìœ„í—˜í•œ ì´ìœ ðŸš¨</h2>
+			<h3>1. ìœ„, ì‹ë„ì˜ ì ë§‰ ì¶œí˜ˆðŸ’‰</h3>
+			<p>&nbsp; ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì´ ì‘ê¸‰ ì²˜ì¹˜ë²•ì´ ë  ìˆœ ìžˆì–´ìš”. í•˜ì§€ë§Œ ê³¼ì‚°í™”ìˆ˜ì†ŒëŠ” ìœ„, ì‹ë„ ì ë§‰ì— ë§¤ìš° ìžê·¹ì ì¸ í™”í•™ ë¬¼ì§ˆì´ì£ . ë³‘ì›ì—ì„œ ì˜¬ë°”ë¥´ê²Œ ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ìœ¼ë¡œ êµ¬í†  ìœ ë„ë¥¼ í•´ë„, ê°•ì•„ì§€ì— ë”°ë¼ ì‹ë„ë‚˜ ìœ„ ì ë§‰ì—ì„œ ì¶œí˜ˆì´ ìƒê¸°ëŠ” ì•„ì´ë“¤ë„ ìžˆë‹¤ê³  í•©ë‹ˆë‹¤.</p>
+			<p>íŠ¹ížˆ ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì„ ê¶Œìž¥ëŸ‰ ì´ìƒ ì‚¬ìš©í•œë‹¤ë©´ ìž¥ê¸°ì— í™”ìƒì´ë‚˜ ê¶¤ì–‘, ì‹¬í•˜ë©´ ì‚¬ë§ì„ í•  ê°€ëŠ¥ì„±ë„ ìžˆìœ¼ë‹ˆ, ì „ë¬¸ê°€ì˜ ì²˜ì¹˜ë¥¼ ë°›ëŠ” ê²Œ ì•ˆì „í•©ë‹ˆë‹¤. </p>
+			<h3>2. ì§ˆì‹ì˜ ìœ„í—˜<span aria-label="ðŸ¤¢" role="image">ðŸ¤¢</span></h3>
+			<p>&nbsp; ê°•ì•„ì§€ êµ¬í†  ìœ ë„ ë¶€ìž‘ìš©ìœ¼ë¡œ ì˜¤ížˆë ¤ êµ¬í† ê°€ íë¡œ ë„˜ì–´ê°€ ì§ˆì‹í•  ìˆ˜ ìžˆì–´ìš”. ì´ë•Œ, íë ´ ê°™ì€ ì‹¬ê°í•œ í•©ë³‘ì¦ì— ê±¸ë¦´ ìˆ˜ë„ ìžˆì£ . íŠ¹ížˆ ì„ ì²œì ìœ¼ë¡œ í˜¸í¡ê¸°ê°€ ì•½í•˜ê²Œ íƒœì–´ë‚¬ê±°ë‚˜, ë¶ˆë…ì²˜ëŸ¼ ë¨¸ë¦¬ê°€ ë‚©ìž‘í•´ í˜¸í¡ê¸°ê°€ ì•½í•œ ë‹¨ë‘ì¢…ì€ êµ¬í† ê°€ ê¸°ë„ë¡œ ë„˜ì–´ê°€ê¸° ì‰½ìŠµë‹ˆë‹¤. </p>
+			<p>ë˜í•œ, ê°•ì•„ì§€ê°€ ìžë‘ ì”¨ê°™ì´ í¬ê³  ë‚ ì¹´ë¡œìš´ ì´ë¬¼ì§ˆì„ ì‚¼ì¼°ë‹¤ë©´, êµ¬í† ë¥¼ í•˜ë©´ì„œ ì§ˆì‹ì€ ë¬¼ë¡  ì‹ë„ê°€ ì°¢ì–´ì§ˆ ìœ„í—˜ë„ ìžˆì–´ìš”.</p>
+			<img src = "./imgs/dog/dog101.jpg">
+			<h3>3. ì‘ê¸‰ ì²˜ì¹˜ ë¶ˆê°€ëŠ¥ðŸš‘ </h3>
+			<p>&nbsp; ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì„ ì‚¬ìš©í–ˆì§€ë§Œ, ê°•ì•„ì§€ê°€ êµ¬í† ë¥¼ í•˜ì§€ ì•Šì„ ìˆ˜ ìžˆì–´ìš”. ì´ë•Œ, ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì„ í† í•˜ì§€ ì•Šìœ¼ë©´, ìœ„ê¶¤ì–‘ ê°™ì€ ë¶€ìž‘ìš©ì´ ìƒê¸¸ ìˆ˜ ìžˆëŠ”ë°ìš”. ê·¸ëž˜ì„œ ë‹¤ë¥¸ êµ¬í†  ìœ ë°œì œë¥¼ ì‚¬ìš©í•´ êµ¬í† ë¥¼ ìœ ë„í•´ì•¼ í•©ë‹ˆë‹¤. í•˜ì§€ë§Œ ì´ëŠ” ì „ë¬¸ì˜ì•½í’ˆì´ê¸° ë•Œë¬¸ì— ê¼­ ì „ë¬¸ê°€ì˜ ì²˜ì¹˜ê°€ í•„ìš”í•˜ì£ .  </p>
+			<p>ì´ì²˜ëŸ¼ ì‘ê¸‰ ìƒí™©ì´ ìƒê²¼ì„ ë•Œ, ë³´í˜¸ìžê°€ ì§‘ì—ì„œ ëŒ€ì²˜í•˜ê¸° ë§¤ìš° ì–´ë ¤ì›Œìš”. ë”°ë¼ì„œ ë³‘ì›ì— ë°©ë¬¸í•˜ëŠ” ê²Œ í›¨ì”¬ ì•ˆì „í•œ ë°©ë²•ìž…ë‹ˆë‹¤. </p>
+			<h3>4. ë¬´ì—‡ì„ ì‚¼ì¼°ëŠ”ì§€ ëª¨ë¥¼ ìˆ˜ ìžˆì–´ðŸ˜¥</h3>
+			<p>&nbsp; ê°•ì•„ì§€ê°€ ë¬´ì—‡ì„ ì‚¼ì¼°ëŠ”ì§€ ëª¨ë¥´ëŠ” ê²½ìš°ì—ë„ êµ¬í†  ìœ ë„ëŠ” ì ˆëŒ€ í•˜ë©´ ì•ˆ ë¼ìš”. ì˜¤ížˆë ¤ ì‹ë„ë‚˜ ìœ„ê°€ ë‹¤ì¹  ìˆ˜ ìžˆê¸° ë•Œë¬¸ì¸ë°ìš”. </p>	
+			<p>íŠ¹ížˆ ê°•ì•„ì§€ê°€ í™”í•™ ë¬¼ì§ˆì„ ì‚¼ì¼°ì„ ê²½ìš°, í™”í•™ ë¬¼ì§ˆì´ ê³¼ì‚°í™”ìˆ˜ì†Œì™€ ê²°í•©í•˜ë©´ ìž¥ê¸°ê°€ ë°ì¼ ìˆ˜ë„ ìžˆì–´ í•¨ë¶€ë¡œ ì‚¬ìš©í•´ì„  ì•ˆ ë©ë‹ˆë‹¤.</p>
+			<img src = "./imgs/dog/dog102.jpg">
+			<h2>ðŸš«ê°•ì•„ì§€ êµ¬í†  ìœ ë„, ì´ëŸ´ ë• ê¸ˆì§€</h2>
+			<p>&nbsp; ê°•ì•„ì§€ ìƒíƒœì— ë”°ë¼ ê³¼ì‚°í™”ìˆ˜ì†Œ í¬ì„ì•¡ì„ ë¨¹ì˜€ì„ ë•Œ, í•©ë³‘ì¦ì´ë‚˜ ì‘ê¸‰ ìƒí™©ì´ ë°œìƒí•  ìˆ˜ ìžˆì–´ìš”. ê°•ì•„ì§€ êµ¬í†  ìœ ë„, íŠ¹ížˆ ì•„ëž˜ì˜ ê²½ìš° ì ˆëŒ€ í•´ì„œëŠ” ì•ˆ ë©ë‹ˆë‹¤. </p>
+			<ul><li>ì˜ì‹ì´ ì—†ìŒ</li><li>ìµœê·¼ì— ìˆ˜ìˆ ì„ í•œ ê²½ìš°</li><li>ë°œìž‘ì„ í•˜ê³  ìžˆê±°ë‚˜ ê°€ëŠ¥ì„±ì´ ìžˆëŠ” ê°•ì•„ì§€</li><li>í˜¸í¡ ê³¤ëž€</li><li>ì´ë¯¸ í† ë¥¼ í•œ ê²½ìš°</li></ul>
+			<h2>ðŸ¥êµ¬í†  ìœ ë„ëŠ” ë³‘ì›ì—ì„œ</h2>
+			<p>&nbsp; í•´ì™¸ì˜ ê²½ìš° ìš°ë¦¬ë‚˜ë¼ë³´ë‹¤ ë™ë¬¼ ë³‘ì›ì´ í›¨ì”¬ ë©€ì–´ì„œ ì‘ê¸‰ì²˜ì¹˜ë¥¼ ê¶Œí•˜ê¸°ë„ í•´ìš”. í•˜ì§€ë§Œ ë¹„êµì  ìš°ë¦¬ë‚˜ë¼ì˜ ê²½ìš° 24ì‹œê°„ ë™ë¬¼ ë³‘ì›ì„ ì‰½ê²Œ ì°¾ì„ ìˆ˜ ìžˆì£ . ê·¸ëŸ¬ë‹ˆ ë³‘ì›ì— ê°ˆ ìˆ˜ ì—†ëŠ” íŠ¹ë³„í•œ ìƒí™©ì´ ì•„ë‹Œ ê²½ìš°, ê°€ëŠ¥í•œ ë¹¨ë¦¬ ë³‘ì›ìœ¼ë¡œ ê°€ ì•ˆì „í•˜ê²Œ ì²˜ì¹˜ë¥¼ ë°›ë„ë¡ í•´ìš”.</p>
 		
 		
 		</div>
@@ -157,11 +160,11 @@ customersVO info = (customersVO)session.getAttribute("info");
 	<div id="footermain">
 
 	
-		<!---------- ÆäÀÌÁö ÇÏ´Ü ¿µ¿ª ---------->
+		<!---------- íŽ˜ì´ì§€ í•˜ë‹¨ ì˜ì—­ ---------->
 		<div id="footer">
 			
-			<h3>½º¸¶Æ®ÀÎÀç°³¹ß¿ø IoT À¥ °³¹ßÀÚ ÃÖÁ¾ ÇÁ·ÎÁ§Æ®</h3>
-			<h5>ÃÖÇö¾Æ, °­Áö¾Ö, ±è¼öÁö, ¼ÛÈñÃ¶, °­¼º¹Î</h5>
+			<h3>ìŠ¤ë§ˆíŠ¸ì¸ìž¬ê°œë°œì› IoT ì›¹ ê°œë°œìž ìµœì¢… í”„ë¡œì íŠ¸</h3>
+			<h5>ìµœí˜„ì•„, ê°•ì§€ì• , ê¹€ìˆ˜ì§€, ì†¡í¬ì² , ê°•ì„±ë¯¼</h5>
 		</div>
 	</div>
 			
