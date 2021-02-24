@@ -119,7 +119,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 		<br>
 		<div style="width: 35%; height: 300px; border: 0; float: left; margin-left: 15px;">
-		<a href="https://mypetlife.co.kr/97927/"><img src= "imgs/dog/dog4.jpg" width ="100%"  height="300"></a>
+		<a href="doghealth-page.jsp"><img src= "imgs/dog/dog4.jpg" width ="100%"  height="300"></a>
 		
 
 			</div>

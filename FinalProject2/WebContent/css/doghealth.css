@@ -1,7 +1,10 @@
 @charset "EUC-KR";
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 #mainFrame>span{font-family: 'Do Hyeon', Sans Serif;};
+
 
 ul, li{
 	list-style:none;
@@ -9,6 +12,15 @@ ul, li{
 a{
 	text-decoration:none;
 	color:inherit;
+	
+}
+.post-title>a{
+	font-family: 'Poor Story', cursive;
+	font-size:30px;
+}
+p{
+	font-family: 'Noto Sans KR', sans-serif;
+	
 }
 
 

@@ -1,4 +1,5 @@
 @charset "EUC-KR";
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -22,13 +23,15 @@ div {
    margin: 0px;
  
 }
+#topMenu .dep1>li>a{font-family: 'Hanna', serif;}
+#topMenu .dep2 a{font-family: 'Hanna', serif;}
 /*---------------------전체 화면---------------------*/
 .frame {
    float: none;
    width: 1200px;
    height: 2100px;
    margin: auto;
-   background-color: rgb(250, 250, 250);
+   background-color: white;
 }
 /*---------------------화면 상단---------------------*/
 .topFrame {
@@ -52,7 +55,7 @@ div {
    height: 200px;
    margin: 0px;
    position: relative;
-   left: 220px;
+   left: 170px;
    top: -10px;
 }
 
@@ -64,7 +67,7 @@ div {
    margin: auto;
    position: relative;
    top: 30px;
-   left: 1040px;
+   left: 1000px;
    float: left;
    list-style: none;
 }
@@ -88,19 +91,23 @@ div {
 	text-decoration: underline;
 }
 
+#top>ul>li>a>img{
+   width:80px;
+}
+
+
 /*--------경계 라인--------*/
 .UnderBar {
    width: 100%;
-   height : 2px;
+   height : 1px;
    position : relative;
    top: 79px;
 
    border-radius: 4px;
-   background-color: rgb(174, 174, 174);
+   background-color: rgb(65 61 61);
 }
 
 /*-- 메인 카테고리 리스트 --*/
-
 
 
 #topMenu .dep1 {
@@ -109,13 +116,14 @@ div {
 }
 #topMenu .dep1 > li{
 	display:inline-block;
-	width:240px;
+	width:200px;
 	vertical-align:top;
-	background:#ddd;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
 
 }
+
 
 
 #topMenu .dep1>li:hover > .dep2{
@@ -128,13 +136,14 @@ div {
 #topMenu .dep1>li>a{
 	display:block;
 	padding : 10px 0;
+	font-size:20px;
 	
 }
 
 
 #topMenu .dep2{
 	display:none;
-	
+	background: whitesmoke;
 }
 
 #topMenu .dep2 a{
@@ -144,11 +153,11 @@ div {
 }
 #topMenu .dep2 >li{
 	
-	background:#ddd;
+	background:ghostwhite;
 	text-align: center;
 	font-size:16px;
-	height: 25px;
-	width:144px;
+	height: 40.91px;
+	width:200px;
 	display:inline-block;
 	
 }
@@ -165,6 +174,7 @@ div {
    height: 1700px;
    padding-top: 120px;
        margin: auto;
+   background-color: white;
    
 }
 
@@ -203,6 +213,13 @@ div {
    background-color: rgb(174, 174, 174);
 }
 
+#footermain{
+	width: 100%;
+    height: 200px;
+  
+    position: relative;
+    top: 200px;
+}
 #footer {
    width: 100%;
    height: 150px;
