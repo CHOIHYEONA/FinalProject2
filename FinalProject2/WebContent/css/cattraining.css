@@ -1,6 +1,7 @@
 @charset "EUC-KR";
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 #mainFrame>span{font-family: 'Do Hyeon', Sans Serif;};
 #player { width:400px; margin:auto; margin-top:50px;}
 #player_screen { position:relative; width:400px; height:225px; }
@@ -13,9 +14,18 @@
 	width:1200px;
 	height: 500px;	
 }
-#player_text{
+
+
+#player_text {
 	position: relative;
     top: 300px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 20px;
+}
+
+.movs {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 17px;
 }
 
 
