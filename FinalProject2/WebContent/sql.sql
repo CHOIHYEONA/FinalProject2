@@ -54,3 +54,4 @@ create sequence commNum start with 1 increment by 1;
 CREATE SEQUENCE CALNUM START WITH 1 INCREMENT BY 1;
 
 SELECT * FROM CALENDAR
+delete from CALENDAR
