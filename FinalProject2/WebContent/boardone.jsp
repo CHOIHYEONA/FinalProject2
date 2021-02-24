@@ -36,8 +36,11 @@ boardDAO dao = new boardDAO();
 int boardUid = Integer.parseInt(request.getParameter("boardUid"));
 dao.updatecount(boardUid);
 String name = info.getUserName();
+
+int userUid = info.getUserUid();
+
 boardVO vo = dao.getOneBoard(boardUid);
- 
+int userUid2 = vo.getUserUid(); 
 commDAO comm_dao = new commDAO();
 ArrayList<commVO> comm_list = new ArrayList<commVO>();
 comm_list =  comm_dao.selectData(boardUid);
@@ -165,9 +168,16 @@ comm_list =  comm_dao.selectData(boardUid);
 						</tr> 
 						    
 		  				<tr>
-		  					<td colspan = "2"><img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
+		  				<%if(userUid == userUid2){ %>
+		  				<a href = "boardDelete?boardUid=<%=boardUid%>"><input type = "button" value = "게시물삭제" style = "float:right;"></a>
+		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "게시물수정" style = "float:right;"></a>
+		  					<%} %>
+		  					<td colspan = "2">
+		  					<img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
+		  					</td>
 		  					<br><br>
 		  				</tr>
+		  				
 		  				
 		  				<tr >
 							<td id = "b_content" colspan = "2">

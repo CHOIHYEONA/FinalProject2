@@ -7,7 +7,7 @@
 <meta charset="EUC-KR">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>고양이 종류 - 장모종</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/cgroup_long.css">
 <style type="text/css">
 
 div#s_left_1{
