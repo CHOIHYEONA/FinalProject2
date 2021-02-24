@@ -34,6 +34,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 boardDAO dao = new boardDAO();
 
 int boardUid = Integer.parseInt(request.getParameter("boardUid"));
+dao.updatecount(boardUid);
 String name = info.getUserName();
 boardVO vo = dao.getOneBoard(boardUid);
  
