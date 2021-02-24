@@ -24,7 +24,7 @@ public class boardDelete extends HttpServlet {
 	}else {
 		System.out.println("삭제실패");
 	}
-	response.sendRedirect("main.jsp");
+	response.sendRedirect("board.jsp");
 
 }
 	}

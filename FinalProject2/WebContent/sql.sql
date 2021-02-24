@@ -53,5 +53,6 @@ create sequence boardNum start with 1 increment by 1;
 create sequence commNum start with 1 increment by 1;
 CREATE SEQUENCE CALNUM START WITH 1 INCREMENT BY 1;
 
+select * from board2
 SELECT * FROM CALENDAR
 delete from CALENDAR
