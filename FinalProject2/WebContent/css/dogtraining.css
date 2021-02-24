@@ -6,12 +6,12 @@
 #mainFrame>span{font-family: 'Do Hyeon', Sans Serif;};
 #player { width:400px; margin:auto; margin-top:50px;}
 #player_screen { position:relative; width:400px; height:225px; }
-#player_screen iframe { position:relative; width:1200px; height:500px; }
-#player_screen .top_img { width:400px; height:225px; position:absolute; top:0px; left:0px; cursoor:pointer; background:#e5e5e5;}
+#player_screen iframe { position:relative; width:1000px; height:500px; left:85px;}
+#player_screen .top_img { width:400px; height:225px; position:absolute; top:0px; left:85px; cursoor:pointer; background:#e5e5e5;}
 #player_screen .top_img + iframe { display:none }
 #player_text dt, #player_text dd { margin:0; padding:0;}
 .top_img>img{
-	width:1200px;
+	width:1000px;
 	height: 500px;	
 }
 #player_text{
@@ -61,7 +61,7 @@ div {
 .frame {
    float: none;
    width: 1200px;
-   height: 1300px;
+   height: 2000px;
    margin: auto;
    background-color: rgb(250, 250, 250);
 }

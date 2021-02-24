@@ -123,7 +123,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 		
 		 <div id="uploadbox"  style=" display: inline; width: 400px; height: 1000px; margin: 0px auto;" >
 		  		<form action = "boardupload" method = "post" enctype="multipart/form-data">
-					제목 <br>	<br>				
+					<p id = "title">제목</p> <br>			
 		  			<span><input type="text" required="required" name = "title" placeholder = "내용을 입력해주세요"></span>
 		  			<br><br>
 		  			<table>
@@ -140,7 +140,7 @@ customersVO info = (customersVO)session.getAttribute("info");
 		  				<tr>
 		  				
 							<td>
-								<textarea name ="content" rows="15" cols="50" style=" width: 392px; height: 411px; "></textarea>
+								<textarea id ="content" name ="content" rows="15" cols="50" style=" width: 392px; height: 411px; "></textarea>
 							</td>
 		  				</tr>
 		  			</table>

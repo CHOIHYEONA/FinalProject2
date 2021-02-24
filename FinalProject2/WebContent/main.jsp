@@ -37,24 +37,24 @@ String date = year+"-"+month+"-"+day;
 System.out.print(date);
 
 if(info!= null) {
-	int userUid = info.getUserUid();
+   int userUid = info.getUserUid();
 cal_list = c_dao.getList(date,userUid);
 if(cal_list.size()>0){
 String c_date = cal_list.get(0).getCa_date();
-	if(date.equals(c_date)){
-		for(int i=0 ; i<cal_list.size();i++){
-		String content = "오늘의 일정은 "+ cal_list.get(i).getCa_text() ;
-					
-		%>
-		<script type = "text/javascript">
-			var content = "<%=content%>";
-			alert(content);
+   if(date.equals(c_date)){
+      for(int i=0 ; i<cal_list.size();i++){
+      String content = "오늘의 일정은 "+ cal_list.get(i).getCa_text() ;
+               
+      %>
+      <script type = "text/javascript">
+         var content = "<%=content%>";
+         alert(content);
 
-		</script>
+      </script>
 <%
-		}
-	}
-	}
+      }
+   }
+   }
 }
 
 board_list = dao.getList(); 
@@ -76,79 +76,79 @@ board_list = dao.getList();
                <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
                <li><a href="logout"><img src="imgs/mypage.png"></a></li>
             </ul>
-			<%}else{ %>            
+         <%}else{ %>            
             <ul>
  
                <li><a href="login.jsp"><img src="imgs/login.png"></a></li>
                <li><a href="join.jsp"><img src="imgs/join.png"></a></li>
             </ul>
-			<%} %>
+         <%} %>
          </div>
 
 
 
-			<!-- 밑줄 디자인 -->
-			<div class="UnderBar"></div>
-			
-			
+         <!-- 밑줄 디자인 -->
+         <div class="UnderBar"></div>
+         
+         
           <!-- 카테고리 선택 목록 -->
-			<div id="topMenu">
-				<ul class="dep1">
-					<li>
-						<a href="doghealth.jsp">강아지</a>
-						<ul class="dep2">
-							<li><a href="doghealth.jsp">건강</a> </li>
-							<li><a href="dogaction.jsp">행동</a> </li>
-							<li><a href="dogtraining.jsp">훈련</a> </li>
-							<li><a href="group.jsp">품종</a> </li>
-						</ul>
-					</li>
-					<li>
-						<a href="cathealth.jsp">고양이</a>
-						<ul class="dep2">
-							<li><a href="cathealth.jsp">건강</a> </li>
-							<li><a href="cataction.jsp">행동</a> </li>
-							<li><a href="cattraining.jsp">훈련</a> </li>
-							<li><a href="catgroup.jsp">품종</a> </li>
-						</ul>
-					</li>
-					<li>
-						<a href="map_hospital.jsp">장소</a>
-						<ul class="dep2">
-							<li><a href="map_hospital.jsp">동물병원</a> </li>
-							<li><a href="map_place.jsp">동반가능장소</a> </li>
-							<li><a href="map_walk.jsp">산책로</a> </li>
-						</ul>					
-					</li>
-					<li>
-						<a href="board.jsp">커뮤니티</a>
-						<ul class="dep2">
-						
-						</ul>					
-					
-					</li>
-					
-					<li>
-						<%if(info!= null){ %>
-						<a href="calendar.html">캘린더</a>
-						<%}else{ %>
-						<a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
-						<%} %>
-						<ul class="dep2">
-						
-						</ul>					
-					
-					</li>					
-					<li>
-						<a href="shop2.jsp">펫 용품샵</a>
-						<ul class="dep2">
-						
-						</ul>
-					</li>
-				</ul>
-			</div>
-			
-			
+         <div id="topMenu">
+            <ul class="dep1">
+               <li>
+                  <a href="doghealth.jsp">강아지</a>
+                  <ul class="dep2">
+                     <li><a href="doghealth.jsp">건강</a> </li>
+                     <li><a href="dogaction.jsp">행동</a> </li>
+                     <li><a href="dogtraining.jsp">훈련</a> </li>
+                     <li><a href="group.jsp">품종</a> </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="cathealth.jsp">고양이</a>
+                  <ul class="dep2">
+                     <li><a href="cathealth.jsp">건강</a> </li>
+                     <li><a href="cataction.jsp">행동</a> </li>
+                     <li><a href="cattraining.jsp">훈련</a> </li>
+                     <li><a href="catgroup.jsp">품종</a> </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="map_hospital.jsp">장소</a>
+                  <ul class="dep2">
+                     <li><a href="map_hospital.jsp">동물병원</a> </li>
+                     <li><a href="map_place.jsp">동반가능장소</a> </li>
+                     <li><a href="map_walk.jsp">산책로</a> </li>
+                  </ul>               
+               </li>
+               <li>
+                  <a href="board.jsp">커뮤니티</a>
+                  <ul class="dep2">
+                  
+                  </ul>               
+               
+               </li>
+               
+               <li>
+                  <%if(info!= null){ %>
+                  <a href="calendar.html">캘린더</a>
+                  <%}else{ %>
+                  <a href="login.jsp" onclick = " alert('로그인을 해주세요');return false;">캘린더</a>
+                  <%} %>
+                  <ul class="dep2">
+                  
+                  </ul>               
+               
+               </li>               
+               <li>
+                  <a href="shop2.jsp">펫 용품샵</a>
+                  <ul class="dep2">
+                  
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         
+         
 
          
       </div>
@@ -266,7 +266,7 @@ board_list = dao.getList();
          <div id="mainContents3">
          
             <div>
-            	<a href = "boardone.jsp?boardUid=<%=board_list.get(1).getBoardUid()%>">
+               <a href = "boardone.jsp?boardUid=<%=board_list.get(1).getBoardUid()%>">
                <img src="./foldername/<%=board_list.get(1).getImgName()%>">
                <h5><%=board_list.get(1).getB_title() %></h5>
                </a>
@@ -297,19 +297,19 @@ board_list = dao.getList();
 
 
 
-	</div>
-	
-	</div>
-	<div id="footermain">
+   </div>
+   
+   </div>
+   <div id="footermain">
 
-	
-		<!---------- 페이지 하단 영역 ---------->
-		<div id="footer">
-			
-			<h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
-			<h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
-		</div>
-	</div>
+   
+      <!---------- 페이지 하단 영역 ---------->
+      <div id="footer">
+         
+         <h3>스마트인재개발원 IoT 웹 개발자 최종 프로젝트</h3>
+         <h5>최현아, 강지애, 김수지, 송희철, 강성민</h5>
+      </div>
+   </div>
          <a class="top-btn" href="#mainFrame">TOP</a>
          
    <script type="text/javascript"></script>
