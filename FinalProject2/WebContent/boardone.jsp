@@ -16,6 +16,7 @@ font-weight:bold;
 }
 #b_content{
 	padding :0;
+	    background: whitesmoke;
 }
 
 
@@ -170,10 +171,10 @@ comm_list =  comm_dao.selectData(boardUid);
 						    
 		  				<tr>
 		  				<%if(userUid == userUid2){ %>
-		  				<a href = "boardDelete?boardUid=<%=boardUid%>"><input type = "button" value = "게시물삭제" style = "float:right;"></a>
-		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "게시물수정" style = "float:right;"></a>
+		  				<a href = "boardDelete?boardUid=<%=boardUid%>"><input type = "button" value = "삭제" style = "float:right;  margin-left: 15px;""></a>
+		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "수정" style = "float:right;"></a>
 		  					<%} %>
-		  					<td colspan = "2">
+		  					<td colspan = "3">
 		  					<img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
 		  					</td>
 		  					<br><br>
@@ -181,38 +182,36 @@ comm_list =  comm_dao.selectData(boardUid);
 		  				
 		  				
 		  				<tr >
-							<td id = "b_content" colspan = "2">
+							<td id = "b_content" colspan = "3">
 								<%=vo.getB_content() %>
+							<br><br><br><br><br><br><br>
 							</td>
 		  				</tr>
-		  				<tr height="200px">
-							<td>
-								
-							</td>
-		  				</tr>
+		  				
+		 
 						<tr >
 							<td colspan = "3"><hr></td>						
 						</tr>
 		  				<tr>
-							<td>조회수 <%=vo.getB_count() %></td>
+							<td style="float: right;position: relative;left: 250px;">조회수 <%=vo.getB_count() %></td>
 							<td>
-							<input id="like_btn" type="image" src = "imgs/like.png" value = "좋아요" onclick = "like()" style=" width : 20px; height :20px;float: right;">
-							<span id="like_result"></span>
+							<input id="like_btn" type="image" src = "imgs/like.png" value = "좋아요" onclick = "like()" style=" width : 20px; height :20px; position: relative;left: 270px;"">
+							<span id="like_result" style="position: relative;left: 280px;top: -4px;"></span>
 							</td>
 						</tr>
 		  			</table>
                        
                        <br><br><br><br>
-                    <span>댓글 </span>   <hr>
+                    <span style="position: relative;top: -110px;">댓글 </span>  
                        <form action = "commServiceCon">
                        <input type="hidden" name="boardUid" value="<%=vo.getBoardUid()%>">
-                       <textarea name ="content" rows="3" cols="30" style="margin: 0px; width: 691px; height: 67px;"></textarea>
+                       <textarea name ="content" rows="3" cols="30" style="margin: 0px; width: 691px; height: 67px; position: relative; top: -100px;"></textarea>
                        <br><br>
                        
-                       <input id = "submit" type="submit" value="등록" style=" float: right;width: 100px;height: 40px;position: relative;top: -10px; ">
+                       <input id = "submit" type="submit" value="등록" style=" float: right;width: 100px;height: 40px;position: relative;top: -100px; ">
                        
-                       </form> <br> <br>
-                       <hr>
+                       </form> 
+                       <hr    style="    position: relative; top: -70px; width:700px">
                        <%for(int i=0;i<comm_list.size();i++){ %>
                        <div>
                        <span><%=name %>님</span><br>
