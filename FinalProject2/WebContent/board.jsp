@@ -140,8 +140,7 @@ System.out.print(board_list.size());
 			<%} %>
 			</div>
 			
-				<br><br><br><br><br>
-			<br><br><br><br><br>
+				<br><br><br>
 
 			  <div id = "img">
 			 <table style = "font-size : 20px;">

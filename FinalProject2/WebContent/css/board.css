@@ -8,6 +8,7 @@ ul, li{
 a{
 	text-decoration:none;
 	color:inherit;
+	font-family: 'Do Hyeon', Sans Serif;
 }
 
 
@@ -22,7 +23,6 @@ div {
 #topMenu .dep1>li>a{font-family: 'Hanna', serif;}
 #topMenu .dep2 a{font-family: 'Hanna', serif;}
 #mainFrame>span{font-family: 'Do Hyeon', Sans Serif;}
-
 
 
 /*---------------------전체 화면---------------------*/
@@ -190,7 +190,7 @@ div {
 
 #boardwrite {
     height: 33px;
-    width: 130px;
+    width: 120px;
   
     position: relative;
 
@@ -199,6 +199,7 @@ div {
     font-size: 20px;
     top: -83px;
     border-radius: 10px;
+    font-family: 'Do Hyeon', Sans Serif;
 }
 /*---------------------화면 하단---------------------*/
 
