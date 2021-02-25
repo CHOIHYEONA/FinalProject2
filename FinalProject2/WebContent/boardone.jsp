@@ -4,8 +4,8 @@
 <%@page import="model.boardVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.boardDAO"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,8 +23,8 @@ font-weight:bold;
 </style>
 <link rel=" shortcut icon" href="imgs/favicon.ico">
 <link rel="icon" href="imgs/favicon.ico">
-<meta charset="EUC-KR">
-<title>Ã¤½Ä·¹½ÃÇÇ</title>
+<meta charset="UTF-8">
+<title>ë©ëƒ¥ì´ ê²Œì‹œíŒ</title>
 <link rel="stylesheet" href="css/boardone1.css">
 
 </head>
@@ -52,15 +52,15 @@ comm_list =  comm_dao.selectData(boardUid);
 
    <div class="frame">
 
-      <!---------- ÆäÀÌÁö »ó´Ü ¿µ¿ª ---------->
+      <!---------- í˜ì´ì§€ ìƒë‹¨ ì˜ì—­ ---------->
       <div class="topFrame">
 
 
-         <!-- ÃÖ»ó´Ü ¿µ¿ª -->
+         <!-- ìµœìƒë‹¨ ì˜ì—­ -->
          <div id="top">
             <a href="main.jsp"><img src="imgs/logo.png"></a>
             
-            <!-- ·Î±×ÀÎ¼º°ø½Ã -->
+            <!-- ë¡œê·¸ì¸ì„±ê³µì‹œ -->
             <%if(info!=null){ %>
             <ul>
                <li><a href="logoutServiceCon"><img src="imgs/logout.png"></a></li>
@@ -76,41 +76,41 @@ comm_list =  comm_dao.selectData(boardUid);
 
 
 
-			<!-- ¹ØÁÙ µğÀÚÀÎ -->
+			<!-- ë°‘ì¤„ ë””ìì¸ -->
 			<div class="UnderBar"></div>
 			
 			
-          <!-- Ä«Å×°í¸® ¼±ÅÃ ¸ñ·Ï -->
+          <!-- ì¹´í…Œê³ ë¦¬ ì„ íƒ ëª©ë¡ -->
 			<div id="topMenu">
 				<ul class="dep1">
 					<li>
-						<a href="doghealth.jsp">°­¾ÆÁö</a>
+						<a href="doghealth.jsp">ê°•ì•„ì§€</a>
 						<ul class="dep2">
-							<li><a href="doghealth.jsp">°Ç°­</a> </li>
-							<li><a href="dogaction.jsp">Çàµ¿</a> </li>
-							<li><a href="dogtraining.jsp">ÈÆ·Ã</a> </li>
-							<li><a href="group.jsp">Ç°Á¾</a> </li>
+							<li><a href="doghealth.jsp">ê±´ê°•</a> </li>
+							<li><a href="dogaction.jsp">í–‰ë™</a> </li>
+							<li><a href="dogtraining.jsp">í›ˆë ¨</a> </li>
+							<li><a href="group.jsp">í’ˆì¢…</a> </li>
 						</ul>
 					</li>
 					<li>
-						<a href="cathealth.jsp">°í¾çÀÌ</a>
+						<a href="cathealth.jsp">ê³ ì–‘ì´</a>
 						<ul class="dep2">
-							<li><a href="cathealth.jsp">°Ç°­</a> </li>
-							<li><a href="cataction.jsp">Çàµ¿</a> </li>
-							<li><a href="cattraining.jsp">ÈÆ·Ã</a> </li>
-							<li><a href="catgroup.jsp">Ç°Á¾</a> </li>
+							<li><a href="cathealth.jsp">ê±´ê°•</a> </li>
+							<li><a href="cataction.jsp">í–‰ë™</a> </li>
+							<li><a href="cattraining.jsp">í›ˆë ¨</a> </li>
+							<li><a href="catgroup.jsp">í’ˆì¢…</a> </li>
 						</ul>
 					</li>
 					<li>
-						<a href="map_hospital.jsp">Àå¼Ò</a>
+						<a href="map_hospital.jsp">ì¥ì†Œ</a>
 						<ul class="dep2">
-							<li><a href="map_hospital.jsp">µ¿¹°º´¿ø</a> </li>
-							<li><a href="map_place.jsp">µ¿¹İ°¡´ÉÀå¼Ò</a> </li>
-							<li><a href="map_walk">»êÃ¥·Î</a> </li>
+							<li><a href="map_hospital.jsp">ë™ë¬¼ë³‘ì›</a> </li>
+							<li><a href="map_place.jsp">ë™ë°˜ê°€ëŠ¥ì¥ì†Œ</a> </li>
+							<li><a href="map_walk">ì‚°ì±…ë¡œ</a> </li>
 						</ul>					
 					</li>
 					<li>
-						<a href="board.jsp">Ä¿¹Â´ÏÆ¼</a>
+						<a href="board.jsp">ì»¤ë®¤ë‹ˆí‹°</a>
 						<ul class="dep2">
 						
 						</ul>					
@@ -119,9 +119,9 @@ comm_list =  comm_dao.selectData(boardUid);
 					
 					<li>
 						<%if(info!= null){ %>
-						<a href="calendar.html">Ä¶¸°´õ</a>
+						<a href="calendar.html">ìº˜ë¦°ë”</a>
 						<%}else{ %>
-						<a href="login.jsp" onclick = " alert('·Î±×ÀÎÀ» ÇØÁÖ¼¼¿ä');return false;">Ä¶¸°´õ</a>
+						<a href="login.jsp" onclick = " alert('ë¡œê·¸ì¸ì„ í•´ì£¼ì„¸ìš”');return false;">ìº˜ë¦°ë”</a>
 						<%} %>
 						<ul class="dep2">
 						
@@ -129,7 +129,7 @@ comm_list =  comm_dao.selectData(boardUid);
 					
 					</li>					
 					<li>
-						<a href="shop2.jsp">Æê ¿ëÇ°¼¥</a>
+						<a href="shop2.jsp">í« ìš©í’ˆìƒµ</a>
 						<ul class="dep2">
 						
 						</ul>
@@ -142,11 +142,11 @@ comm_list =  comm_dao.selectData(boardUid);
          
       </div>
   
-		<!---------- ÆäÀÌÁö Áß°£ ¿µ¿ª ---------->
+		<!---------- í˜ì´ì§€ ì¤‘ê°„ ì˜ì—­ ---------->
 		<div id="mainFrame">
 		<br><br><br><br><br><br><br><br><br>
 		<span style = " font-size:3em; margin-left: 15px;">
-		°Ô½Ã¹° 
+		ê²Œì‹œë¬¼ 
 		</span>
 		<br>
 		<hr>
@@ -171,8 +171,8 @@ comm_list =  comm_dao.selectData(boardUid);
 						    
 		  				<tr>
 		  				<%if(userUid == userUid2){ %>
-		  				<a href = "boardDelete?boardUid=<%=boardUid%>"><input type = "button" value = "»èÁ¦" style = "float:right;  margin-left: 15px;""></a>
-		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "¼öÁ¤" style = "float:right;"></a>
+		  				<a href = "boardDelete?boardUid=<%=boardUid%>"><input type = "button" value = "ì‚­ì œ" style = "float:right;  margin-left: 15px;""></a>
+		  				<a href = "boardUpdate.jsp?boardUid=<%=boardUid%>"><input type = "button" value = "ìˆ˜ì •" style = "float:right;"></a>
 		  					<%} %>
 		  					<td colspan = "3">
 		  					<img src="./foldername/<%=vo.getImgName()%>" width = "300" height = "300" >
@@ -193,28 +193,28 @@ comm_list =  comm_dao.selectData(boardUid);
 							<td colspan = "3"><hr></td>						
 						</tr>
 		  				<tr>
-							<td style="float: right;position: relative;left: 250px;">Á¶È¸¼ö <%=vo.getB_count() %></td>
+							<td style="float: right;position: relative;left: 250px;">ì¡°íšŒìˆ˜ <%=vo.getB_count() %></td>
 							<td>
-							<input id="like_btn" type="image" src = "imgs/like.png" value = "ÁÁ¾Æ¿ä" onclick = "like()" style=" width : 20px; height :20px; position: relative;left: 270px;"">
+							<input id="like_btn" type="image" src = "imgs/like.png" value = "ì¢‹ì•„ìš”" onclick = "like()" style=" width : 20px; height :20px; position: relative;left: 270px;"">
 							<span id="like_result" style="position: relative;left: 280px;top: -4px;"></span>
 							</td>
 						</tr>
 		  			</table>
                        
                        <br><br><br><br>
-                    <span style="position: relative;top: -110px;">´ñ±Û </span>  
+                    <span style="position: relative;top: -110px;">ëŒ“ê¸€ </span>  
                        <form action = "commServiceCon">
                        <input type="hidden" name="boardUid" value="<%=vo.getBoardUid()%>">
                        <textarea name ="content" rows="3" cols="30" style="margin: 0px; width: 691px; height: 67px; position: relative; top: -100px;"></textarea>
                        <br><br>
                        
-                       <input id = "submit" type="submit" value="µî·Ï" style=" float: right;width: 100px;height: 40px;position: relative;top: -100px; ">
+                       <input id = "submit" type="submit" value="ë“±ë¡" style=" float: right;width: 100px;height: 40px;position: relative;top: -100px; ">
                        
                        </form> 
                        <hr    style="    position: relative; top: -70px; width:700px">
                        <%for(int i=0;i<comm_list.size();i++){ %>
                        <div>
-                       <span><%=name %>´Ô</span><br>
+                       <span><%=name %>ë‹˜</span><br>
                        <span><%=comm_list.get(i).getC_content()%></span><br>
                        <span><%=comm_list.get(i).getC_date() %></span>
                        <br>
@@ -228,11 +228,11 @@ comm_list =  comm_dao.selectData(boardUid);
            	<div id="footermain">
 
 	
-		<!---------- ÆäÀÌÁö ÇÏ´Ü ¿µ¿ª ---------->
+		<!---------- í˜ì´ì§€ í•˜ë‹¨ ì˜ì—­ ---------->
 		<div id="footer">
 			
-			<h3>½º¸¶Æ®ÀÎÀç°³¹ß¿ø IoT À¥ °³¹ßÀÚ ÃÖÁ¾ ÇÁ·ÎÁ§Æ®</h3>
-			<h5>ÃÖÇö¾Æ, °­Áö¾Ö, ±è¼öÁö, ¼ÛÈñÃ¶, °­¼º¹Î</h5>
+			<h3>ìŠ¤ë§ˆíŠ¸ì¸ì¬ê°œë°œì› IoT ì›¹ ê°œë°œì ìµœì¢… í”„ë¡œì íŠ¸</h3>
+			<h5>ìµœí˜„ì•„, ê°•ì§€ì• , ê¹€ìˆ˜ì§€, ì†¡í¬ì² , ê°•ì„±ë¯¼</h5>
 		</div>
 	</div>
                        
@@ -241,14 +241,14 @@ comm_list =  comm_dao.selectData(boardUid);
 			function like() {
 			var board_num = <%= boardUid%>
 			var btn_like = document.getElementById("like_btn");
-			//½ºÅ©¸³Æ®¿¡¼­ var·Î ¼±¾ğÇÏ´Â º¯¼ö´Â °ãÃÄµµ µÈ´Ù.
-			//½ºÅ©¸³Æ®¾È¿¡¼­´Â ==µÈ´Ù..
-			if(btn_like.value == "ÁÁ¾Æ¿ä"){
+			//ìŠ¤í¬ë¦½íŠ¸ì—ì„œ varë¡œ ì„ ì–¸í•˜ëŠ” ë³€ìˆ˜ëŠ” ê²¹ì³ë„ ëœë‹¤.
+			//ìŠ¤í¬ë¦½íŠ¸ì•ˆì—ì„œëŠ” ==ëœë‹¤..
+			if(btn_like.value == "ì¢‹ì•„ìš”"){
 			$.ajax({
-				type : "post", //Àü¼Û¹æ½Ä
-				url : "likeService",//¼­¹öÆÄÀÏÀÌ¸§
-				data : {"board_num":<%= boardUid%>}, //¼­¹ö·Î º¸³»´Â °ª
-				dataType : "text", //¼­¹ö¿¡¼­ ¿À´Â ÀÀ´ä¹æ½Ä
+				type : "post", //ì „ì†¡ë°©ì‹
+				url : "likeService",//ì„œë²„íŒŒì¼ì´ë¦„
+				data : {"board_num":<%= boardUid%>}, //ì„œë²„ë¡œ ë³´ë‚´ëŠ” ê°’
+				dataType : "text", //ì„œë²„ì—ì„œ ì˜¤ëŠ” ì‘ë‹µë°©ì‹
 				success: function(data){
 					//alert(data);
 					var result = document.getElementById("like_result");
@@ -256,19 +256,19 @@ comm_list =  comm_dao.selectData(boardUid);
 					
 					var btn_like = document.getElementById("like_btn");
 					btn_like.src = "imgs/redlike.png"
-					btn_like.value = "ÁÁ¾Æ¿äÃë¼Ò"
+					btn_like.value = "ì¢‹ì•„ìš”ì·¨ì†Œ"
 					
 				},
 				error : function(){
-					alert("¿äÃ»½ÇÆĞ");
+					alert("ìš”ì²­ì‹¤íŒ¨");
 				}
 			});
 		}else{
 			$.ajax({
-				type : "post", //Àü¼Û¹æ½Ä
-				url : "dislikeService",//¼­¹öÆÄÀÏÀÌ¸§
-				data : {"board_num":<%= boardUid%>}, //¼­¹ö·Î º¸³»´Â °ª
-				dataType : "text", //¼­¹ö¿¡¼­ ¿À´Â ÀÀ´ä¹æ½Ä
+				type : "post", //ì „ì†¡ë°©ì‹
+				url : "dislikeService",//ì„œë²„íŒŒì¼ì´ë¦„
+				data : {"board_num":<%= boardUid%>}, //ì„œë²„ë¡œ ë³´ë‚´ëŠ” ê°’
+				dataType : "text", //ì„œë²„ì—ì„œ ì˜¤ëŠ” ì‘ë‹µë°©ì‹
 				success: function(data){
 					//alert(data);
 					var result = document.getElementById("like_result");
@@ -276,10 +276,10 @@ comm_list =  comm_dao.selectData(boardUid);
 					
 					var btn_like = document.getElementById("like_btn");
 					btn_like.src = "imgs/like.png"
-					btn_like.value = "ÁÁ¾Æ¿ä"
+					btn_like.value = "ì¢‹ì•„ìš”"
 				},
 				error : function(){
-					alert("¿äÃ»½ÇÆĞ");
+					alert("ìš”ì²­ì‹¤íŒ¨");
 				}
 			});
 		}
